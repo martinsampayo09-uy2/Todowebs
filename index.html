@@ -52,8 +52,8 @@ nav a:hover{color:var(--azul)}
 
 radio-player{display:block;width:100%;height:130px}
 
-/* SOLICITA WEB WIDGET */
-.solicita-widget{background:linear-gradient(135deg,#0a1a2b,#0f2942);border:1px solid var(--azul);padding:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 5px 20px rgba(0,189,245,.15);text-decoration:none;transition:.3s}
+/* WIDGET SUGERENCIA */
+.solicita-widget{background:linear-gradient(135deg,#0a1a2b,#0f2942);border:1px solid var(--azul);padding:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 5px 20px rgba(0,189,245,.15);text-decoration:none;transition:.3s;cursor:pointer}
 .solicita-widget:hover{transform:translateY(-3px);border-color:#fff}
 .solicita-widget h3{font-size:14px;color:#fff;margin-bottom:4px;letter-spacing:1px;font-weight:900}
 .solicita-widget p{color:#b5c7d9;font-size:11.5px;margin-bottom:8px;line-height:1.3;font-weight:600}
@@ -78,6 +78,8 @@ radio-player{display:block;width:100%;height:130px}
 .titulo{text-align:center;margin-bottom:25px}
 .titulo h2{font-size:26px;letter-spacing:2px}
 .titulo p{color:var(--subtexto);margin-top:8px;font-size:13.5px}
+
+/* GRILLA PRINCIPAL EN 3 COLUMNAS */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1250px;margin:auto}
 .card{background:var(--card);border:1px solid var(--border);border-radius:15px;overflow:hidden;transition:.3s;display:flex;flex-direction:column;position:relative}
 .card:hover{transform:translateY(-6px);border-color:var(--azul);box-shadow:0 12px 35px rgba(0,139,213,0.25)}
@@ -93,11 +95,27 @@ radio-player{display:block;width:100%;height:130px}
 .btn{width:100%;text-align:center;text-decoration:none;color:var(--texto);border:1px solid var(--azul);border-radius:8px;padding:9px 6px;font-weight:bold;font-size:11px;transition:.3s;background:rgba(8,121,181,0.15)}
 .btn:hover{background:var(--azul);color:#001321}
 
+/* ESTILOS CARRUSEL DE TESTIMONIOS */
+.carrusel-testimonios{width:100%;max-width:1250px;margin:auto;overflow:hidden;position:relative;padding:10px 0}
+.carrusel-track{display:flex;gap:18px;width:max-content;animation:carruselMov 25s linear infinite}
+.carrusel-track:hover{animation-play-state:paused}
+.testimonio-card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:20px;box-shadow:0 5px 20px rgba(0,0,0,0.2);display:flex;flex-direction:column;justify-content:space-between;width:360px;flex-shrink:0;transition:.3s}
+.testimonio-card:hover{transform:translateY(-4px);border-color:var(--azul)}
+.estrellas{color:#f59e0b;font-size:15px;margin-bottom:8px}
+.testimonio-card p{color:var(--subtexto);font-size:12.5px;line-height:1.5;margin-bottom:14px;font-style:italic}
+.cliente{font-weight:bold;color:var(--texto);font-size:12.5px;display:flex;justify-content:space-between;align-items:center}
+.cliente span{color:var(--azul);font-size:10.5px;font-weight:600}
+
+@keyframes carruselMov{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+
 .solicita-seccion{max-width:900px;margin:25px auto 35px;padding:0 5%}
 .solicita-box{background:linear-gradient(135deg,#0a1a2b,#0f2942);border:1px solid var(--azul);border-radius:18px;padding:30px 20px;text-align:center;box-shadow:0 10px 30px rgba(0,189,245,.15)}
 .solicita-box h2{font-size:22px;color:#fff;margin-bottom:8px;letter-spacing:1px}
 .solicita-box p{color:#b5c7d9;font-size:13.5px;margin-bottom:18px;line-height:1.5}
-.btn-solicita{display:inline-block;background:var(--azul);color:#001321;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:800;font-size:13.5px;transition:.3s;box-shadow:0 0 15px rgba(8,189,245,.4)}
+.btn-solicita{display:inline-block;background:var(--azul);color:#001321;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:800;font-size:13.5px;transition:.3s;cursor:pointer}
 .btn-solicita:hover{background:#fff;transform:scale(1.05)}
 
 .contacto{max-width:800px;margin:0 auto 35px;padding:0 5%}
@@ -166,6 +184,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   .contenido h3 { font-size: 14.5px; margin-bottom: 4px; }
   .contenido p { font-size: 11px; margin-bottom: 10px; line-height: 1.3; }
   .btn { font-size: 9.5px; padding: 7px 4px; }
+  .testimonio-card{width:300px}
 }
 </style>
 <script>
@@ -194,14 +213,16 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   <nav id="nav">
     <a href="#inicio">Inicio</a>
     <a href="#servicios">Servicios</a>
+    <a href="#testimonios">Reseñas</a>
     <a href="https://tinmar.vercel.app">Tienda</a>
     <a href="https://pabloalesandre.vercel.app">Abogado</a>
     <a href="https://javiertato.vercel.app">Tatuaje</a>
     <a href="https://lavaderounion.vercel.app">Lavadero</a>
     <a href="masajes/index.html">Masajes</a>
     <a href="trabajos/index.html">Trabajos</a>
-    <a href=" https://webport.itch.io/vascolet1">Vascolet</a>
+    <a href="https://webport.itch.io/vascolet1">Vascolet</a>
     <a href="https://tinmar.vercel.app/solicita">Solicita Web</a>
+    <a href="#" id="navBtnSugerencias">Sugerencia</a>
     <a href="#contacto">Contacto</a>
   </nav>
 </header>
@@ -226,21 +247,21 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   <div class="clima-container" id="climaWidget">
     <div class="clima-screen"><span id="climaLoc">📍 Montevideo</span></div>
     <div class="clima-temp" id="climaTemp">--°C</div>
-    <div class="clima-desc" id="climaDesc">Cargando clima...</div>
+    <div class="clima-desc" id="climaDesc">Clima no disponible</div>
   </div>
 
   <radio-player></radio-player>
 
-  <a href="https://tinmar.vercel.app/solicita" class="solicita-widget">
-    <h3>🚀 SOLICITA TU WEB</h3>
-    <p>Impulsa tu negocio hoy</p>
-    <div class="btn-solicita-mini">PEDIR AQUÍ</div>
+  <a href="#" class="solicita-widget" id="widgetSugerencia">
+    <h3>💡 DEJA TU SUGERENCIA</h3>
+    <p>Ayúdanos a mejorar el portal</p>
+    <div class="btn-solicita-mini">ESCRIBIR</div>
   </a>
 </div>
 
 <section class="hero">
   <div class="hero-text">
-    <h1><span>◎</span>TINMAR Portal de negocios</h1> 
+    <h1><span>◎</span>TINMAR Negocios Servicios</h1> 
     <div class="titulo">
       <h2>ALGUNAS WEB</h2>
     </div> 
@@ -343,10 +364,72 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 </div>
 </section>
 
+<!-- SECCIÓN TESTIMONIOS EN FORMATO CARRUSEL -->
+<section class="seccion" id="testimonios">
+  <div class="titulo">
+    <h2>💬 CLIENTES</h2>
+<p>Dnesicen quienes ya confiaron en los servicios de TINMAR</p>
+  </div>
+  
+  <div class="carrusel-testimonios">
+    <div class="carrusel-track">
+      <!-- Grupo 1 de opiniones -->
+      <div class="testimonio-card">
+        <div>
+          <div class="estrellas">★★★★★</div>
+          <p>"Excelente atención del estudio jurídico. Me asesoraron de forma clara y rápida con todos los trámites que necesitaba en Montevideo."</p>
+        </div>
+        <div class="cliente">Carlos R. <span>Abogado</span></div>
+      </div>
+
+      <div class="testimonio-card">
+        <div>
+          <div class="estrellas">★★★★★</div>
+          <p>"Impecable el servicio del lavadero. La ropa quedó perfecta, con muy buen aroma y lista en tiempo récord. ¡Recomendadísimo!"</p>
+        </div>
+        <div class="cliente">Valeria M. <span>Lavadero</span></div>
+      </div>
+
+      <div class="testimonio-card">
+        <div>
+          <div class="estrellas">★★★★★</div>
+          <p>"El diseño del tatuaje quedó exactamente como lo imaginé. Muy prolijo, higiénico y con excelente trato profesional."</p>
+        </div>
+        <div class="cliente">Matías S. <span>Tatuajes</span></div>
+      </div>
+
+      <!-- Grupo 2 clonado para bucle continuo suave -->
+      <div class="testimonio-card">
+        <div>
+          <div class="estrellas">★★★★★</div>
+          <p>"Excelente atención del estudio jurídico. Me asesoraron de forma clara y rápida con todos los trámites que necesitaba en Montevideo."</p>
+        </div>
+        <div class="cliente">Carlos R. <span>Abogado</span></div>
+      </div>
+
+      <div class="testimonio-card">
+        <div>
+          <div class="estrellas">★★★★★</div>
+          <p>"Impecable el servicio del lavadero. La ropa quedó perfecta, con muy buen aroma y lista en tiempo récord. ¡Recomendadísimo!"</p>
+        </div>
+        <div class="cliente">Valeria M. <span>Lavadero</span></div>
+      </div>
+
+      <div class="testimonio-card">
+        <div>
+          <div class="estrellas">★★★★★</div>
+          <p>"El diseño del tatuaje quedó exactamente como lo imaginé. Muy prolijo, higiénico y con excelente trato profesional."</p>
+        </div>
+        <div class="cliente">Matías S. <span>Tatuajes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="solicita-seccion" id="solicita">
   <div class="solicita-box">
-    <h2>🚀 ¿NECESITAS UNA PÁGINA WEB PROFESIONAL?</h2>
-    <p>Impulsa tu emprendimiento con un diseño moderno, ultrarrápido y 100% adaptado para móviles.</p>
+    <h2>🚀 ¿NECESITAS UNA PÁGINA WEB ?</h2>
+    <p>Impulsa tu emprendimiento con un diseño moderno, ultrarrápido y 100% adaptable</p>
     <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener" class="btn-solicita">SOLICITA TU WEB AHORA</a>
   </div>
 </section>
@@ -413,14 +496,16 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   </div>
 </div>
 
-<!-- MODAL NUEVO: SUGERENCIAS -->
+<!-- MODAL SUGERENCIAS -->
 <div class="modal-legal" id="modalSugerencias" role="dialog" aria-modal="true" aria-labelledby="tituloSugerencias">
   <div class="modal-legal-box">
     <button class="modal-cerrar" id="cerrarSugerencias" aria-label="Cerrar">✕</button>
     <h2 id="tituloSugerencias">💡 Envíanos tu Sugerencia</h2>
     <div class="modal-sub">Ayúdanos a mejorar el Portal TINMAR</div>
     <p>¿Tienes alguna idea, propuesta o detectaste algo que podamos mejorar? Escríbenos directamente:</p>
-    <form class="sug-form" action="https://formspree.io/f/tu-correo-id" method="POST">
+    <form class="sug-form" action="https://formsubmit.co/Martinsampayo9@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="¡Nueva Sugerencia en Portal TINMAR!">
+      <input type="hidden" name="_captcha" value="false">
       <input type="text" name="nombre" placeholder="Tu Nombre" required>
       <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
       <textarea name="sugerencia" placeholder="Escribe tu sugerencia o comentario aquí..." required></textarea>
@@ -625,10 +710,15 @@ if(!customElements.get("radio-player")){
   }
 
   const modalSugerencias = document.getElementById("modalSugerencias");
-  const btnSugerencias = document.getElementById("btnSugerencias");
   const cerrarSugerencias = document.getElementById("cerrarSugerencias");
-  if(btnSugerencias && modalSugerencias){
-    btnSugerencias.addEventListener("click", e=>{ e.preventDefault(); modalSugerencias.classList.add("abierto"); });
+  
+  const abrirSugerencias = e => { e.preventDefault(); modalSugerencias.classList.add("abierto"); };
+  
+  document.getElementById("btnSugerencias")?.addEventListener("click", abrirSugerencias);
+  document.getElementById("navBtnSugerencias")?.addEventListener("click", abrirSugerencias);
+  document.getElementById("widgetSugerencia")?.addEventListener("click", abrirSugerencias);
+
+  if(cerrarSugerencias && modalSugerencias){
     cerrarSugerencias.addEventListener("click", ()=>modalSugerencias.classList.remove("abierto"));
   }
 })(); 
