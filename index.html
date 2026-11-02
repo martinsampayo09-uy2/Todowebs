@@ -52,7 +52,7 @@ nav a:hover{color:var(--azul)}
 
 radio-player{display:block;width:100%;height:130px}
 
-/* SOLICITA WEB WIDGET (Más grande y grueso) */
+/* SOLICITA WEB WIDGET */
 .solicita-widget{background:linear-gradient(135deg,#0a1a2b,#0f2942);border:1px solid var(--azul);padding:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 5px 20px rgba(0,189,245,.15);text-decoration:none;transition:.3s}
 .solicita-widget:hover{transform:translateY(-3px);border-color:#fff}
 .solicita-widget h3{font-size:14px;color:#fff;margin-bottom:4px;letter-spacing:1px;font-weight:900}
@@ -68,13 +68,13 @@ radio-player{display:block;width:100%;height:130px}
 .hero-icon{font-size:clamp(110px,22vw,230px);color:#087fc1;text-shadow:0 0 45px #087fc1;animation:flotar 4s ease-in-out infinite}
 @keyframes flotar{50%{transform:translateY(-13px)}}
 
-.search-container{max-width:650px;margin:20px auto 10px;padding:0 5%;text-align:center}
+.search-container{max-width:650px;margin:25px auto 15px;padding:0 5%;text-align:center}
 .search-box{position:relative;display:flex;align-items:center}
 .search-input{width:100%;padding:13px 20px 13px 45px;background:var(--card);border:1px solid var(--border);border-radius:30px;color:var(--texto);font-size:14px;outline:none;transition:.3s;box-shadow:0 5px 20px rgba(0,0,0,.15)}
 .search-input:focus{border-color:var(--azul);box-shadow:0 0 15px rgba(8,189,245,.3)}
 .search-icon{position:absolute;left:18px;color:var(--azul);font-size:16px;pointer-events:none}
 
-.seccion{padding:30px 4% 55px}
+.seccion{padding:20px 4% 55px}
 .titulo{text-align:center;margin-bottom:25px}
 .titulo h2{font-size:26px;letter-spacing:2px}
 .titulo p{color:var(--subtexto);margin-top:8px;font-size:13.5px}
@@ -93,7 +93,7 @@ radio-player{display:block;width:100%;height:130px}
 .btn{width:100%;text-align:center;text-decoration:none;color:var(--texto);border:1px solid var(--azul);border-radius:8px;padding:9px 6px;font-weight:bold;font-size:11px;transition:.3s;background:rgba(8,121,181,0.15)}
 .btn:hover{background:var(--azul);color:#001321}
 
-.solicita-seccion{max-width:900px;margin:0 auto 35px;padding:0 5%}
+.solicita-seccion{max-width:900px;margin:25px auto 35px;padding:0 5%}
 .solicita-box{background:linear-gradient(135deg,#0a1a2b,#0f2942);border:1px solid var(--azul);border-radius:18px;padding:30px 20px;text-align:center;box-shadow:0 10px 30px rgba(0,189,245,.15)}
 .solicita-box h2{font-size:22px;color:#fff;margin-bottom:8px;letter-spacing:1px}
 .solicita-box p{color:#b5c7d9;font-size:13.5px;margin-bottom:18px;line-height:1.5}
@@ -114,13 +114,15 @@ radio-player{display:block;width:100%;height:130px}
 .fab-whatsapp:hover{transform:scale(1.1);background:#16a34a}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,0.7)}70%{box-shadow:0 0 0 15px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
 
-/* PIE DE PÁGINA (Más grande y grueso) */
+/* PIE DE PÁGINA */
 footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
 .footer-top{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;width:100%;font-size:16px;font-weight:900}
 .footer-tagline p{font-size:12px;color:var(--subtexto);letter-spacing:1px;margin:0;font-weight:700}
-.footer-legal #btnTerminos{font-size:15px;font-weight:bold;color:var(--azul);text-decoration:none}
-.footer-legal #btnTerminos:hover{text-decoration:underline}
+.footer-legal{display:flex;gap:15px;align-items:center;justify-content:center;flex-wrap:wrap}
+.footer-legal a{font-size:14px;font-weight:bold;color:var(--azul);text-decoration:none}
+.footer-legal a:hover{text-decoration:underline}
 
+/* MODALES GENERALES */
 .modal-legal{display:none;position:fixed;inset:0;z-index:999;background:rgba(2,10,18,.85);backdrop-filter:blur(6px);padding:20px;overflow-y:auto}
 .modal-legal.abierto{display:flex;align-items:flex-start;justify-content:center}
 .modal-legal-box{background:var(--card);border:1px solid var(--azul);border-radius:18px;max-width:820px;width:100%;margin:40px auto;padding:30px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.6)}
@@ -131,25 +133,25 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 .modal-legal-box ul{margin-left:20px}
 .modal-cerrar{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:var(--fondo);color:var(--texto);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 
-/* ESTILOS RESPONSIVE PARA MENÚ LATERAL DERECHO / IZQUIERDO COMPACTO */
+/* ESTILOS FORMULARIO SUGERENCIAS */
+.sug-form{display:flex;flex-direction:column;gap:12px;margin-top:15px}
+.sug-form input, .sug-form textarea{width:100%;padding:12px 15px;background:var(--fondo);border:1px solid var(--border);border-radius:10px;color:var(--texto);font-size:13px;outline:none;font-family:inherit}
+.sug-form input:focus, .sug-form textarea:focus{border-color:var(--azul)}
+.sug-form textarea{resize:vertical;min-height:90px}
+.sug-btn{background:var(--azul);color:#001321;padding:12px;border:none;border-radius:10px;font-weight:800;font-size:13.5px;cursor:pointer;transition:.3s}
+.sug-btn:hover{background:#fff}
+
+/* RESPONSIVE */
 @media(max-width:750px){
   header{height:65px;padding:0 5%}
   .logo{font-size:24px}
   .menu{display:block}
-  
-  /* Menú lateral compacto de costado con letras grandes y gruesas */
   nav{display:none;position:absolute;top:65px;right:0;width:240px;background:rgba(11,27,46,0.98);backdrop-filter:blur(12px);padding:25px 20px;flex-direction:column;align-items:flex-start;gap:18px;border-left:1px solid var(--border);border-bottom:1px solid var(--border);box-shadow:-10px 15px 30px rgba(0,0,0,0.5);border-bottom-left-radius:16px}
   nav.abierto{display:flex}
   nav a{font-size:14px;font-weight:800;letter-spacing:0.5px}
-
   .hero-icon{display:block; font-size: 110px;}
-  .widgets{
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px;
-    padding: 0 4%; }
-  #reloj-lluvia, .clima-container, radio-player, .solicita-widget {
-    height: 115px;
-    border-radius: 16px; }
+  .widgets{grid-template-columns: repeat(2, 1fr) !important;gap: 10px;padding: 0 4%;}
+  #reloj-lluvia, .clima-container, radio-player, .solicita-widget {height: 115px;border-radius: 16px;}
   #reloj-lluvia #hora { font-size: 22px; font-weight: 900; }
   #reloj-lluvia #fecha { font-size: 10px; font-weight: 700; }
   .clima-temp { font-size: 24px; font-weight: 900; }
@@ -158,9 +160,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   .solicita-widget h3 { font-size: 12.5px; font-weight: 900; }
   .solicita-widget p { font-size: 10.5px; font-weight: 600; }
   .btn-solicita-mini { padding: 4px 8px; font-size: 10.5px; font-weight: 900; }
-  .grid{
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px; }
+  .grid{grid-template-columns: repeat(2, 1fr) !important;gap: 10px;}
   .foto { height: 115px; }
   .contenido { padding: 10px 12px 12px; }
   .contenido h3 { font-size: 14.5px; margin-bottom: 4px; }
@@ -169,10 +169,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 }
 </style>
 <script>
-  // Bloqueo de menú contextual (clic derecho)
   document.addEventListener("contextmenu", e => e.preventDefault());
-
-  // Bloqueo de atajos de desarrollador
   document.addEventListener("keydown", e => {
     const bloqueadas =
       e.key === "F12" ||
@@ -185,11 +182,10 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       return false;
     }
   });
-  // Bloqueo de doble clic
   document.addEventListener("dblclick", e => e.preventDefault());
 </script>
 </head>
-<body>
+<body id="inicio">
 <header>
   <a href="#inicio" class="logo"><span>◎</span>TINMAR</a><p>🏗️ En Construcción</p>
   <div class="header-actions">
@@ -218,7 +214,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   </div> 
 </div>
 
-<div class="widgets" id="inicio">
+<div class="widgets">
   <div id="reloj-lluvia">
     <canvas></canvas>
     <div class="contenido">
@@ -252,10 +248,18 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   <div class="hero-icon">◎</div>
 </section>
 
+<!-- BUSCADOR PRINCIPAL ACTIVADO -->
+<div class="search-container">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" class="search-input" placeholder="Buscar servicio, tienda, abogado, lavadero...">
+  </div>
+</div>
+
 <div class="grid" id="servicesGrid">
     <article class="card" data-search="tienda tinmar productos variedad compras">
       <span class="badge-status">🟢 Abierto</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800" alt="Tienda"></div>
+      <div class="foto"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800" alt="Tienda" loading="lazy"></div>
       <div class="contenido">
         <h3>🛒 TINMAR</h3>
         <p>Productos, variedad y la mejor atención.</p>
@@ -267,7 +271,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 
     <article class="card" data-search="abogado asesoramiento jurídico consultas legales derecho">
       <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://i.ibb.co/5hCFkk3Z/Screenshot-20261030-171925-Chrome.jpg" alt="Abogado"></div>
+      <div class="foto"><img src="https://i.ibb.co/5hCFkk3Z/Screenshot-20261030-171925-Chrome.jpg" alt="Abogado" loading="lazy"></div>
       <div class="contenido">
         <h3>⚖️ ABOGADO</h3>
         <p>Asesoramiento jurídico y consultas profesionales.</p>
@@ -279,7 +283,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 
     <article class="card" data-search="tatuajes tatuaje diseños únicos estilo personalizado arte">
       <span class="badge-status">🟢 Abierto</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800" alt="Tatuajes"></div>
+      <div class="foto"><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800" alt="Tatuajes" loading="lazy"></div>
       <div class="contenido">
         <h3>🖋️ TATUAJES</h3>
         <p>Diseños únicos y estilo personalizado.</p>
@@ -291,7 +295,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 
     <article class="card" data-search="lavadero unión lavado ropa prendas rápido secado">
       <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=800" alt="Lavadero"></div>
+      <div class="foto"><img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=800" alt="Lavadero" loading="lazy"></div>
       <div class="contenido">
         <h3>🧺 LAVADERO</h3>
         <p>Lavado de ropa y prendas. Rápido y confiable.</p>
@@ -303,7 +307,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 
     <article class="card" data-search="masajes relajación bienestar equilibrio cuerpo descontracturante">
       <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800" alt="Masajes"></div>
+      <div class="foto"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800" alt="Masajes" loading="lazy"></div>
       <div class="contenido">
         <h3>🌿 MASAJES</h3>
         <p>Relajación, bienestar y equilibrio corporal.</p>
@@ -315,7 +319,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 
     <article class="card" data-search="trabajos en general mantenimiento construcción jardinería pintura hogar">
       <span class="badge-status">🟢 Presupuesto</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Trabajos en general"></div>
+      <div class="foto"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Trabajos en general" loading="lazy"></div>
       <div class="contenido">
         <h3>🔧 TRABAJOS</h3>
         <p>Mantenimiento, construcción, jardinería y pintura.</p>
@@ -327,7 +331,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 
     <article class="card" data-search="juego vascolet entretenimiento diversión online arcade">
       <span class="badge-status">🎮 Online</span>
-      <div class="foto"><img src="" alt="Juego Vascolet"></div>
+      <div class="foto"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Juego Vascolet" loading="lazy"></div>
       <div class="contenido">
         <h3>🎮 VASCOLET</h3>
         <p>Entretenimiento retro y diversión online.</p>
@@ -371,32 +375,57 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   </div>
   <div class="footer-legal">
     <a href="#" id="btnTerminos">Términos y Condiciones</a> 
+    <span>•</span>
+    <a href="#" id="btnPrivacidad">Política de Privacidad</a>
+    <span>•</span>
+    <a href="#" id="btnSugerencias">💡 Dejar Sugerencia</a>
   </div>
   <br>
 </footer>
 
+<!-- MODAL TÉRMINOS -->
 <div class="modal-legal" id="modalTerminos" role="dialog" aria-modal="true" aria-labelledby="tituloTerminos">
   <div class="modal-legal-box">
     <button class="modal-cerrar" id="cerrarTerminos" aria-label="Cerrar">✕</button>
     <h2 id="tituloTerminos">📄 Términos y Condiciones de Uso</h2>
     <div class="modal-sub">Portal TINMAR · Montevideo, Uruguay</div>
-
     <h3>1. Información General y Aceptación</h3>
     <p>El portal <strong>TINMAR</strong> opera como un directorio y canal de conexión directa entre clientes y servicios profesionales independientes en Montevideo, Uruguay. Al acceder, navegar y utilizar este sitio web, el usuario acepta de manera expresa los presentes términos y condiciones en su totalidad.</p>
-
     <h3>2. Servicios Ofrecidos</h3>
-    <p>A través de la plataforma se facilita el acceso a diversos servicios profesionales y comerciales, tales como asesoramiento jurídico, diseño de tatuajes, servicios de lavadero, masajes, trabajos de mantenimiento general y entretenimiento digital. Cada servicio se rige por sus propias condiciones particulares acordadas de forma directa entre el proveedor y el cliente.</p>
-
+    <p>A través de la plataforma se facilita el acceso a diversos servicios profesionales y comerciales, tales como asesoramiento jurídico, diseño de tatuajes, servicios de lavadero, masajes, trabajos de mantenimiento general y entretenimiento digital.</p>
     <h3>3. Protección de Datos Personales</h3>
-    <p>Conforme a lo dispuesto por la Ley N.º 18.331 de Protección de Datos Personales y Acción de Habeas Data de la República Oriental del Uruguay, toda información de contacto o datos provistos voluntariamente por el usuario serán tratados con estricta confidencialidad y utilizados exclusivamente para coordinar la prestación de los servicios solicitados.</p>
+    <p>Conforme a la Ley N.º 18.331 de Protección de Datos Personales, toda información de contacto provista voluntariamente será tratada con confidencialidad para coordinar la prestación de los servicios solicitados.</p>
+    <div style="margin-top:20px; font-size:11.5px; color:var(--subtexto);">Última actualización: Octubre 2026</div>
+  </div>
+</div>
 
-    <h3>4. Propiedad Intelectual</h3>
-    <p>Todos los contenidos visuales, textos, marcas, logotipos, códigos fuente, diseños y estructuras presentados en este portal son propiedad exclusiva de TINMAR o cuentan con las autorizaciones correspondientes para su difusión. Queda estrictamente prohibida su reproducción total o parcial sin autorización previa y por escrito.</p>
+<!-- MODAL POLÍTICA DE PRIVACIDAD -->
+<div class="modal-legal" id="modalPrivacidad" role="dialog" aria-modal="true" aria-labelledby="tituloPrivacidad">
+  <div class="modal-legal-box">
+    <button class="modal-cerrar" id="cerrarPrivacidad" aria-label="Cerrar">✕</button>
+    <h2 id="tituloPrivacidad">🔒 Política de Privacidad</h2>
+    <div class="modal-sub">Portal TINMAR · Montevideo, Uruguay</div>
+    <h3>1. Responsable del tratamiento</h3>
+    <p>El responsable del tratamiento de los datos es <strong>TINMAR</strong> (Montevideo, Uruguay). Contacto: <a href="mailto:martinsampayo9@gmail.com">martinsampayo9@gmail.com</a>.</p>
+    <h3>2. Finalidad</h3>
+    <p>Los datos recopilados (consultas, mensajes y WhatsApp) se usan exclusivamente para responder solicitudes y mejorar la experiencia de navegación en el Portal.</p>
+    <div style="margin-top:20px; font-size:11.5px; color:var(--subtexto);">Última actualización: Octubre 2026</div>
+  </div>
+</div>
 
-    <h3>5. Limitación de Responsabilidad</h3>
-    <p>TINMAR actúa como un facilitador de enlaces y contacto directo. No se responsabiliza por inconvenientes, daños indirectos, disputas o incumplimientos derivados de las transacciones comerciales o acuerdos particulares realizados directamente entre los usuarios y los prestadores de cada servicio anunciado.</p>
-
-    <div style="margin-top:20px; font-size:11.5px; color:var(--subtexto);">Última actualización: <span id="fechaActualizacion">Octubre 2026</span></div>
+<!-- MODAL NUEVO: SUGERENCIAS -->
+<div class="modal-legal" id="modalSugerencias" role="dialog" aria-modal="true" aria-labelledby="tituloSugerencias">
+  <div class="modal-legal-box">
+    <button class="modal-cerrar" id="cerrarSugerencias" aria-label="Cerrar">✕</button>
+    <h2 id="tituloSugerencias">💡 Envíanos tu Sugerencia</h2>
+    <div class="modal-sub">Ayúdanos a mejorar el Portal TINMAR</div>
+    <p>¿Tienes alguna idea, propuesta o detectaste algo que podamos mejorar? Escríbenos directamente:</p>
+    <form class="sug-form" action="https://formspree.io/f/tu-correo-id" method="POST">
+      <input type="text" name="nombre" placeholder="Tu Nombre" required>
+      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+      <textarea name="sugerencia" placeholder="Escribe tu sugerencia o comentario aquí..." required></textarea>
+      <button type="submit" class="sug-btn">ENVIAR SUGERENCIA</button>
+    </form>
   </div>
 </div>
 
@@ -414,6 +443,7 @@ nav.querySelectorAll("a").forEach(a=>{
   });
 });
 
+/* LÓGICA BUSCADOR */
 (function(){
   const searchInput = document.getElementById("searchInput");
   const cards = document.querySelectorAll("#servicesGrid .card");
@@ -433,6 +463,7 @@ nav.querySelectorAll("a").forEach(a=>{
   });
 })();
 
+/* RELOJ Y LLUVIA */
 (function(){
   const reloj=document.getElementById("reloj-lluvia");
   if(!reloj)return;
@@ -474,6 +505,7 @@ nav.querySelectorAll("a").forEach(a=>{
   window.addEventListener("resize",ajustar); 
 })();
 
+/* CLIMA */
 (function(){
   const tempEl = document.getElementById("climaTemp");
   const descEl = document.getElementById("climaDesc");
@@ -493,6 +525,7 @@ nav.querySelectorAll("a").forEach(a=>{
   cargarClima(); 
 })();
 
+/* RADIO PLAYER */
 if(!customElements.get("radio-player")){
   customElements.define("radio-player",class extends HTMLElement{
     constructor(){super();this.attachShadow({mode:"open"});}
@@ -528,7 +561,7 @@ if(!customElements.get("radio-player")){
           <div class="pause-icon"></div>
         </button>
         <div class="live" id="live">● PAUSADO</div>
-        <audio id="audio" preload="none" pplaysinline crossorigin="anonymous">
+        <audio id="audio" preload="none" crossorigin="anonymous">
           <source src="https://stream.zeno.fm/8wup8yd9dm0uv" type="audio/mpeg">  
         </audio>  
       </div>`;
@@ -573,6 +606,7 @@ if(!customElements.get("radio-player")){
   }); 
 }
 
+/* CONTROL DE MODALES (Términos, Privacidad y Sugerencias) */
 (function(){
   const modalTerminos = document.getElementById("modalTerminos");
   const btnTerminos = document.getElementById("btnTerminos");
@@ -580,7 +614,24 @@ if(!customElements.get("radio-player")){
   if(btnTerminos && modalTerminos){
     btnTerminos.addEventListener("click", e=>{ e.preventDefault(); modalTerminos.classList.add("abierto"); });
     cerrarTerminos.addEventListener("click", ()=>modalTerminos.classList.remove("abierto"));
-  }  })(); 
+  }
+
+  const modalPrivacidad = document.getElementById("modalPrivacidad");
+  const btnPrivacidad = document.getElementById("btnPrivacidad");
+  const cerrarPrivacidad = document.getElementById("cerrarPrivacidad");
+  if(btnPrivacidad && modalPrivacidad){
+    btnPrivacidad.addEventListener("click", e=>{ e.preventDefault(); modalPrivacidad.classList.add("abierto"); });
+    cerrarPrivacidad.addEventListener("click", ()=>modalPrivacidad.classList.remove("abierto"));
+  }
+
+  const modalSugerencias = document.getElementById("modalSugerencias");
+  const btnSugerencias = document.getElementById("btnSugerencias");
+  const cerrarSugerencias = document.getElementById("cerrarSugerencias");
+  if(btnSugerencias && modalSugerencias){
+    btnSugerencias.addEventListener("click", e=>{ e.preventDefault(); modalSugerencias.classList.add("abierto"); });
+    cerrarSugerencias.addEventListener("click", ()=>modalSugerencias.classList.remove("abierto"));
+  }
+})(); 
 </script> 
 </body> 
 </html>
