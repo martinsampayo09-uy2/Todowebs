@@ -38,7 +38,61 @@
 }
 </script>
 
+
+
+
+
+
+
+
+
+
+
 <style>
+    
+    
+    
+    
+    
+    /* ===== COMPARTIR ===== */
+.compartir-box{margin-top:24px;text-align:center;animation:heroTextIn .8s .3s cubic-bezier(.2,.9,.3,1) both}
+.compartir-titulo{color:var(--subtexto);font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.compartir-botones{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-compartir{display:inline-flex;align-items:center;gap:7px;background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--border);color:var(--subtexto);padding:10px 16px;border-radius:25px;font-size:12px;font-weight:800;cursor:pointer;transition:.3s;letter-spacing:.5px;position:relative;overflow:hidden;font-family:inherit}
+.btn-compartir::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 70%);opacity:0;transform:scale(0);transition:.5s}
+.btn-compartir:hover::before{opacity:1;transform:scale(2.5)}
+.btn-compartir:hover{transform:translateY(-3px);color:#fff}
+.btn-compartir .ico{font-size:16px;transition:.3s}
+.btn-compartir:hover .ico{transform:scale(1.2) rotate(-8deg)}
+
+.btn-compartir.copiar:hover{border-color:var(--azul);box-shadow:0 6px 20px rgba(8,189,245,.4);background:rgba(8,189,245,.15)}
+.btn-compartir.whatsapp:hover{border-color:#25d366;box-shadow:0 6px 20px rgba(37,211,102,.4);background:rgba(37,211,102,.15)}
+.btn-compartir.facebook:hover{border-color:#1877f2;box-shadow:0 6px 20px rgba(24,119,242,.4);background:rgba(24,119,242,.15)}
+.btn-compartir.twitter:hover{border-color:#e0e0e0;box-shadow:0 6px 20px rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.btn-compartir.nativo:hover{border-color:#a855f7;box-shadow:0 6px 20px rgba(168,85,247,.4);background:rgba(168,85,247,.15)}
+
+/* Estado copiado */
+.btn-compartir.copiado{background:rgba(34,197,94,.2);border-color:#22c55e;color:#4ade80}
+.btn-compartir.copiado .ico{animation:checkPop .5s cubic-bezier(.2,.9,.3,1.5)}
+@keyframes checkPop{0%{transform:scale(0) rotate(-45deg)}60%{transform:scale(1.3) rotate(10deg)}100%{transform:scale(1) rotate(0)}}
+
+/* Ocultar botón nativo si no hay soporte */
+.btn-compartir.nativo{display:none}
+.btn-compartir.nativo.soportado{display:inline-flex}
+
+@media(max-width:750px){
+  .compartir-botones{gap:8px}
+  .btn-compartir{padding:9px 13px;font-size:11px;border-radius:20px}
+  .btn-compartir .ico{font-size:14px}
+}
+    
+    
+    
+    
+    
+    
+    
+    
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --azul:#08bdf5;
@@ -515,7 +569,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="contenido">
         <h3>🛒 TINMAR</h3>
         <p>Productos, variedad .</p>
-        <div class="card-actions"><a href="https://tinmar.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TIENDA →</a></div>
+        <div class="card-actions"><a href="https://tinmar.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TIENDA ➡️</a></div>
       </div>
     </article>
 
@@ -525,17 +579,17 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="contenido">
         <h3>⚖️ ABOGADO</h3>
         <p>Asesoramiento jurídico y consultas profesionales.</p>
-        <div class="card-actions"><a href="https://pabloalesandre.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER ABOGADO →</a></div>
+        <div class="card-actions"><a href="https://pabloalesandre.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER ABOGADO ➡️</a></div>
       </div>
     </article>
 
     <article class="card" tabindex="0" data-cat="belleza" data-search="tatuajes tatuaje diseños únicos estilo personalizado arte">
-      <span class="badge-status">🟢 Abierto</span>
+  <span class="badge-status">🟢 Abierto</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800" alt="Tatuajes" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🖋️ TATUAJES</h3>
         <p>Diseños únicos y estilo personalizado.</p>
-        <div class="card-actions"><a href="https://javiertato.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TATUAJES →</a></div>
+        <div class="card-actions"><a href="https://javiertato.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TATUAJES ➡️</a></div>
       </div>
     </article>
 
@@ -545,7 +599,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="contenido">
         <h3>🧺 LAVADERO</h3>
         <p>Lavado de ropa y prendas. Rápido y confiable.</p>
-        <div class="card-actions"><a href="https://lavaderounion.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER LAVADERO →</a></div>
+        <div class="card-actions"><a href="https://lavaderounion.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER LAVADERO ➡️</a></div>
       </div>
     </article>
 
@@ -615,7 +669,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="contenido">
         <h3>🌿 MASAJES</h3>
         <p>Relajación, bienestar y equilibrio corporal.</p>
-        <div class="card-actions"><a href="masajes/index.html" class="btn">VER MASAJES →</a></div>
+        <div class="card-actions"><a href="masajes/index.html" class="btn">VER MASAJES ➡️</a></div>
       </div>
     </article>
 
@@ -635,7 +689,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="contenido">
         <h3>🎮 VASCOLET</h3>
         <p>Entretenimiento retro, diversión online.</p>
-        <div class="card-actions"><a href="https://webport.itch.io/vascolet1" class="btn" target="_blank" rel="noopener noreferrer">JUGAR AHORA →</a></div>
+        <div class="card-actions"><a href="https://webport.itch.io/vascolet1" class="btn" target="_blank" rel="noopener noreferrer">JUGAR AHORA ➡️</a></div>
       </div>
     </article>
   </div>
@@ -689,6 +743,34 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
     <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener noreferrer" class="btn-solicita">SOLICITA TU WEB AHORA</a>
   </div>
 </section>
+
+
+
+<!-- BOTONES COMPARTIR -->
+<div class="compartir-box">
+  <p class="compartir-titulo">🔗 Compartí este portal</p>
+  <div class="compartir-botones">
+    <button class="btn-compartir copiar" id="btnCopiar" aria-label="Copiar enlace del portal">
+      <span class="ico">📋</span><span class="txt">Copiar enlace</span>
+    </button>
+    <button class="btn-compartir whatsapp" id="btnWhatsApp" aria-label="Compartir por WhatsApp">
+      <span class="ico">💬</span><span class="txt">WhatsApp</span>
+    </button>
+    <button class="btn-compartir facebook" id="btnFacebook" aria-label="Compartir en Facebook">
+      <span class="ico">📘</span><span class="txt">Facebook</span>
+    </button>
+    <button class="btn-compartir twitter" id="btnTwitter" aria-label="Compartir en X (Twitter)">
+      <span class="ico">🐦</span><span class="txt">X / Twitter</span>
+    </button>
+    <button class="btn-compartir nativo" id="btnNativo" aria-label="Compartir en otras apps">
+      <span class="ico">📤</span><span class="txt">Más...</span>
+    </button>
+  </div>
+</div>
+
+
+
+
 
 <section class="contacto" id="contacto">
   <div class="titulo">
@@ -873,27 +955,19 @@ nav.querySelectorAll("a").forEach(a => {
     toast.innerHTML = `
       <div class="toast-icono">${m.icono}</div>
       <div class="toast-cuerpo">
-        <div class="toast-titulo">${m.titulo}</div>
-        <div class="toast-texto">${m.texto}</div>
-      </div>
-      <button class="toast-cerrar" aria-label="Cerrar">✕</button>
-    `;
+   <div class="toast-titulo">${m.titulo}</div>
+<div class="toast-texto">${m.texto}</div></div>
+      <button class="toast-cerrar" aria-label="Cerrar">X</button> `;
     container.appendChild(toast);
-    toast.querySelector(".toast-cerrar").addEventListener("click", () => cerrarToast(toast));
-    setTimeout(() => cerrarToast(toast), 5000);
-  }
-
-  function cerrarToast(toast){
+toast.querySelector(".toast-cerrar").addEventListener("click", () => cerrarToast(toast));
+ setTimeout(() => cerrarToast(toast), 5000);}
+function cerrarToast(toast){
     if(!toast || toast.classList.contains("saliendo")) return;
     toast.classList.add("saliendo");
-    setTimeout(() => { if(toast.parentNode) toast.parentNode.removeChild(toast); }, 400);
-  }
-
-  setTimeout(() => mostrarToast(indiceAleatorio()), 2000);
+    setTimeout(() => { if(toast.parentNode) toast.parentNode.removeChild(toast); }, 400);}
+ setTimeout(() => mostrarToast(indiceAleatorio()), 2000);
   setInterval(() => mostrarToast(indiceAleatorio()), 9000);
 })();
-
-/* ===== BUSCADOR + FILTROS ===== */
 (function(){
   const searchInput = document.getElementById("searchInput");
   const cards = document.querySelectorAll("#servicesGrid .card");
@@ -916,21 +990,14 @@ nav.querySelectorAll("a").forEach(a => {
     });
     if(term || categoriaActiva !== "todos"){
       counter.innerHTML = `<b>${visibles}</b> servicio${visibles === 1 ? "" : "s"} encontrado${visibles === 1 ? "" : "s"}`;
-    } else { counter.textContent = ""; }
-  }
-
-  searchInput.addEventListener("input", aplicarFiltros);
+    } else { counter.textContent = ""; } }
+ searchInput.addEventListener("input", aplicarFiltros);
   filtros.forEach(btn => {
     btn.addEventListener("click", () => {
       filtros.forEach(b => b.classList.remove("activo"));
       btn.classList.add("activo");
       categoriaActiva = btn.getAttribute("data-cat");
-      aplicarFiltros();
-    });
-  });
-})();
-
-/* ===== CHATBOT ===== */
+      aplicarFiltros(); }); }); })();
 (function(){
   const chatFab = document.getElementById("chatFab");
   const chatContainer = document.getElementById("chatContainer");
@@ -940,25 +1007,19 @@ nav.querySelectorAll("a").forEach(a => {
   const chatSend = document.getElementById("chatSend");
   const sugerenciasInline = document.getElementById("sugerenciasInline");
   const waLink = "https://wa.me/59899295848?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR";
-
-  chatFab.addEventListener("click", () => chatContainer.classList.toggle("abierto"));
+ chatFab.addEventListener("click", () => chatContainer.classList.toggle("abierto"));
   chatCerrar.addEventListener("click", () => chatContainer.classList.remove("abierto"));
-
-  function mostrarSugerencias(lista){
+function mostrarSugerencias(lista){
     sugerenciasInline.innerHTML = "";
     lista.forEach(txt => {
       const b = document.createElement("button");
       b.textContent = txt;
       b.addEventListener("click", () => procesarTexto(txt));
-      sugerenciasInline.appendChild(b);
-    });
-  }
-
-  function responder(texto){
+      sugerenciasInline.appendChild(b);  }); }
+ function responder(texto){
     const t = texto.toLowerCase().trim();
     const noDisp = `⛔ Este servicio se encuentra <strong>temporalmente NO DISPONIBLE</strong>. Puedes consultar por otros servicios escribiendo a nuestro <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;
-
-    if(t.includes("hola") || t.includes("buenas") || t.includes("saludos") || t.includes("inicio")){
+ if(t.includes("hola") || t.includes("buenas") || t.includes("saludos") || t.includes("inicio")){
       return `¡Hola! 👋 ¿En qué servicio estás interesado? Puedo ayudarte con información`;
     } else if(t.includes("trabajo") || t.includes("trabajos") || t.includes("mantenimiento") || t.includes("construccion") || t.includes("albañil") || t.includes("obra")){
       return noDisp;
@@ -971,7 +1032,7 @@ nav.querySelectorAll("a").forEach(a => {
     } else if(t.includes("limpieza") || t.includes("limpiar") || t.includes("desinfeccion")){
       return noDisp;
     } else if(t.includes("sanitaria") || t.includes("plomero") || t.includes("plomeria") || t.includes("cañeria") || t.includes("fuga") || t.includes("grifo") || t.includes("tanque")){
-      return noDisp;
+ return noDisp;
     } else if(t.includes("flete") || t.includes("mudanza") || t.includes("transporte") || t.includes("carga")){
       return noDisp;
     } else if(t.includes("abogado") || t.includes("juridico") || t.includes("legal") || t.includes("derecho") || t.includes("juicio") || t.includes("consulta legal")){
@@ -1000,19 +1061,14 @@ nav.querySelectorAll("a").forEach(a => {
       return `💡 ¡Tus comentarios nos ayudan a crecer! Puedes dejar tu sugerencia usando la opción en el menú inferior o del widget superior.`;
     } else {
       mostrarSugerencias(["Abogado", "Lavadero", "Masajes", "Tatuajes", "WhatsApp directo"]);
-      return `No estoy seguro de haber entendido 🤔. Probá con alguna de estas opciones o escríbenos directo al <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;
-    }
-  }
-
-  function agregarMensaje(remitente, htmlContenido){
+      return `No estoy seguro de haber entendido 🤔. Probá con alguna de estas opciones o escríbenos directo al <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;} }
+ function agregarMensaje(remitente, htmlContenido){
     const msg = document.createElement("div");
     msg.className = "chat-msg " + remitente;
     msg.innerHTML = htmlContenido;
     chatBody.appendChild(msg);
-    chatBody.scrollTop = chatBody.scrollHeight;
-  }
-
-  function procesarTexto(texto){
+ chatBody.scrollTop = chatBody.scrollHeight;}
+function procesarTexto(texto){
     if(!texto.trim()) return;
     agregarMensaje("user", texto);
     chatInput.value = "";
@@ -1020,16 +1076,12 @@ nav.querySelectorAll("a").forEach(a => {
     setTimeout(() => {
       const r = responder(texto);
       agregarMensaje("bot", r);
-    }, 400);
-  }
-
-  chatSend.addEventListener("click", () => procesarTexto(chatInput.value));
+    }, 400); }
+chatSend.addEventListener("click", () => procesarTexto(chatInput.value));
   chatInput.addEventListener("keypress", (e) => {
     if(e.key === "Enter") procesarTexto(chatInput.value);
   });
 })();
-
-/* ===== RELOJ CON LLUVIA ===== */
 (function(){
   const reloj = document.getElementById("reloj-lluvia");
   if(!reloj) return;
@@ -1042,19 +1094,17 @@ nav.querySelectorAll("a").forEach(a => {
   function actualizarHora(){
     const a = new Date();
     horaEl.textContent = String(a.getHours()).padStart(2,"0") + ":" + String(a.getMinutes()).padStart(2,"0") + ":" + String(a.getSeconds()).padStart(2,"0");
-    fechaEl.textContent = dias[a.getDay()] + ", " + a.getDate() + " de " + meses[a.getMonth()] + " de " + a.getFullYear();
-  }
+    fechaEl.textContent = dias[a.getDay()] + ", " + a.getDate() + " de " + meses[a.getMonth()] + " de " + a.getFullYear();  }
   actualizarHora();
   setInterval(actualizarHora, 1000);
   let gotas = [];
   function ajustar(){
     const r = canvas.getBoundingClientRect();
-    canvas.width = r.width; canvas.height = r.height;
+canvas.width = r.width; canvas.height = r.height;
     gotas = [];
-    for(let i=0;i<25;i++) gotas.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, l:8+Math.random()*10, v:2+Math.random()*3});
-  }
+    for(let i=0;i<25;i++) gotas.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, l:8+Math.random()*10, v:2+Math.random()*3});}
   function animar(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
+ ctx.clearRect(0,0,canvas.width,canvas.height);
     ctx.strokeStyle = "#7eefff";
     ctx.lineWidth = 1;
     for(const g of gotas){
@@ -1063,15 +1113,11 @@ nav.querySelectorAll("a").forEach(a => {
       ctx.lineTo(g.x, g.y + g.l);
       ctx.stroke();
       g.y += g.v;
-      if(g.y > canvas.height){ g.y = -10; g.x = Math.random()*canvas.width; }
-    }
-    requestAnimationFrame(animar);
-  }
+      if(g.y > canvas.height){ g.y = -10; g.x = Math.random()*canvas.width; } }
+    requestAnimationFrame(animar);  }
   ajustar(); animar();
   window.addEventListener("resize", ajustar);
 })();
-
-/* ===== CLIMA ===== */
 (function(){
   const tempEl = document.getElementById("climaTemp");
   const descEl = document.getElementById("climaDesc");
@@ -1082,8 +1128,7 @@ nav.querySelectorAll("a").forEach(a => {
     61:"Lluvia leve 🌧️",63:"Lluvia moderada 🌧️",65:"Lluvia intensa 🌧️",
     71:"Nieve leve 🌨️",73:"Nieve moderada 🌨️",75:"Nieve intensa 🌨️",
     80:"Chaparrones 🌦️",81:"Chaparrones fuertes 🌧️",82:"Chaparrones violentos ⛈️",
-    95:"Tormenta ⛈️",96:"Tormenta con granizo ⛈️",99:"Tormenta fuerte con granizo ⛈️"
-  };
+    95:"Tormenta ⛈️",96:"Tormenta con granizo ⛈️",99:"Tormenta fuerte con granizo ⛈️"  };
   async function cargarClima(){
     try{
       const cache = localStorage.getItem("tinmar_clima");
@@ -1092,9 +1137,7 @@ nav.querySelectorAll("a").forEach(a => {
         if(Date.now() - c.ts < 1800000){
           tempEl.textContent = c.temp + "°C";
           descEl.textContent = c.desc;
-          return;
-        }
-      }
+          return; }  }
       const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=-34.9033&longitude=-56.1882&current=temperature_2m,weather_code");
       const data = await res.json();
       if(data && data.current){
@@ -1142,8 +1185,7 @@ audio{display:none;}
   <div class="radio-song" id="song">🎶 MÚSICA ACTIVA 24/7</div>
   <button class="play-button" id="play" type="button" aria-label="Reproducir radio">
     <div class="play-icon"></div>
-    <div class="pause-icon"></div>
-  </button>
+    <div class="pause-icon"></div>  </button>
   <div class="live" id="live">● PAUSADO</div>
   <audio id="audio" preload="none">
     <source src="https://traxx008.ice.infomaniak.ch/traxx008-low.mp3" type="audio/mpeg">
@@ -1151,7 +1193,7 @@ audio{display:none;}
       this.iniciar(); }
     iniciar(){
       const root = this.shadowRoot;
-      const cont = root.querySelector(".radio-container");
+ const cont = root.querySelector(".radio-container");
       const btn = root.querySelector("#play");
       const audio = root.querySelector("#audio");
       const status = root.querySelector("#status");
@@ -1162,7 +1204,7 @@ audio{display:none;}
       setInterval(() => { idx = (idx+1) % canciones.length; song.textContent = canciones[idx]; }, 4000);
  btn.addEventListener("click", async () => {
         if(audio.paused){
-          try{
+     try{
    status.textContent = "⏳ CONECTANDO...";
             live.textContent = "● CONECTANDO";
             audio.load();
@@ -1173,53 +1215,41 @@ audio{display:none;}
           } catch(e){
             cont.classList.remove("playing");
             status.textContent = "⚠️ ERROR";
-            live.textContent = "● ERROR";
-          }
+            live.textContent = "● ERROR";}
         } else {
           audio.pause();
           cont.classList.remove("playing");
           status.textContent = "📻 PAUSADA";
-          live.textContent = "● PAUSADO";
-        }
-      });
+          live.textContent = "● PAUSADO"; }});
       audio.addEventListener("playing", () => { cont.classList.add("playing"); status.textContent = "⚡ EN VIVO"; live.textContent = "● EN VIVO"; });
-      audio.addEventListener("pause", () => { if(!audio.ended){ cont.classList.remove("playing"); status.textContent = "📻 PAUSADA"; live.textContent = "● PAUSADO"; } });
-    }
-  });}
+      audio.addEventListener("pause", () => { if(!audio.ended){ cont.classList.remove("playing"); status.textContent = "📻 PAUSADA"; live.textContent = "● PAUSADO"; } });  }  });}
 (function(){
   const modalTerminos = document.getElementById("modalTerminos");
   const btnTerminos = document.getElementById("btnTerminos");
   const cerrarTerminos = document.getElementById("cerrarTerminos");
   if(btnTerminos && modalTerminos){
     btnTerminos.addEventListener("click", e => { e.preventDefault(); modalTerminos.classList.add("abierto"); });
-    cerrarTerminos.addEventListener("click", () => modalTerminos.classList.remove("abierto"));
-  }
+    cerrarTerminos.addEventListener("click", () => modalTerminos.classList.remove("abierto"));}
   const modalPrivacidad = document.getElementById("modalPrivacidad");
   const btnPrivacidad = document.getElementById("btnPrivacidad");
   const cerrarPrivacidad = document.getElementById("cerrarPrivacidad");
   if(btnPrivacidad && modalPrivacidad){
-    btnPrivacidad.addEventListener("click", e => { e.preventDefault(); modalPrivacidad.classList.add("abierto"); });
-    cerrarPrivacidad.addEventListener("click", () => modalPrivacidad.classList.remove("abierto"));
-  }
+btnPrivacidad.addEventListener("click", e => { e.preventDefault(); modalPrivacidad.classList.add("abierto"); });
+cerrarPrivacidad.addEventListener("click",() => modalPrivacidad.classList.remove("abierto"));}
   const modalSugerencias = document.getElementById("modalSugerencias");
   const cerrarSugerencias = document.getElementById("cerrarSugerencias");
   const abrirSugerencias = e => { e.preventDefault(); modalSugerencias.classList.add("abierto"); };
-  document.getElementById("btnSugerencias")?.addEventListener("click", abrirSugerencias);
-  document.getElementById("navBtnSugerencias")?.addEventListener("click", abrirSugerencias);
-  document.getElementById("widgetSugerencia")?.addEventListener("click", abrirSugerencias);
+document.getElementById("btnSugerencias")?.addEventListener("click", abrirSugerencias);
+document.getElementById("navBtnSugerencias")?.addEventListener("click", abrirSugerencias);
+document.getElementById("widgetSugerencia")?.addEventListener("click", abrirSugerencias);
   if(cerrarSugerencias && modalSugerencias){
-    cerrarSugerencias.addEventListener("click", () => modalSugerencias.classList.remove("abierto"));
-  }
+cerrarSugerencias.addEventListener("click",() => modalSugerencias.classList.remove("abierto"));}
   document.addEventListener("keydown", e => {
     if(e.key === "Escape"){
-      modalTerminos?.classList.remove("abierto");
-      modalPrivacidad?.classList.remove("abierto");
-      modalSugerencias?.classList.remove("abierto");
-    }
-  });
-})();
-(function(){
-  const btn = document.getElementById("backToTop");
+modalTerminos?.classList.remove("abierto");
+modalPrivacidad?.classList.remove("abierto");
+modalSugerencias?.classList.remove("abierto");
+    } }); })(); (function() {  const btn = document.getElementById("backToTop");
   window.addEventListener("scroll", () => {
     if(window.scrollY > 400) btn.classList.add("visible");
  else btn.classList.remove("visible");});
