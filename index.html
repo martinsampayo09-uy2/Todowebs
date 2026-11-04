@@ -428,10 +428,8 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 <div class="search-container">
   <div class="search-box">
     <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" class="search-input" placeholder="¿Qué servicio estás buscando? (Ej: Electricista, Abogado, Limpieza...)" aria-label="Buscar servicios">
-  </div>
-  <div class="search-counter" id="searchCounter"></div>
-</div>
+    <input type="text" id="searchInput" class="search-input" placeholder="(Ej:Abogado, Tatuaje ,lavadero, juego...)" aria-label="Buscar servicios"> </div>
+  <div class="search-counter" id="searchCounter"></div></div>
 
 <div class="filtros" id="filtros">
   <button class="filtro-btn activo" data-cat="todos">Todos</button>
@@ -439,20 +437,17 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   <button class="filtro-btn" data-cat="legal">Legal</button>
   <button class="filtro-btn" data-cat="belleza">Belleza</button>
   <button class="filtro-btn" data-cat="comercio">Comercio</button>
-  <button class="filtro-btn" data-cat="otros">Otros</button>
-</div>
+  <button class="filtro-btn" data-cat="otros">Otros</button></div>
 
 <section class="seccion" id="servicios">
   <div class="grid" id="servicesGrid">
     <article class="card" tabindex="0" data-cat="comercio" data-search="tienda tinmar productos variedad compras">
-      <span class="badge-status">🟢 Abierto</span>
+<span class="badge-status">🟢 Abierto</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800" alt="Tienda" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🛒 TINMAR</h3>
-        <p>Productos, variedad y la mejor atención.</p>
-        <div class="card-actions"><a href="https://tinmar.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TIENDA →</a></div>
-      </div>
-    </article>
+<p>Productos, variedad y la mejor atención.</p>
+        <div class="card-actions"><a href="https://tinmar.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TIENDA →</a></div> </div> </article>
 
     <article class="card" tabindex="0" data-cat="legal" data-search="abogado asesoramiento jurídico consultas legales derecho">
       <span class="badge-status">🟢 Disponible</span>
@@ -465,7 +460,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
     </article>
 
     <article class="card" tabindex="0" data-cat="belleza" data-search="tatuajes tatuaje diseños únicos estilo personalizado arte">
-      <span class="badge-status">🟢 Abierto</span>
+  <span class="badge-status">🟢 Abierto</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800" alt="Tatuajes" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🖋️ TATUAJES</h3>
@@ -479,7 +474,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="foto"><img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=800" alt="Lavadero" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🧺 LAVADERO</h3>
-        <p>Lavado de ropa y prendas. Rápido y confiable.</p>
+<p>Lavado de ropa y prendas. Rápido y confiable.</p>
         <div class="card-actions"><a href="https://lavaderounion.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER LAVADERO →</a></div>
       </div>
     </article>
@@ -545,7 +540,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="foto"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Mudanzas" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🚚 MUDANZAS</h3>
-        <p>Servicio temporalmente no disponible.</p>
+ <p>Servicio temporalmente no disponible.</p>
         <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
@@ -555,7 +550,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       <div class="foto"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800" alt="Masajes" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🌿 MASAJES</h3>
-        <p>Relajación, bienestar y equilibrio corporal.</p>
+<p>Relajación, bienestar y equilibrio corporal.</p>
         <div class="card-actions"><a href="masajes/index.html" class="btn">VER MASAJES →</a></div>
       </div>
     </article>
@@ -1034,7 +1029,7 @@ audio{display:none;}
   </button>
   <div class="live" id="live">● PAUSADO</div>
   <audio id="audio" preload="none">
-    <source src="https://stream.zeno.fm/8wup8yd9dm0uv" type="audio/mpeg"> </audio></div>`;
+    <source src="https://traxx008.ice.infomaniak.ch/traxx008-low.mp3" type="audio/mpeg"> </audio></div>`;
       this.iniciar(); }
     iniciar(){
       const root = this.shadowRoot;
