@@ -128,6 +128,15 @@ radio-player{display:block;width:100%;height:130px}
 .card:hover{transform:translateY(-6px);border-color:var(--azul);box-shadow:0 12px 35px rgba(0,139,213,0.25)}
 .card:focus-visible{outline:2px solid var(--azul);outline-offset:3px}
 .badge-status{position:absolute;top:10px;right:10px;background:rgba(34,197,94,0.9);color:#fff;font-size:9.5px;font-weight:bold;padding:3px 7px;border-radius:12px;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+
+/* Tarjeta y badge para servicios NO DISPONIBLES */
+.badge-status.no-disponible{background:rgba(220,38,38,0.92);color:#fff}
+.card.no-disponible{opacity:.72;filter:grayscale(.55)}
+.card.no-disponible:hover{border-color:#ef4444;box-shadow:0 12px 35px rgba(220,38,38,0.22);transform:translateY(-4px)}
+.card.no-disponible .foto img{filter:grayscale(.4) brightness(.75)}
+.btn.deshabilitado{background:rgba(220,38,38,.12);border-color:#7f1d1d;color:#fca5a5;cursor:not-allowed;pointer-events:none}
+.card.no-disponible .contenido p{color:#8aa0b5}
+
 .foto{height:170px;position:relative;overflow:hidden;background:#0f2942}
 .foto img{width:100%;height:100%;object-fit:cover;transition:.5s}
 .card:hover .foto img{transform:scale(1.07)}
@@ -409,7 +418,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 <div class="search-container">
   <div class="search-box">
     <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" class="search-input" placeholder="¿Qué servicio estás buscando? (Ej: Electricista, Abogado, Limpieza...)" aria-label="Buscar servicios">
+    <input type="text" id="searchInput" class="search-input" placeholder="(Ej:Abogado, tatuaje Lavadero Juego)" aria-label="Buscar servicios">
   </div>
   <div class="search-counter" id="searchCounter"></div>
 </div>
@@ -465,63 +474,69 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="electricista instalaciones reparaciones corto circuitos luz hogar">
-      <span class="badge-status">🟢 Disponible</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="electricista instalaciones reparaciones corto circuitos luz hogar">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800" alt="Electricista" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>⚡ ELECTRICISTA</h3>
-        <p>Instalaciones, reparaciones y emergencias eléctricas.</p>
-        <div class="card-actions"><a href="https://wa.me/59899295848?text=Hola,%20necesito%20un%20electricista" class="btn" target="_blank" rel="noopener noreferrer">CONTRATAR →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="pintor pintura paredes interior exterior casas fachadas">
-      <span class="badge-status">🟢 Disponible</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="pintor pintura paredes interior exterior casas fachadas">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800" alt="Pintor" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🎨 PINTOR</h3>
-        <p>Pintura de interiores, exteriores y fachadas.</p>
-        <div class="card-actions"><a href="https://wa.me/59899295848?text=Hola,%20necesito%20un%20pintor" class="btn" target="_blank" rel="noopener noreferrer">CONTRATAR →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="jardinería poda plantas espacios verdes diseño jardines">
-      <span class="badge-status">🟢 Disponible</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="jardinería poda plantas espacios verdes diseño jardines">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?w=800" alt="Jardinería" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🌱 JARDINERÍA</h3>
-        <p>Mantenimiento de espacios verdes, poda y diseño.</p>
-        <div class="card-actions"><a href="https://wa.me/59899295848?text=Hola,%20necesito%20servicio%20de%20jardineria" class="btn" target="_blank" rel="noopener noreferrer">CONTRATAR →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="limpieza casas oficinas desinfección orden hogar">
-      <span class="badge-status">🟢 Disponible</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="limpieza casas oficinas desinfección orden hogar">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Limpieza" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🧹 LIMPIEZA</h3>
-        <p>Limpieza profunda para hogares y oficinas.</p>
-        <div class="card-actions"><a href="https://wa.me/59899295848?text=Hola,%20necesito%20servicio%20de%20limpieza" class="btn" target="_blank" rel="noopener noreferrer">CONTRATAR →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="sanitaria plomería fugas cañerías grifería baño cocina">
-      <span class="badge-status">🟢 Disponible</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="sanitaria plomería fugas cañerías grifería baño cocina">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1542013936-69f0eed2c716?w=800" alt="Sanitaria" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🚰 SANITARIA</h3>
-        <p>Reparaciones de cañerías, fugas y grifería.</p>
-        <div class="card-actions"><a href="https://wa.me/59899295848?text=Hola,%20necesito%20sanitario" class="btn" target="_blank" rel="noopener noreferrer">CONTRATAR →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="mudanzas fletes transporte cargas mudanza local">
-      <span class="badge-status">🟢 Disponible</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="mudanzas fletes transporte cargas mudanza local">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Mudanzas" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🚚 MUDANZAS</h3>
-        <p>Fletes y mudanzas seguras dentro de Montevideo.</p>
-        <div class="card-actions"><a href="https://wa.me/59899295848?text=Hola,%20necesito%20flete%20o%20mudanza" class="btn" target="_blank" rel="noopener noreferrer">CONTRATAR →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
@@ -535,13 +550,14 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
       </div>
     </article>
 
-    <article class="card" tabindex="0" data-cat="hogar" data-search="trabajos en general mantenimiento construcción jardinería pintura hogar">
-      <span class="badge-status">🟢 Presupuesto</span>
+    <!-- NO DISPONIBLE -->
+    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="trabajos en general mantenimiento construcción jardinería pintura hogar">
+      <span class="badge-status no-disponible">🔴 No Disponible</span>
       <div class="foto"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Trabajos en general" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="contenido">
         <h3>🔧 TRABAJOS</h3>
-        <p>Mantenimiento, construcción, jardinería y pintura.</p>
-        <div class="card-actions"><a href="trabajos/index.html" class="btn">VER TRABAJOS →</a></div>
+        <p>Servicio temporalmente no disponible.</p>
+        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
       </div>
     </article>
 
@@ -724,7 +740,6 @@ nav.querySelectorAll("a").forEach(a => {
     { icono:"🖋️", titulo:"Tatuajes Personalizados", texto:'Diseños únicos y estilo propio. <a href="https://javiertato.vercel.app" target="_blank" rel="noopener">Ver tatuajes →</a>', tipo:"morado" },
     { icono:"🧺", titulo:"Lavadero Unión", texto:'Lavado rápido y confiable de ropa. <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener">Ver lavadero →</a>', tipo:"" },
     { icono:"🌿", titulo:"Masajes Relajantes", texto:'Bienestar y equilibrio corporal. <a href="masajes/index.html">Ver masajes →</a>', tipo:"verde" },
-    { icono:"🔧", titulo:"Trabajos en General", texto:'Mantenimiento, construcción y pintura. <a href="trabajos/index.html">Ver trabajos →</a>', tipo:"naranja" },
     { icono:"🎮", titulo:"Juego Vascolet", texto:'Entretenimiento retro online. <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener">Jugar ahora →</a>', tipo:"rosa" },
     { icono:"🚀", titulo:"¿Necesitas una web?", texto:'Diseño moderno y adaptable. <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener">Solicitar →</a>', tipo:"morado" },
     { icono:"💬", titulo:"WhatsApp Directo", texto:'Atención 24 horas al <a href="https://wa.me/59899295848?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR" target="_blank" rel="noopener">099 295 848</a>', tipo:"verde" }
@@ -827,28 +842,32 @@ nav.querySelectorAll("a").forEach(a => {
 
   function responder(texto){
     const t = texto.toLowerCase().trim();
+    const noDisp = `⛔ Este servicio se encuentra <strong>temporalmente NO DISPONIBLE</strong>. Puedes consultar por otros servicios escribiendo a nuestro <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;
+
     if(t.includes("hola") || t.includes("buenas") || t.includes("saludos") || t.includes("inicio")){
       return `¡Hola! 👋 ¿En qué servicio estás interesado? Puedo ayudarte con información`;
+    } else if(t.includes("trabajo") || t.includes("trabajos") || t.includes("mantenimiento") || t.includes("construccion") || t.includes("albañil") || t.includes("obra")){
+      return noDisp;
+    } else if(t.includes("electricista") || t.includes("electricidad") || t.includes("cortocircuito") || t.includes("instalacion electrica") || t.includes("tablero")){
+      return noDisp;
+    } else if(t.includes("pintor") || t.includes("pintura") || t.includes("pared") || t.includes("fachada")){
+      return noDisp;
+    } else if(t.includes("jardin") || t.includes("poda") || t.includes("pasto") || t.includes("plantas")){
+      return noDisp;
+    } else if(t.includes("limpieza") || t.includes("limpiar") || t.includes("desinfeccion")){
+      return noDisp;
+    } else if(t.includes("sanitaria") || t.includes("plomero") || t.includes("plomeria") || t.includes("cañeria") || t.includes("fuga") || t.includes("grifo") || t.includes("tanque")){
+      return noDisp;
+    } else if(t.includes("flete") || t.includes("mudanza") || t.includes("transporte") || t.includes("carga")){
+      return noDisp;
     } else if(t.includes("abogado") || t.includes("juridico") || t.includes("legal") || t.includes("derecho") || t.includes("juicio") || t.includes("consulta legal")){
       return `⚖️ Nuestro Estudio Jurídico ofrece asesoramiento legal y consultas profesionales en Montevideo. Puedes ver la web oficial <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener">aquí</a> o enviar tu consulta directo a <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
     } else if(t.includes("tatuaje") || t.includes("tattoo") || t.includes("tinta")){
       return `🖋️ Contamos con servicio de Tatuajes profesionales con diseños únicos y personalizados. Mira los trabajos en su web <a href="https://javiertato.vercel.app" target="_blank" rel="noopener">aquí</a> o agenda tu turno por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
     } else if(t.includes("lavadero") || t.includes("ropa") || t.includes("lavar") || t.includes("secado") || t.includes("prendas") || t.includes("union")){
       return `🧺 El Lavadero Unión brinda servicio de lavado y secado de ropa rápido, eficiente y de calidad. Puedes visitar la web <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener">aquí</a> o comunicarte por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("pintor") || t.includes("pintura") || t.includes("pared") || t.includes("fachada")){
-      return `🎨 Ofrecemos trabajo de pintura profesional para interiores, exteriores y fachadas. Solicita presupuesto sin compromiso escribiendo por <a href="https://wa.me/59899295848?text=Hola,%20necesito%20presupuesto%20de%20pintor" target="_blank" rel="noopener">WhatsApp</a>.`;
     } else if(t.includes("masaje") || t.includes("relajacion") || t.includes("descontracturante") || t.includes("bienestar")){
       return `🌿 Disfruta de masajes orientados al bienestar y la relajación corporal. Revisa la sección dedicada <a href="masajes/index.html">aquí</a> o agenda tu cita por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("electricista") || t.includes("luz") || t.includes("cortocircuito") || t.includes("instalacion electrica") || t.includes("tablero")){
-      return `⚡ Contamos con electricista capacitado para instalaciones, reparaciones y emergencias del hogar. Escribe directo a <a href="https://wa.me/59899295848?text=Hola,%20necesito%20un%20electricista" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("sanitaria") || t.includes("plomero") || t.includes("plomeria") || t.includes("cañeria") || t.includes("fuga") || t.includes("grifo") || t.includes("tanque")){
-      return `🚰 Soluciones en sanitaria y plomería: reparación de cañerías, fugas y grifería en Montevideo. Pide asistencia rápida por <a href="https://wa.me/59899295848?text=Hola,%20necesito%20servicio%20de%20sanitaria" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("flete") || t.includes("mudanza") || t.includes("transporte") || t.includes("carga")){
-      return `🚚 Servicio de fletes y mudanzas locales dentro de Montevideo, rápido y seguro. Cotiza tu traslado por <a href="https://wa.me/59899295848?text=Hola,%20necesito%20cotizar%20un%20flete" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("jardin") || t.includes("poda") || t.includes("pasto") || t.includes("plantas")){
-      return `🌱 Mantenimiento de espacios verdes, poda de árboles y corte de césped. Contacta al servicio de jardinería por <a href="https://wa.me/59899295848?text=Hola,%20necesito%20jardinero" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("limpieza") || t.includes("limpiar") || t.includes("oficina") || t.includes("hogar")){
-      return `🧹 Servicios de limpieza profunda para casas, departamentos y oficinas. Coordina tu día por <a href="https://wa.me/59899295848?text=Hola,%20necesito%20servicio%20de%20limpieza" target="_blank" rel="noopener">WhatsApp</a>.`;
     } else if(t.includes("tienda") || t.includes("comprar") || t.includes("producto")){
       return `🛒 Explora nuestra Tienda TINMAR en línea con gran catálogo y productos variados visitándola <a href="https://tinmar.vercel.app" target="_blank" rel="noopener">aquí</a>.`;
     } else if(t.includes("juego") || t.includes("vascolet") || t.includes("jugar") || t.includes("arcade")){
@@ -866,7 +885,7 @@ nav.querySelectorAll("a").forEach(a => {
     } else if(t.includes("sugerencia") || t.includes("idea") || t.includes("reclamo") || t.includes("comentario")){
       return `💡 ¡Tus comentarios nos ayudan a crecer! Puedes dejar tu sugerencia usando la opción en el menú inferior o del widget superior.`;
     } else {
-      mostrarSugerencias(["Abogado", "Lavadero", "Masajes", "Pintor", "WhatsApp directo"]);
+      mostrarSugerencias(["Abogado", "Lavadero", "Masajes", "Tatuajes", "WhatsApp directo"]);
       return `No estoy seguro de haber entendido 🤔. Probá con alguna de estas opciones o escríbenos directo al <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;
     }
   }
@@ -908,19 +927,17 @@ nav.querySelectorAll("a").forEach(a => {
   function actualizarHora(){
     const a = new Date();
     horaEl.textContent = String(a.getHours()).padStart(2,"0") + ":" + String(a.getMinutes()).padStart(2,"0") + ":" + String(a.getSeconds()).padStart(2,"0");
-    fechaEl.textContent = dias[a.getDay()] + ", " + a.getDate() + " de " + meses[a.getMonth()] + " de " + a.getFullYear();
-  }
+    fechaEl.textContent = dias[a.getDay()] + ", " + a.getDate() + " de " + meses[a.getMonth()] + " de " + a.getFullYear(); }
   actualizarHora();
   setInterval(actualizarHora, 1000);
   let gotas = [];
   function ajustar(){
     const r = canvas.getBoundingClientRect();
-    canvas.width = r.width; canvas.height = r.height;
+canvas.width = r.width; canvas.height = r.height;
     gotas = [];
-    for(let i=0;i<25;i++) gotas.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, l:8+Math.random()*10, v:2+Math.random()*3});
-  }
+    for(let i=0;i<25;i++) gotas.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, l:8+Math.random()*10, v:2+Math.random()*3});}
   function animar(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
+ ctx.clearRect(0,0,canvas.width,canvas.height);
     ctx.strokeStyle = "#7eefff";
     ctx.lineWidth = 1;
     for(const g of gotas){
@@ -929,37 +946,30 @@ nav.querySelectorAll("a").forEach(a => {
       ctx.lineTo(g.x, g.y + g.l);
       ctx.stroke();
       g.y += g.v;
-      if(g.y > canvas.height){ g.y = -10; g.x = Math.random()*canvas.width; }
-    }
-    requestAnimationFrame(animar);
-  }
+      if(g.y > canvas.height){ g.y = -10; g.x = Math.random()*canvas.width; } }
+    requestAnimationFrame(animar); }
   ajustar(); animar();
   window.addEventListener("resize", ajustar);
 })();
-
 (function(){
   const tempEl = document.getElementById("climaTemp");
   const descEl = document.getElementById("climaDesc");
   const codigos = {
-    0:"Despejado ☀️",1:"Mayormente despejado 🌤️",2:"Parcialmente nublado ⛅",3:"Nublado ☁️",
+    0:"Despejado ☀️",1:"Mayormente despejado 🌤️",2:"Parcialmente nublado ⛅",3:"Nublado☁️",
     45:"Niebla 🌫️",48:"Niebla helada 🌫️",
     51:"Llovizna leve 🌦️",53:"Llovizna moderada 🌦️",55:"Llovizna intensa 🌧️",
     61:"Lluvia leve 🌧️",63:"Lluvia moderada 🌧️",65:"Lluvia intensa 🌧️",
     71:"Nieve leve 🌨️",73:"Nieve moderada 🌨️",75:"Nieve intensa 🌨️",
     80:"Chaparrones 🌦️",81:"Chaparrones fuertes 🌧️",82:"Chaparrones violentos ⛈️",
-    95:"Tormenta ⛈️",96:"Tormenta con granizo ⛈️",99:"Tormenta fuerte con granizo ⛈️"
-  };
-  async function cargarClima(){
-    try{
+    95:"Tormenta ⛈️",96:"Tormenta con granizo ⛈️",99:"Tormenta fuerte con granizo ⛈️"  };
+  async function cargarClima(){  try{
       const cache = localStorage.getItem("tinmar_clima");
       if(cache){
         const c = JSON.parse(cache);
         if(Date.now() - c.ts < 1800000){
           tempEl.textContent = c.temp + "°C";
           descEl.textContent = c.desc;
-          return;
-        }
-      }
+          return; } }
       const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=-34.9033&longitude=-56.1882&current=temperature_2m,weather_code");
       const data = await res.json();
       if(data && data.current){
@@ -968,16 +978,11 @@ nav.querySelectorAll("a").forEach(a => {
         const desc = (codigos[code] || "Clima actual") + " · Montevideo";
         tempEl.textContent = temp + "°C";
         descEl.textContent = desc;
-        localStorage.setItem("tinmar_clima", JSON.stringify({temp, desc, ts: Date.now()}));
-      }
+        localStorage.setItem("tinmar_clima", JSON.stringify({temp, desc, ts: Date.now()}));}
     } catch(e){
       tempEl.textContent = "--°C";
-      descEl.textContent = "Clima no disponible";
-    }
-  }
-  cargarClima();
-})();
-
+descEl.textContent ="Clima no disponible";  }  }
+  cargarClima();})();
 if(!customElements.get("radio-player")){
   customElements.define("radio-player", class extends HTMLElement {
     constructor(){ super(); this.attachShadow({mode:"open"}); }
@@ -1000,10 +1005,9 @@ audio{display:none;}
 @media(max-width:750px){
   .radio-container{padding:8px;min-height:120px;border-radius:16px;}
   .radio-screen{font-size:13px;min-height:24px;font-weight:800;}
-  .radio-song{font-size:11.5px;font-weight:700;}
+.radio-song{font-size:11.5px;font-weight:700;}
   .live{font-size:11px;font-weight:800;}
-  .play-button{width:32px;height:32px;}
-}
+  .play-button{width:32px;height:32px;}}
 </style>
 <div class="radio-container">
   <div class="radio-screen"><span id="status">📻 RADIO ONLINE</span></div>
@@ -1014,26 +1018,23 @@ audio{display:none;}
   </button>
   <div class="live" id="live">● PAUSADO</div>
   <audio id="audio" preload="none">
-    <source src="https://stream.zeno.fm/8wup8yd9dm0uv" type="audio/mpeg">
-  </audio>
-</div>`;
-      this.iniciar();
-    }
+    <source src="https://stream.zeno.fm/8wup8yd9dm0uv" type="audio/mpeg"> </audio></div>`;
+      this.iniciar(); }
     iniciar(){
       const root = this.shadowRoot;
-      const cont = root.querySelector(".radio-container");
-      const btn = root.querySelector("#play");
-      const audio = root.querySelector("#audio");
-      const status = root.querySelector("#status");
+   const cont = root.querySelector(".radio-container");
+    const btn = root.querySelector("#play");
+ const audio = root.querySelector("#audio");
+ const status = root.querySelector("#status");
       const live = root.querySelector("#live");
       const song = root.querySelector("#song");
       const canciones = ["🎶 Sonando: Remix Night 🔥","🎵 DJ Flow Session 😎","🔥 Música activa 24/7","🎧 Trap Latino Mix"];
       let idx = 0;
       setInterval(() => { idx = (idx+1) % canciones.length; song.textContent = canciones[idx]; }, 4000);
-      btn.addEventListener("click", async () => {
+   btn.addEventListener("click", async () => {
         if(audio.paused){
           try{
-            status.textContent = "⏳ CONECTANDO...";
+     status.textContent = "⏳ CONECTANDO...";
             live.textContent = "● CONECTANDO";
             audio.load();
             await audio.play();
@@ -1043,62 +1044,45 @@ audio{display:none;}
           } catch(e){
             cont.classList.remove("playing");
             status.textContent = "⚠️ ERROR";
-            live.textContent = "● ERROR";
-          }
+            live.textContent = "● ERROR";  }
         } else {
           audio.pause();
           cont.classList.remove("playing");
           status.textContent = "📻 PAUSADA";
-          live.textContent = "● PAUSADO";
-        }
-      });
+          live.textContent = "● PAUSADO";}});
       audio.addEventListener("playing", () => { cont.classList.add("playing"); status.textContent = "⚡ EN VIVO"; live.textContent = "● EN VIVO"; });
-      audio.addEventListener("pause", () => { if(!audio.ended){ cont.classList.remove("playing"); status.textContent = "📻 PAUSADA"; live.textContent = "● PAUSADO"; } });
-    }
-  });
-}
-
+      audio.addEventListener("pause", () => { if(!audio.ended){ cont.classList.remove("playing"); status.textContent = "📻 PAUSADA"; live.textContent = "● PAUSADO"; } });}});}
 (function(){
   const modalTerminos = document.getElementById("modalTerminos");
   const btnTerminos = document.getElementById("btnTerminos");
   const cerrarTerminos = document.getElementById("cerrarTerminos");
   if(btnTerminos && modalTerminos){
     btnTerminos.addEventListener("click", e => { e.preventDefault(); modalTerminos.classList.add("abierto"); });
-    cerrarTerminos.addEventListener("click", () => modalTerminos.classList.remove("abierto"));
-  }
+    cerrarTerminos.addEventListener("click", () => modalTerminos.classList.remove("abierto"));}
   const modalPrivacidad = document.getElementById("modalPrivacidad");
   const btnPrivacidad = document.getElementById("btnPrivacidad");
   const cerrarPrivacidad = document.getElementById("cerrarPrivacidad");
   if(btnPrivacidad && modalPrivacidad){
-    btnPrivacidad.addEventListener("click", e => { e.preventDefault(); modalPrivacidad.classList.add("abierto"); });
-    cerrarPrivacidad.addEventListener("click", () => modalPrivacidad.classList.remove("abierto"));
-  }
+btnPrivacidad.addEventListener("click", e => { e.preventDefault(); modalPrivacidad.classList.add("abierto"); });
+cerrarPrivacidad.addEventListener("click",() => modalPrivacidad.classList.remove("abierto"));}
   const modalSugerencias = document.getElementById("modalSugerencias");
   const cerrarSugerencias = document.getElementById("cerrarSugerencias");
   const abrirSugerencias = e => { e.preventDefault(); modalSugerencias.classList.add("abierto"); };
-  document.getElementById("btnSugerencias")?.addEventListener("click", abrirSugerencias);
-  document.getElementById("navBtnSugerencias")?.addEventListener("click", abrirSugerencias);
-  document.getElementById("widgetSugerencia")?.addEventListener("click", abrirSugerencias);
+document.getElementById("btnSugerencias")?.addEventListener("click", abrirSugerencias);
+document.getElementById("navBtnSugerencias")?.addEventListener("click", abrirSugerencias);
+document.getElementById("widgetSugerencia")?.addEventListener("click", abrirSugerencias);
   if(cerrarSugerencias && modalSugerencias){
-    cerrarSugerencias.addEventListener("click", () => modalSugerencias.classList.remove("abierto"));
-  }
+cerrarSugerencias.addEventListener("click",()=> modalSugerencias.classList.remove("abierto"));}
   document.addEventListener("keydown", e => {
     if(e.key === "Escape"){
-      modalTerminos?.classList.remove("abierto");
-      modalPrivacidad?.classList.remove("abierto");
-      modalSugerencias?.classList.remove("abierto");
-    }
-  });
-})();
-
+    modalTerminos?.classList.remove("abierto");
+  modalPrivacidad?.classList.remove("abierto");
+ modalSugerencias?.classList.remove("abierto");
+    }  });})();
 (function(){
   const btn = document.getElementById("backToTop");
   window.addEventListener("scroll", () => {
     if(window.scrollY > 400) btn.classList.add("visible");
-    else btn.classList.remove("visible");
-  });
+    else btn.classList.remove("visible");  });
   btn.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
-})();
-</script>
-</body>
-</html>
+})();</script></body></html>
