@@ -148,6 +148,17 @@ radio-player{display:block;width:100%;height:130px}
 .btn{width:100%;text-align:center;text-decoration:none;color:var(--texto);border:1px solid var(--azul);border-radius:8px;padding:9px 6px;font-weight:bold;font-size:11px;transition:.3s;background:rgba(8,121,181,0.15)}
 .btn:hover{background:var(--azul);color:#001321}
 
+/* NUEVA SECCIÓN: imagen destacada de TINMAR */
+.seccion-imagen{max-width:1050px;margin:10px auto 50px;padding:0 5%}
+.imagen-box{background:var(--card);border:1px solid var(--azul);border-radius:20px;padding:14px;box-shadow:0 12px 40px rgba(8,189,245,.18),0 0 0 1px rgba(8,189,245,.08) inset;overflow:hidden;transition:.35s}
+.imagen-box:hover{transform:translateY(-4px);border-color:#fff;box-shadow:0 18px 50px rgba(8,189,245,.35)}
+.imagen-box img{display:block;width:100%;height:auto;border-radius:12px;object-fit:cover}
+.imagen-caption{text-align:center;color:var(--subtexto);font-size:12.5px;font-weight:700;letter-spacing:1px;margin-top:14px;text-transform:uppercase}
+@media(max-width:750px){
+  .imagen-box{padding:9px;border-radius:16px}
+  .imagen-caption{font-size:11px;margin-top:10px}
+}
+
 .carrusel-testimonios{width:100%;max-width:1250px;margin:auto;overflow:hidden;position:relative;padding:10px 0}
 .carrusel-track{display:flex;gap:18px;width:max-content;animation:carruselMov 25s linear infinite}
 .carrusel-track:hover{animation-play-state:paused}
@@ -362,13 +373,12 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   <nav id="nav" aria-label="Menú principal">
     <a href="#inicio">Inicio</a>
     <a href="#servicios">Servicios</a>
-    <a href="#testimonios">Reseñas</a>
     <a href="https://tinmar.vercel.app" target="_blank" rel="noopener noreferrer">Tienda</a>
     <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener noreferrer">Abogado</a>
     <a href="https://javiertato.vercel.app" target="_blank" rel="noopener noreferrer">Tatuaje</a>
     <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener noreferrer">Lavadero</a>
     <a href="masajes/index.html">Masajes</a>
-    <a href="trabajos/index.html">Trabajos</a>
+
     <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener noreferrer">Vascolet</a>
     <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener noreferrer">Solicita Web</a>
     <a href="#" id="navBtnSugerencias">Sugerencia</a>
@@ -418,7 +428,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 <div class="search-container">
   <div class="search-box">
     <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" class="search-input" placeholder="(Ej:Abogado, tatuaje Lavadero Juego)" aria-label="Buscar servicios">
+    <input type="text" id="searchInput" class="search-input" placeholder="¿Qué servicio estás buscando? (Ej: Electricista, Abogado, Limpieza...)" aria-label="Buscar servicios">
   </div>
   <div class="search-counter" id="searchCounter"></div>
 </div>
@@ -573,11 +583,17 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   </div>
 </section>
 
-<section class="seccion" id="testimonios">
-  <div class="titulo">
-    <h2>💬 CLIENTES</h2>
-    <p>Destacan quienes ya confiaron en los servicios de TINMAR</p>
+
+  <div class="imagen-box">
+    <img src="https://i.ibb.co/1GQ2FWJ4/file-00000000a1e4820ea6b9170f83d018a1.png"
+         alt="TINMAR - Portal de servicios y negocios en Montevideo"
+         loading="lazy"
+         onerror="this.closest('.imagen-box').style.display='none'">
+    <div class="imagen-caption">◎ TINMAR · Servicios y Negocios</div>
   </div>
+</section>
+
+
 
   <div class="carrusel-testimonios">
     <div class="carrusel-track">
@@ -620,7 +636,7 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 <section class="contacto" id="contacto">
   <div class="titulo">
     <h2>📌 CONTACTO</h2>
-    <p>Estamos disponibles las 24 horas para atender tus consultas</p>
+    <p>Disponibles las 24 horas para atender tus consultas</p>
   </div>
   <div class="contacto-box">
     <p class="info-icon">📍 <strong>Ubicación:</strong> Montevideo, Uruguay</p>
