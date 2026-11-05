@@ -38,23 +38,8 @@
 }
 </script>
 
-
-
-
-
-
-
-
-
-
-
 <style>
-    
-    
-    
-    
-    
-    /* ===== COMPARTIR ===== */
+/* ===== COMPARTIR ===== */
 .compartir-box{margin-top:24px;text-align:center;animation:heroTextIn .8s .3s cubic-bezier(.2,.9,.3,1) both}
 .compartir-titulo{color:var(--subtexto);font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
 .compartir-botones{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
@@ -85,14 +70,7 @@
   .btn-compartir{padding:9px 13px;font-size:11px;border-radius:20px}
   .btn-compartir .ico{font-size:14px}
 }
-    
-    
-    
-    
-    
-    
-    
-    
+
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --azul:#08bdf5;
@@ -106,7 +84,7 @@
 html{scroll-behavior:smooth}
 body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--fondo);color:var(--texto);overflow-x:hidden;position:relative;min-height:100vh}
 
-/* ===== FONDO ANIMADO GLOBAL (orgánico, sin cuadrados) ===== */
+/* ===== FONDO ANIMADO GLOBAL ===== */
 .bg-fx{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 50% 30%,#0a2742 0%,#061323 60%,#040c18 100%)}
 .bg-fx .orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.32;will-change:transform}
 .bg-fx .orb.o1{width:620px;height:620px;background:#08bdf5;top:-200px;left:-180px;animation:orbFloat1 22s ease-in-out infinite}
@@ -118,7 +96,6 @@ body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--
 @keyframes orbFloat2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-70px,-50px) scale(1.15)}}
 @keyframes orbFloat3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(50px,-70px) scale(1.1)}}
 
-/* Estrellas/partículas brillantes (reemplaza la cuadrícula) */
 .bg-fx .stars{position:absolute;inset:0}
 .bg-fx .stars i{position:absolute;background:#fff;border-radius:50%;opacity:.7;box-shadow:0 0 6px rgba(126,239,255,.9);animation:twinkle 3s ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.2)}}
@@ -198,7 +175,6 @@ radio-player{display:block;width:100%;height:130px}
 @keyframes flotar{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(6deg)}}
 @media(max-width:520px){.hero-icon{display:none}}
 
-/* partículas del hero */
 .hero-particles{position:absolute;inset:0;z-index:1;pointer-events:none}
 .hero-particles i{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--azul);box-shadow:0 0 8px var(--azul);animation:floatParticle linear infinite}
 @keyframes floatParticle{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-20vh) scale(1);opacity:0}}
@@ -473,7 +449,6 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 </head>
 <body id="inicio">
 
-<!-- FONDO ANIMADO GLOBAL - orbes + estrellas (sin cuadrados) -->
 <div class="bg-fx" aria-hidden="true">
   <div class="stars" id="bgStars"></div>
   <div class="orb o1"></div>
@@ -744,8 +719,6 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   </div>
 </section>
 
-
-
 <!-- BOTONES COMPARTIR -->
 <div class="compartir-box">
   <p class="compartir-titulo">🔗 Compartí este portal</p>
@@ -767,10 +740,6 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
     </button>
   </div>
 </div>
-
-
-
-
 
 <section class="contacto" id="contacto">
   <div class="titulo">
@@ -968,6 +937,8 @@ function cerrarToast(toast){
  setTimeout(() => mostrarToast(indiceAleatorio()), 2000);
   setInterval(() => mostrarToast(indiceAleatorio()), 9000);
 })();
+
+/* ===== BUSCADOR Y FILTROS ===== */
 (function(){
   const searchInput = document.getElementById("searchInput");
   const cards = document.querySelectorAll("#servicesGrid .card");
@@ -998,6 +969,8 @@ function cerrarToast(toast){
       btn.classList.add("activo");
       categoriaActiva = btn.getAttribute("data-cat");
       aplicarFiltros(); }); }); })();
+
+/* ===== CHAT ===== */
 (function(){
   const chatFab = document.getElementById("chatFab");
   const chatContainer = document.getElementById("chatContainer");
@@ -1082,6 +1055,8 @@ chatSend.addEventListener("click", () => procesarTexto(chatInput.value));
     if(e.key === "Enter") procesarTexto(chatInput.value);
   });
 })();
+
+/* ===== RELOJ LLUVIA ===== */
 (function(){
   const reloj = document.getElementById("reloj-lluvia");
   if(!reloj) return;
@@ -1118,6 +1093,8 @@ canvas.width = r.width; canvas.height = r.height;
   ajustar(); animar();
   window.addEventListener("resize", ajustar);
 })();
+
+/* ===== CLIMA ===== */
 (function(){
   const tempEl = document.getElementById("climaTemp");
   const descEl = document.getElementById("climaDesc");
@@ -1153,6 +1130,8 @@ canvas.width = r.width; canvas.height = r.height;
 descEl.textContent = "Clima no disponible";}}
   cargarClima();
 })();
+
+/* ===== RADIO PLAYER ===== */
 if(!customElements.get("radio-player")){
   customElements.define("radio-player", class extends HTMLElement {
     constructor(){ super(); this.attachShadow({mode:"open"}); }
@@ -1223,6 +1202,8 @@ audio{display:none;}
           live.textContent = "● PAUSADO"; }});
       audio.addEventListener("playing", () => { cont.classList.add("playing"); status.textContent = "⚡ EN VIVO"; live.textContent = "● EN VIVO"; });
       audio.addEventListener("pause", () => { if(!audio.ended){ cont.classList.remove("playing"); status.textContent = "📻 PAUSADA"; live.textContent = "● PAUSADO"; } });  }  });}
+
+/* ===== MODALES ===== */
 (function(){
   const modalTerminos = document.getElementById("modalTerminos");
   const btnTerminos = document.getElementById("btnTerminos");
@@ -1249,9 +1230,85 @@ cerrarSugerencias.addEventListener("click",() => modalSugerencias.classList.remo
 modalTerminos?.classList.remove("abierto");
 modalPrivacidad?.classList.remove("abierto");
 modalSugerencias?.classList.remove("abierto");
-    } }); })(); (function() {  const btn = document.getElementById("backToTop");
+    } }); })();
+
+/* ===== BACK TO TOP ===== */
+(function() {
+  const btn = document.getElementById("backToTop");
   window.addEventListener("scroll", () => {
     if(window.scrollY > 400) btn.classList.add("visible");
- else btn.classList.remove("visible");});
+    else btn.classList.remove("visible");
+  });
   btn.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
-})();</script></body></html>
+})();
+
+/* ===== BOTONES COMPARTIR ===== */
+(function(){
+  const urlPortal = "https://tinmar.vercel.app";
+  const titulo = "TINMAR · Servicios y Negocios en Montevideo";
+  const texto = "Mirá TINMAR 👉 servicios profesionales en Montevideo: abogado, tatuajes, lavadero, masajes y más. Atención 24h.";
+
+  // --- COPIAR ENLACE ---
+  const btnCopiar = document.getElementById("btnCopiar");
+  if(btnCopiar){
+    btnCopiar.addEventListener("click", async () => {
+      const txtOriginal = btnCopiar.querySelector(".txt");
+      const icoOriginal = btnCopiar.querySelector(".ico");
+      try{
+        if(navigator.clipboard && window.isSecureContext){
+          await navigator.clipboard.writeText(urlPortal);
+        } else {
+          const ta = document.createElement("textarea");
+          ta.value = urlPortal;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand("copy");
+          document.body.removeChild(ta);
+        }
+        btnCopiar.classList.add("copiado");
+        icoOriginal.textContent = "✅";
+        txtOriginal.textContent = "¡Copiado!";
+        setTimeout(() => {
+          btnCopiar.classList.remove("copiado");
+          icoOriginal.textContent = "📋";
+          txtOriginal.textContent = "Copiar enlace";
+        }, 2000);
+      } catch(e){
+        alert("No se pudo copiar. Copiá manualmente: " + urlPortal);
+      }
+    });
+  }
+
+  // --- WHATSAPP ---
+  document.getElementById("btnWhatsApp")?.addEventListener("click", () => {
+    const msg = encodeURIComponent(texto + "\n\n" + urlPortal);
+    window.open("https://wa.me/?text=" + msg, "_blank", "noopener,noreferrer");
+  });
+
+  // --- FACEBOOK ---
+  document.getElementById("btnFacebook")?.addEventListener("click", () => {
+    const u = encodeURIComponent(urlPortal);
+    window.open("https://www.facebook.com/sharer/sharer.php?u=" + u, "_blank", "noopener,noreferrer,width=600,height=500");
+  });
+
+  // --- TWITTER / X ---
+  document.getElementById("btnTwitter")?.addEventListener("click", () => {
+    const t = encodeURIComponent(titulo);
+    const u = encodeURIComponent(urlPortal);
+    window.open("https://twitter.com/intent/tweet?text=" + t + "&url=" + u, "_blank", "noopener,noreferrer,width=600,height=500");
+  });
+
+  // --- NATIVO (Web Share API) ---
+  const btnNativo = document.getElementById("btnNativo");
+  if(btnNativo && navigator.share){
+    btnNativo.classList.add("soportado");
+    btnNativo.addEventListener("click", async () => {
+      try{
+        await navigator.share({ title: titulo, text: texto, url: urlPortal });
+      } catch(e){
+if(e.name !== "AbortError") console.warn("Share error:", e); } }); } })();
+</script>
+</body>
+</html>
