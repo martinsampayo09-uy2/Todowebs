@@ -168,8 +168,8 @@ nav a:hover::after{width:100%}
 #reloj-lluvia{position:relative}
 #reloj-lluvia canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 #reloj-lluvia .contenido{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%}
-#reloj-lluvia #hora{font-size:clamp(28px,3vw,42px);font-weight:900;color:#e0ffff;font-family:monospace;text-shadow:0 0 15px rgba(126,239,255,.9);line-height:1}
-#reloj-lluvia #fecha{color:#b0e0e6;font-size:clamp(12px,1.5vw,16px);margin-top:8px;text-shadow:0 0 8px rgba(126,239,255,.6);line-height:1.3;font-weight:700}
+#reloj-lluvia #hora{font-size:clamp(30px,3.3vw,46px);font-weight:900;color:#e0ffff;font-family:monospace;text-shadow:0 0 15px rgba(126,239,255,.9);line-height:1}
+#reloj-lluvia #fecha{color:#b0e0e6;font-size:clamp(13px,1.6vw,17px);margin-top:8px;text-shadow:0 0 8px rgba(126,239,255,.6);line-height:1.3;font-weight:700}
 
 /* Clima */
 .clima-container{
@@ -287,9 +287,9 @@ radio-player{
   width: 100%;
 }
 .solicita-widget:hover{transform: translateY(-3px)}
-.solicita-widget h3{font-size: 16px;color:#fff;margin-bottom:8px;letter-spacing:1px;font-weight:900;line-height:1.2;text-shadow:0 0 12px rgba(8,189,245,.6)}
-.solicita-widget p{color:#b5c7d9;font-size:13px;margin-bottom:12px;line-height:1.3;font-weight:600;text-shadow:0 0 6px rgba(8,189,245,.3)}
-.btn-solicita-mini{background:var(--azul);color:#001321;padding:8px 18px;border-radius:8px;font-weight:900;font-size:14px;box-shadow:0 0 15px rgba(8,189,245,.6);animation:miniPulse 2.4s ease-in-out infinite}
+.solicita-widget h3{font-size: 18px;color:#fff;margin-bottom:8px;letter-spacing:1px;font-weight:900;line-height:1.2;text-shadow:0 0 12px rgba(8,189,245,.6)}
+.solicita-widget p{color:#b5c7d9;font-size:14px;margin-bottom:12px;line-height:1.3;font-weight:600;text-shadow:0 0 6px rgba(8,189,245,.3)}
+.btn-solicita-mini{background:var(--azul);color:#001321;padding:9px 20px;border-radius:8px;font-weight:900;font-size:15px;box-shadow:0 0 15px rgba(8,189,245,.6);animation:miniPulse 2.4s ease-in-out infinite}
 @keyframes miniPulse{50%{box-shadow:0 0 25px rgba(8,189,245,1);transform:scale(1.05)}}
 
 /* ===== HERO ===== */
@@ -541,8 +541,8 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
     padding: 10px 8px;
   }
 
-  #reloj-lluvia #hora{font-size:26px}
-  #reloj-lluvia #fecha{font-size:11.5px}
+  #reloj-lluvia #hora{font-size:28px}
+  #reloj-lluvia #fecha{font-size:12.5px}
   
   .clima-header h3{font-size:11px}
   .clima-header .ubicacion{font-size:8px}
@@ -551,9 +551,9 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
   .clima-desc-small{font-size:9px}
   .clima-detalles{font-size:8.5px;gap:2px;padding:5px 3px 0}
   
-  .solicita-widget h3{font-size:14px}
-  .solicita-widget p{font-size:11.5px;margin-bottom:10px}
-  .btn-solicita-mini{padding:6px 12px;font-size:12px}
+  .solicita-widget h3{font-size:15.5px}
+  .solicita-widget p{font-size:12.5px;margin-bottom:10px}
+  .btn-solicita-mini{padding:7px 14px;font-size:13px}
   
   .grid{grid-template-columns:repeat(2,1fr) !important;gap:10px}
   .foto{height:115px}
@@ -1316,9 +1316,9 @@ audio{display:none;}
     <div class="play-icon"></div>
     <div class="pause-icon"></div>  </button>
   <div class="live" id="live">● PAUSADO</div>
-  <!-- EL CAMBIO CLAVE ESTÁ AQUÍ: preload="auto" -->
+  <!-- ENLACE ACTUALIZADO A SOMA FM GROOVE SALAD -->
   <audio id="audio" preload="auto" crossorigin="anonymous">
-    <source src="https://traxx008.ice.infomaniak.ch/traxx008-low.mp3" type="audio/mpeg">
+    <source src="https://ice1.somafm.com/groovesalad-128-mp3?utm_source=chatgpt.com" type="audio/mpeg">
   </audio> </div>`;
       this.iniciar(); }
     iniciar(){
@@ -1329,7 +1329,7 @@ audio{display:none;}
       const status = root.querySelector("#status");
       const live = root.querySelector("#live");
       const song = root.querySelector("#song");
-      const canciones = ["🎶 Sonando: Remix 🔥","🎵 DJ Flow 😎","🔥 Música activa","🎧 Trap Mix"];
+      const canciones = ["🎶 Sonando: Remix 🔥","🎵 DJ Tinmar 😎","🔥 Música activa","🎧  Mix"];
       let idx = 0;
       setInterval(() => { idx = (idx+1) % canciones.length; song.textContent = canciones[idx]; }, 4000);
 
