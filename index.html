@@ -1244,27 +1244,36 @@ canvas.width = r.width; canvas.height = r.height;
   window.addEventListener("resize", ajustar);
 })();
 
-/* ===== CLIMA ===== */
+/* ===== CLIMA (con día/noche) ===== */
 async function cargarClima(){
   const contenedor = document.getElementById("climaContenedor");
   if(!contenedor) return;
   try{
     const lat = -34.90, lon = -56.16;
-    const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lon+"&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m&timezone=America%2FMontevideo", {cache:"no-store"});
+    const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lon+"&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,is_day&timezone=America%2FMontevideo", {cache:"no-store"});
     if(!res.ok) throw new Error("API");
     const data = await res.json();
     const actual = data.current;
     if(!actual) throw new Error("Sin datos");
     const codigo = actual.weather_code;
+    const esDia = actual.is_day === 1;
     let icono = "☀️", texto = "Despejado";
-    if(codigo === 0){ icono = "☀️"; texto = "Despejado"; }
-    else if(codigo <= 3){ icono = "⛅"; texto = "Parcialmente nublado"; }
+
+    if(codigo === 0){
+      icono = esDia ? "☀️" : "🌙";
+      texto = esDia ? "Despejado" : "Despejado (noche)";
+    }
+    else if(codigo <= 3){
+      icono = esDia ? "⛅" : "☁️";
+      texto = "Parcialmente nublado";
+    }
     else if(codigo === 45 || codigo === 48){ icono = "🌫️"; texto = "Niebla"; }
     else if(codigo >= 51 && codigo <= 67){ icono = "🌧️"; texto = "Lluvia"; }
     else if(codigo >= 71 && codigo <= 77){ icono = "❄️"; texto = "Nieve"; }
     else if(codigo >= 80 && codigo <= 82){ icono = "🌦️"; texto = "Chaparrones"; }
     else if(codigo >= 85 && codigo <= 86){ icono = "🌨️"; texto = "Nevadas"; }
     else if(codigo >= 95){ icono = "⛈️"; texto = "Tormenta"; }
+
     const temp = Math.round(actual.temperature_2m);
     const sens = Math.round(actual.apparent_temperature);
     const viento = Math.round(actual.wind_speed_10m);
@@ -1316,7 +1325,6 @@ audio{display:none;}
     <div class="play-icon"></div>
     <div class="pause-icon"></div>  </button>
   <div class="live" id="live">● PAUSADO</div>
-  <!-- ENLACE ACTUALIZADO A SOMA FM GROOVE SALAD -->
   <audio id="audio" preload="auto" crossorigin="anonymous">
     <source src="https://ice1.somafm.com/groovesalad-128-mp3?utm_source=chatgpt.com" type="audio/mpeg">
   </audio> </div>`;
@@ -1329,26 +1337,17 @@ audio{display:none;}
       const status = root.querySelector("#status");
       const live = root.querySelector("#live");
       const song = root.querySelector("#song");
-      const canciones = ["🎶 Sonando: Remix 🔥","🎵 DJ Tinmar 😎","🔥 Música activa","🎧  Mix"];
+      const canciones = ["🎶 Sonando: Remix 🔥","🎵 DJ Flow 😎","🔥 Música activa","🎧 Trap Mix"];
       let idx = 0;
       setInterval(() => { idx = (idx+1) % canciones.length; song.textContent = canciones[idx]; }, 4000);
-
-      // LÓGICA DE CARGA RÁPIDA
       btn.addEventListener("click", async () => {
         if(audio.paused){
           try{
             status.textContent = "⏳ CONECTANDO";
             live.textContent = "● CONECTANDO";
-            
-            // Forzamos la carga si no se cargó al inicio
-            if (audio.readyState === 0) {
-               audio.load();
-            }
-            
-            // Agregamos un pequeño delay para evitar bloqueos del navegador
+            if (audio.readyState === 0) { audio.load(); }
             await new Promise(resolve => setTimeout(resolve, 100));
             await audio.play();
-            
             cont.classList.add("playing");
             status.textContent = "⚡ EN VIVO";
             live.textContent = "● EN VIVO";
@@ -1365,18 +1364,15 @@ audio{display:none;}
           live.textContent = "● PAUSADO";
         }
       });
-
       audio.addEventListener("playing", () => { 
         cont.classList.add("playing"); 
         status.textContent = "⚡ EN VIVO"; 
         live.textContent = "● EN VIVO"; 
       });
-      
       audio.addEventListener("waiting", () => {
         status.textContent = "⏳ BUFFERING";
         live.textContent = "● CARGANDO...";
       });
-
       audio.addEventListener("pause", () => { 
         if(!audio.ended){ 
           cont.classList.remove("playing"); 
