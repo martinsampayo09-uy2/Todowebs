@@ -10,16 +10,26 @@
 <meta name="author" content="TINMAR">
 <meta name="robots" content="index, follow">
 
+<!-- ===== OPEN GRAPH (para que la imagen aparezca al compartir) ===== -->
 <meta property="og:title" content="TINMAR | Servicios y Negocios en Montevideo">
 <meta property="og:description" content="Abogado, tatuajes, lavadero, masajes, agro san y más servicios profesionales cerca tuyo. Atención 24 horas.">
-<meta property="og:image" content="https://i.ibb.co/1GQ2FWJ4/file-00000000a1e4820ea6b9170f83d018a1.png">
+<meta property="og:image" content="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg">
+<meta property="og:image:secure_url" content="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TINMAR - Servicios y Negocios en Montevideo">
 <meta property="og:url" content="https://tinmar.vercel.app">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content="TINMAR">
+
+<!-- ===== TWITTER CARD ===== -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TINMAR | Servicios y Negocios en Montevideo">
 <meta name="twitter:description" content="Abogado, tatuajes, lavadero, masajes y más servicios profesionales cerca tuyo.">
-<meta name="twitter:image" content="https://i.ibb.co/1GQ2FWJ4/file-00000000a1e4820ea6b9170f83d018a1.png">
+<meta name="twitter:image" content="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg">
+<meta name="twitter:image:alt" content="TINMAR - Servicios y Negocios en Montevideo">
 
 <link rel="preload" as="image" href="https://i.ibb.co/5hCFkk3Z/Screenshot-20261030-171925-Chrome.jpg">
 
@@ -32,6 +42,7 @@
   "telephone": "+59899295848",
   "email": "martinsampayo9@gmail.com",
   "description": "Portal de negocios y servicios profesionales en Montevideo, Uruguay.",
+  "image": "https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg",
   "address": { "@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY" },
   "openingHours": "Mo-Su 00:00-23:59",
   "priceRange": "$$"
@@ -105,7 +116,6 @@ header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px
 @keyframes lineFlow{from{background-position:200% 0}to{background-position:-200% 0}}
 .logo{display:flex;align-items:center;gap:10px;color:var(--texto);text-decoration:none;font-size:28px;font-weight:900;letter-spacing:1px;transition:.3s}
 .logo:hover{filter:drop-shadow(0 0 10px rgba(8,189,245,.8))}
-/* NUEVO: IMAGEN COMO LOGO */
 .logo img{
   height:44px;
   width:44px;
@@ -120,7 +130,6 @@ header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px
   box-shadow:0 0 20px rgba(8,189,245,1);
 }
 .logo span{font-size:26px;color:var(--texto);font-weight:900;letter-spacing:1px}
-/* FIN NUEVO LOGO */
 @keyframes spinSlow{to{transform:rotate(360deg)}}
 .en-construccion{font-size:11px;color:#ffd84d;background:rgba(255,216,77,.12);padding:4px 10px;border-radius:20px;border:1px solid rgba(255,216,77,.4);font-weight:700;white-space:nowrap;display:none}
 nav{display:flex;align-items:center;gap:16px}
@@ -144,165 +153,37 @@ nav a:hover::after{width:100%}
   *,*::before,*::after{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important}
 }
 
-/* ===== WIDGETS SIN FONDO NI RECUADRO NI LINEAS ===== */
-.widgets{
-  width: 100%;
-  max-width: 1250px;
-  margin: 25px auto 10px;
-  padding: 0 5%;
-}
-
-.widget-panel{
-  background: transparent;
-  backdrop-filter: none;
-  border: none;
-  box-shadow: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  overflow: visible;
-  position: relative;
-  animation: widgetIn .7s cubic-bezier(.2,.9,.3,1.2) both;
-}
-
+/* ===== WIDGETS ===== */
+.widgets{width:100%;max-width:1250px;margin:25px auto 10px;padding:0 5%;}
+.widget-panel{background:transparent;backdrop-filter:none;border:none;box-shadow:none;display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;position:relative;animation:widgetIn .7s cubic-bezier(.2,.9,.3,1.2) both;}
 @keyframes widgetIn{from{opacity:0;transform:translateY(30px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+.widget-cell{position:relative;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:15px 10px;transition:transform .3s ease;}
+.widget-cell:hover{transform:translateY(-3px);}
 
-.widget-cell{
-  position: relative;
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 15px 10px;
-  transition: transform .3s ease;
-}
-.widget-cell:hover{ transform: translateY(-3px); }
-
-/* Reloj */
 #reloj-lluvia{position:relative}
 #reloj-lluvia canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 #reloj-lluvia .contenido{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%}
 #reloj-lluvia #hora{font-size:clamp(30px,3.3vw,46px);font-weight:900;color:#e0ffff;font-family:monospace;text-shadow:0 0 15px rgba(126,239,255,.9);line-height:1}
 #reloj-lluvia #fecha{color:#b0e0e6;font-size:clamp(13px,1.6vw,17px);margin-top:8px;text-shadow:0 0 8px rgba(126,239,255,.6);line-height:1.3;font-weight:700}
 
-/* Clima */
-.clima-container{
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  backdrop-filter: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-.clima-header{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 6px;
-  padding: 0 5px;
-}
-.clima-header h3{
-  font-size: 13px;
-  color: #c6f8ff;
-  font-weight: 800;
-  letter-spacing: .5px;
-  text-shadow: 0 0 10px rgba(0,230,255,.7);
-}
-.clima-header .ubicacion{
-  font-size: 9.5px;
-  color: #70efff;
-  background: transparent;
-  padding: 2px 0;
-  font-weight: 700;
-  white-space: nowrap;
-  text-shadow: 0 0 6px rgba(0,230,255,.5);
-}
-.clima-body{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  padding: 0 5px;
-}
-.clima-temp{
-  font-size: 32px;
-  font-weight: 900;
-  color: #e0ffff;
-  line-height: 1;
-  font-family: monospace;
-  text-shadow: 0 0 18px rgba(126,239,255,1), 0 0 35px rgba(8,189,245,.6);
-}
-.clima-desc-small{
-  font-size: 10.5px;
-  color: #b0e0e6;
-  margin-top: 3px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 1.2;
-  text-shadow: 0 0 8px rgba(126,239,255,.5);
-}
-.clima-icon{
-  font-size: 38px;
-  filter: drop-shadow(0 0 15px rgba(126,239,255,.8));
-  animation: climaFloat 3s ease-in-out infinite;
-}
+.clima-container{background:transparent;border:none;box-shadow:none;backdrop-filter:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%;}
+.clima-header{width:100%;display:flex;justify-content:space-between;align-items:center;gap:5px;margin-bottom:6px;padding:0 5px;}
+.clima-header h3{font-size:13px;color:#c6f8ff;font-weight:800;letter-spacing:.5px;text-shadow:0 0 10px rgba(0,230,255,.7);}
+.clima-header .ubicacion{font-size:9.5px;color:#70efff;background:transparent;padding:2px 0;font-weight:700;white-space:nowrap;text-shadow:0 0 6px rgba(0,230,255,.5);}
+.clima-body{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:0 5px;}
+.clima-temp{font-size:32px;font-weight:900;color:#e0ffff;line-height:1;font-family:monospace;text-shadow:0 0 18px rgba(126,239,255,1),0 0 35px rgba(8,189,245,.6);}
+.clima-desc-small{font-size:10.5px;color:#b0e0e6;margin-top:3px;font-weight:700;text-transform:capitalize;line-height:1.2;text-shadow:0 0 8px rgba(126,239,255,.5);}
+.clima-icon{font-size:38px;filter:drop-shadow(0 0 15px rgba(126,239,255,.8));animation:climaFloat 3s ease-in-out infinite;}
 @keyframes climaFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.08)}}
-.clima-detalles{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px;
-  margin-top: 8px;
-  font-size: 9.5px;
-  color: #b0e0e6;
-  background: transparent;
-  padding: 6px 5px 0;
-  border-radius: 8px;
-  width: 100%;
-  font-weight: 700;
-}
-.clima-loading,.clima-error{
-  font-size: 11px;
-  text-align: center;
-  padding: 10px 0;
-  color: #b0e0e6;
-  font-weight: 700;
-}
+.clima-detalles{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:8px;font-size:9.5px;color:#b0e0e6;background:transparent;padding:6px 5px 0;border-radius:8px;width:100%;font-weight:700;}
+.clima-loading,.clima-error{font-size:11px;text-align:center;padding:10px 0;color:#b0e0e6;font-weight:700;}
 .clima-error{color:#fca5a5}
 
-/* Radio */
-radio-player{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+radio-player{display:block;width:100%;height:100%;}
 
-/* Sugerencia */
-.solicita-widget{
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  transition: .3s;
-  cursor: pointer;
-  width: 100%;
-}
-.solicita-widget:hover{transform: translateY(-3px)}
-.solicita-widget h3{font-size: 18px;color:#fff;margin-bottom:8px;letter-spacing:1px;font-weight:900;line-height:1.2;text-shadow:0 0 12px rgba(8,189,245,.6)}
+.solicita-widget{background:transparent;border:none;box-shadow:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;transition:.3s;cursor:pointer;width:100%;}
+.solicita-widget:hover{transform:translateY(-3px)}
+.solicita-widget h3{font-size:18px;color:#fff;margin-bottom:8px;letter-spacing:1px;font-weight:900;line-height:1.2;text-shadow:0 0 12px rgba(8,189,245,.6)}
 .solicita-widget p{color:#b5c7d9;font-size:14px;margin-bottom:12px;line-height:1.3;font-weight:600;text-shadow:0 0 6px rgba(8,189,245,.3)}
 .btn-solicita-mini{background:var(--azul);color:#001321;padding:9px 20px;border-radius:8px;font-weight:900;font-size:15px;box-shadow:0 0 15px rgba(8,189,245,.6);animation:miniPulse 2.4s ease-in-out infinite}
 @keyframes miniPulse{50%{box-shadow:0 0 25px rgba(8,189,245,1);transform:scale(1.05)}}
@@ -327,7 +208,7 @@ radio-player{
 .hero-particles i{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--azul);box-shadow:0 0 8px var(--azul);animation:floatParticle linear infinite}
 @keyframes floatParticle{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-20vh) scale(1);opacity:0}}
 
-/* ===== NUEVO: FONDO CON IMAGEN EN EL HERO ===== */
+/* ===== FONDO CON IMAGEN EN EL HERO ===== */
 .hero {
   background-image: url('https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg');
   background-size: cover;
@@ -345,7 +226,7 @@ radio-player{
 .hero-text, .hero-icon { position: relative; z-index: 2; }
 .hero-particles { z-index: 1; }
 
-/* ===== NUEVO: TYPEWRITER EN EL PÁRRAFO DEL HERO ===== */
+/* ===== TYPEWRITER EN EL PÁRRAFO DEL HERO ===== */
 .hero-sub .typewriter-cursor::after {
   content: "|";
   color: var(--azul);
