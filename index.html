@@ -179,6 +179,12 @@ nav a:hover::after{width:100%}
 .clima-loading,.clima-error{font-size:11px;text-align:center;padding:10px 0;color:#b0e0e6;font-weight:700;}
 .clima-error{color:#fca5a5}
 
+/* ===== ANIMACIÓN PARA EL PÁRRAFO DEL CLIMA EN TIEMPO REAL ===== */
+@keyframes fadeInText{
+  from{opacity:0;transform:translateY(4px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
 radio-player{display:block;width:100%;height:100%;}
 
 .solicita-widget{background:transparent;border:none;box-shadow:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;transition:.3s;cursor:pointer;width:100%;}
@@ -1274,13 +1280,18 @@ canvas.width = r.width; canvas.height = r.height;
   window.addEventListener("resize", ajustar);
 })();
 
-/* ===== CLIMA (con día/noche) ===== */
+/* ===== CLIMA (con actualización en tiempo real y textos variados) ===== */
 async function cargarClima(){
   const contenedor = document.getElementById("climaContenedor");
   if(!contenedor) return;
   try{
     const lat = -34.90, lon = -56.16;
-    const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lon+"&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,is_day&timezone=America%2FMontevideo", {cache:"no-store"});
+    const res = await fetch(
+      "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lon+
+      "&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,is_day"+
+      "&timezone=America%2FMontevideo&_=" + Date.now(),
+      {cache:"no-store"}
+    );
     if(!res.ok) throw new Error("API");
     const data = await res.json();
     const actual = data.current;
@@ -1291,26 +1302,40 @@ async function cargarClima(){
 
     if(codigo === 0){
       icono = esDia ? "☀️" : "🌙";
-      texto = esDia ? "Despejado" : "Despejado (noche)";
+      texto = esDia ? "Cielo despejado y soleado" : "Noche despejada y estrellada";
     }
     else if(codigo <= 3){
       icono = esDia ? "⛅" : "☁️";
-      texto = "Parcialmente nublado";
+      texto = esDia ? "Parcialmente nublado con ratos de sol" : "Noche parcialmente nublada";
     }
-    else if(codigo === 45 || codigo === 48){ icono = "🌫️"; texto = "Niebla"; }
-    else if(codigo >= 51 && codigo <= 67){ icono = "🌧️"; texto = "Lluvia"; }
-    else if(codigo >= 71 && codigo <= 77){ icono = "❄️"; texto = "Nieve"; }
-    else if(codigo >= 80 && codigo <= 82){ icono = "🌦️"; texto = "Chaparrones"; }
-    else if(codigo >= 85 && codigo <= 86){ icono = "🌨️"; texto = "Nevadas"; }
-    else if(codigo >= 95){ icono = "⛈️"; texto = "Tormenta"; }
+    else if(codigo === 45 || codigo === 48){
+      icono = "🌫️"; texto = "Niebla densa, visibilidad reducida";
+    }
+    else if(codigo >= 51 && codigo <= 67){
+      icono = "🌧️"; texto = "Lluvia intermitente, llevá paraguas";
+    }
+    else if(codigo >= 71 && codigo <= 77){
+      icono = "❄️"; texto = "Nevada ligera, abrigate bien";
+    }
+    else if(codigo >= 80 && codigo <= 82){
+      icono = "🌦️"; texto = "Chaparrones aislados, típico de la zona";
+    }
+    else if(codigo >= 85 && codigo <= 86){
+      icono = "🌨️"; texto = "Nevadas dispersas, precaución al conducir";
+    }
+    else if(codigo >= 95){
+      icono = "⛈️"; texto = "Tormenta eléctrica, buscá refugio";
+    }
 
     const temp = Math.round(actual.temperature_2m);
     const sens = Math.round(actual.apparent_temperature);
     const viento = Math.round(actual.wind_speed_10m);
     const humedad = Math.round(actual.relative_humidity_2m);
     const hora = new Date().toLocaleTimeString("es-UY",{hour:"2-digit",minute:"2-digit",timeZone:"America/Montevideo"});
-    contenedor.innerHTML = '<div class="clima-body">'
-      + '<div><div class="clima-temp">'+temp+'°C</div><div class="clima-desc-small">'+texto+'</div></div>'
+
+    const nuevoHTML = '<div class="clima-body">'
+      + '<div><div class="clima-temp">'+temp+'°C</div>'
+      + '<div class="clima-desc-small" style="animation: fadeInText .6s ease;">'+texto+'</div></div>'
       + '<div class="clima-icon">'+icono+'</div>'
       + '</div>'
       + '<div class="clima-detalles">'
@@ -1319,13 +1344,18 @@ async function cargarClima(){
       + '<div>🌡️ Sensación: '+sens+'°C</div>'
       + '<div>🕒 Act.: '+hora+' hs</div>'
       + '</div>';
+
+    if(contenedor.innerHTML !== nuevoHTML){
+      contenedor.innerHTML = nuevoHTML;
+    }
+
   } catch(e){
     contenedor.innerHTML = '<div class="clima-error">⚠️ No se pudo actualizar el clima. Comprueba tu conexión.</div>';
   }
 }
 document.addEventListener("DOMContentLoaded", function(){
   cargarClima();
-  setInterval(cargarClima, 1800000);
+  setInterval(cargarClima, 300000);
 });
 
 if(!customElements.get("radio-player")){
