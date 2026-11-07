@@ -9,8 +9,6 @@
 <meta name="keywords" content="servicios Montevideo, abogado Montevideo, tatuajes, lavadero, masajes, electricista, pintor, jardinería, plomería, mudanzas, agro san, baño animales, Uruguay">
 <meta name="author" content="TINMAR">
 <meta name="robots" content="index, follow">
-
-<!-- ===== OPEN GRAPH (para que la imagen aparezca al compartir) ===== -->
 <meta property="og:title" content="TINMAR | Servicios y Negocios en Montevideo">
 <meta property="og:description" content="Abogado, tatuajes, lavadero, masajes, agro san y más servicios profesionales cerca tuyo. Atención 24 horas.">
 <meta property="og:image" content="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg">
@@ -23,114 +21,42 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_UY">
 <meta property="og:site_name" content="TINMAR">
-
-<!-- ===== TWITTER CARD ===== -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TINMAR | Servicios y Negocios en Montevideo">
 <meta name="twitter:description" content="Abogado, tatuajes, lavadero, masajes y más servicios profesionales cerca tuyo.">
 <meta name="twitter:image" content="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg">
 <meta name="twitter:image:alt" content="TINMAR - Servicios y Negocios en Montevideo">
-
 <link rel="preload" as="image" href="https://i.ibb.co/5hCFkk3Z/Screenshot-20261030-171925-Chrome.jpg">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "TINMAR",
-  "url": "https://tinmar.vercel.app",
-  "telephone": "+59899295848",
-  "email": "martinsampayo9@gmail.com",
-  "description": "Portal de negocios y servicios profesionales en Montevideo, Uruguay.",
-  "image": "https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg",
-  "address": { "@type": "PostalAddress", "addressLocality": "Montevideo", "addressCountry": "UY" },
-  "openingHours": "Mo-Su 00:00-23:59",
-  "priceRange": "$$"
-}
-</script>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"TINMAR","url":"https://tinmar.vercel.app","telephone":"+59899295848","email":"martinsampayo9@gmail.com","description":"Portal de negocios y servicios profesionales en Montevideo, Uruguay.","image":"https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg","address":{"@type":"PostalAddress","addressLocality":"Montevideo","addressCountry":"UY"},"openingHours":"Mo-Su 00:00-23:59","priceRange":"$$"}</script>
 <style>
-/* ===== COMPARTIR ===== */
-.compartir-box{margin-top:24px;text-align:center;animation:heroTextIn .8s .3s cubic-bezier(.2,.9,.3,1) both}
-.compartir-titulo{color:var(--subtexto);font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
-.compartir-botones{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-compartir{display:inline-flex;align-items:center;gap:7px;background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--border);color:var(--subtexto);padding:10px 16px;border-radius:25px;font-size:12px;font-weight:800;cursor:pointer;transition:.3s;letter-spacing:.5px;position:relative;overflow:hidden;font-family:inherit}
-.btn-compartir::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 70%);opacity:0;transform:scale(0);transition:.5s}
-.btn-compartir:hover::before{opacity:1;transform:scale(2.5)}
-.btn-compartir:hover{transform:translateY(-3px);color:#fff}
-.btn-compartir .ico{font-size:16px;transition:.3s}
-.btn-compartir:hover .ico{transform:scale(1.2) rotate(-8deg)}
-
-.btn-compartir.copiar:hover{border-color:var(--azul);box-shadow:0 6px 20px rgba(8,189,245,.4);background:rgba(8,189,245,.15)}
-.btn-compartir.whatsapp:hover{border-color:#25d366;box-shadow:0 6px 20px rgba(37,211,102,.4);background:rgba(37,211,102,.15)}
-.btn-compartir.facebook:hover{border-color:#1877f2;box-shadow:0 6px 20px rgba(24,119,242,.4);background:rgba(24,119,242,.15)}
-.btn-compartir.twitter:hover{border-color:#e0e0e0;box-shadow:0 6px 20px rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
-.btn-compartir.nativo:hover{border-color:#a855f7;box-shadow:0 6px 20px rgba(168,85,247,.4);background:rgba(168,85,247,.15)}
-
-.btn-compartir.copiado{background:rgba(34,197,94,.2);border-color:#22c55e;color:#4ade80}
-.btn-compartir.copiado .ico{animation:checkPop .5s cubic-bezier(.2,.9,.3,1.5)}
-@keyframes checkPop{0%{transform:scale(0) rotate(-45deg)}60%{transform:scale(1.3) rotate(10deg)}100%{transform:scale(1) rotate(0)}}
-
-.btn-compartir.nativo{display:none}
-.btn-compartir.nativo.soportado{display:inline-flex}
-
-@media(max-width:750px){
-  .compartir-botones{gap:8px}
-  .btn-compartir{padding:9px 13px;font-size:11px;border-radius:20px}
-  .btn-compartir .ico{font-size:14px}
-}
-
 *{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --azul:#08bdf5;
-  --azul-hover:#0696c4;
-  --fondo:#061323;
-  --card:#0b1b2e;
-  --texto:#ffffff;
-  --subtexto:#b5c7d9;
-  --border:#164365;
-}
+:root{--azul:#08bdf5;--azul-hover:#0696c4;--fondo:#061323;--card:#0b1b2e;--texto:#fff;--subtexto:#b5c7d9;--border:#164365}
 html{scroll-behavior:smooth}
-body{font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--fondo);color:var(--texto);overflow-x:hidden;position:relative;min-height:100vh}
-
-/* ===== FONDO ANIMADO GLOBAL ===== */
+body{font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;background:var(--fondo);color:var(--texto);overflow-x:hidden;position:relative;min-height:100vh}
 .bg-fx{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 50% 30%,#0a2742 0%,#061323 60%,#040c18 100%)}
 .bg-fx .orb{position:absolute;border-radius:50%;filter:blur(100px);opacity:.32;will-change:transform}
 .bg-fx .orb.o1{width:620px;height:620px;background:#08bdf5;top:-200px;left:-180px;animation:orbFloat1 22s ease-in-out infinite}
 .bg-fx .orb.o2{width:520px;height:520px;background:#0a6e9e;bottom:-180px;right:-160px;animation:orbFloat2 28s ease-in-out infinite}
 .bg-fx .orb.o3{width:420px;height:420px;background:#0f4c75;top:38%;left:58%;animation:orbFloat3 32s ease-in-out infinite}
 .bg-fx .orb.o4{width:360px;height:360px;background:#08bdf5;top:65%;left:-140px;opacity:.22;animation:orbFloat2 36s ease-in-out infinite reverse}
-.bg-fx .orb.o5{width:320px;height:320px;background:#0696c4;top:12%;right:8%;opacity:.20;animation:orbFloat1 26s ease-in-out infinite reverse}
+.bg-fx .orb.o5{width:320px;height:320px;background:#0696c4;top:12%;right:8%;opacity:.2;animation:orbFloat1 26s ease-in-out infinite reverse}
 @keyframes orbFloat1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(80px,60px) scale(1.2)}}
 @keyframes orbFloat2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-70px,-50px) scale(1.15)}}
 @keyframes orbFloat3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(50px,-70px) scale(1.1)}}
-
 .bg-fx .stars{position:absolute;inset:0}
 .bg-fx .stars i{position:absolute;background:#fff;border-radius:50%;opacity:.7;box-shadow:0 0 6px rgba(126,239,255,.9);animation:twinkle 3s ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.2)}}
-
-/* ===== HEADER ===== */
-header{height:76px;background:rgba(6,16,30,0.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;z-index:100;gap:10px;animation:headerIn .8s ease both}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+@keyframes fadeInText{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+header{height:76px;background:rgba(6,16,30,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 5%;position:sticky;top:0;z-index:100;gap:10px;animation:headerIn .8s ease both}
 @keyframes headerIn{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
 header::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,transparent,var(--azul),transparent);background-size:200% 100%;animation:lineFlow 4s linear infinite}
 @keyframes lineFlow{from{background-position:200% 0}to{background-position:-200% 0}}
 .logo{display:flex;align-items:center;gap:10px;color:var(--texto);text-decoration:none;font-size:28px;font-weight:900;letter-spacing:1px;transition:.3s}
 .logo:hover{filter:drop-shadow(0 0 10px rgba(8,189,245,.8))}
-.logo img{
-  height:44px;
-  width:44px;
-  border-radius:10px;
-  border:2px solid var(--azul);
-  object-fit:cover;
-  box-shadow:0 0 12px rgba(8,189,245,.6);
-  transition:.3s;
-}
-.logo:hover img{
-  transform:scale(1.08) rotate(-3deg);
-  box-shadow:0 0 20px rgba(8,189,245,1);
-}
+.logo img{height:44px;width:44px;border-radius:10px;border:2px solid var(--azul);object-fit:cover;box-shadow:0 0 12px rgba(8,189,245,.6);transition:.3s}
+.logo:hover img{transform:scale(1.08) rotate(-3deg);box-shadow:0 0 20px rgba(8,189,245,1)}
 .logo span{font-size:26px;color:var(--texto);font-weight:900;letter-spacing:1px}
-@keyframes spinSlow{to{transform:rotate(360deg)}}
 .en-construccion{font-size:11px;color:#ffd84d;background:rgba(255,216,77,.12);padding:4px 10px;border-radius:20px;border:1px solid rgba(255,216,77,.4);font-weight:700;white-space:nowrap;display:none}
 nav{display:flex;align-items:center;gap:16px}
 nav a{color:var(--subtexto);text-decoration:none;font-size:12px;font-weight:bold;transition:.3s;text-transform:uppercase;position:relative}
@@ -140,68 +66,50 @@ nav a:hover::after{width:100%}
 .header-actions{display:flex;align-items:center;gap:12px}
 .menu{display:none;background:none;border:0;color:var(--texto);font-size:28px;cursor:pointer;padding:4px 8px;transition:.3s}
 .menu:hover{color:var(--azul);transform:rotate(90deg)}
-
-/* ===== MARQUEE ===== */
 .marquee{width:100%;overflow:hidden;background:linear-gradient(90deg,rgba(8,37,48,.85),rgba(10,58,72,.85),rgba(8,37,48,.85));background-size:200% 100%;border-top:1px solid #197b8b;border-bottom:1px solid #197b8b;padding:8px 0;animation:marqueeBg 6s linear infinite}
 @keyframes marqueeBg{from{background-position:0 0}to{background-position:200% 0}}
 .marquee-track{display:inline-flex;white-space:nowrap;animation:mover 28s linear infinite;will-change:transform}
 .marquee-track span{color:#c6f8ff;font-size:13px;font-weight:700;letter-spacing:1px;padding:0 26px;text-shadow:0 0 6px rgba(0,220,240,.5)}
 .marquee-track span::after{content:"◆";color:var(--azul);margin-left:26px;font-size:10px;display:inline-block;animation:spinSlow 3s linear infinite}
 @keyframes mover{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important}
-}
-
-/* ===== WIDGETS ===== */
-.widgets{width:100%;max-width:1250px;margin:25px auto 10px;padding:0 5%;}
-.widget-panel{background:transparent;backdrop-filter:none;border:none;box-shadow:none;display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;position:relative;animation:widgetIn .7s cubic-bezier(.2,.9,.3,1.2) both;}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}}
+.widgets{width:100%;max-width:1250px;margin:25px auto 10px;padding:0 5%}
+.widget-panel{background:transparent;backdrop-filter:none;border:none;box-shadow:none;display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;position:relative;animation:widgetIn .7s cubic-bezier(.2,.9,.3,1.2) both}
 @keyframes widgetIn{from{opacity:0;transform:translateY(30px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
-.widget-cell{position:relative;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:15px 10px;transition:transform .3s ease;}
-.widget-cell:hover{transform:translateY(-3px);}
-
+.widget-cell{position:relative;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:15px 10px;transition:transform .3s ease}
+.widget-cell:hover{transform:translateY(-3px)}
 #reloj-lluvia{position:relative}
 #reloj-lluvia canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 #reloj-lluvia .contenido{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%}
-#reloj-lluvia #hora{font-size:clamp(30px,3.3vw,46px);font-weight:900;color:#e0ffff;font-family:monospace;text-shadow:0 0 15px rgba(126,239,255,.9);line-height:1}
-#reloj-lluvia #fecha{color:#b0e0e6;font-size:clamp(13px,1.6vw,17px);margin-top:8px;text-shadow:0 0 8px rgba(126,239,255,.6);line-height:1.3;font-weight:700}
-
-.clima-container{background:transparent;border:none;box-shadow:none;backdrop-filter:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%;}
-.clima-header{width:100%;display:flex;justify-content:space-between;align-items:center;gap:5px;margin-bottom:6px;padding:0 5px;}
-.clima-header h3{font-size:13px;color:#c6f8ff;font-weight:800;letter-spacing:.5px;text-shadow:0 0 10px rgba(0,230,255,.7);}
-.clima-header .ubicacion{font-size:9.5px;color:#70efff;background:transparent;padding:2px 0;font-weight:700;white-space:nowrap;text-shadow:0 0 6px rgba(0,230,255,.5);}
-.clima-body{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:0 5px;}
-.clima-temp{font-size:32px;font-weight:900;color:#e0ffff;line-height:1;font-family:monospace;text-shadow:0 0 18px rgba(126,239,255,1),0 0 35px rgba(8,189,245,.6);}
-.clima-desc-small{font-size:10.5px;color:#b0e0e6;margin-top:3px;font-weight:700;text-transform:capitalize;line-height:1.2;text-shadow:0 0 8px rgba(126,239,255,.5);}
-.clima-icon{font-size:38px;filter:drop-shadow(0 0 15px rgba(126,239,255,.8));animation:climaFloat 3s ease-in-out infinite;}
+#reloj-lluvia #hora{font-size:clamp(34px,3.8vw,52px);font-weight:900;color:#e0ffff;font-family:monospace;text-shadow:0 0 15px rgba(126,239,255,.9);line-height:1}
+#reloj-lluvia #fecha{color:#b0e0e6;font-size:clamp(15px,1.9vw,20px);margin-top:8px;text-shadow:0 0 8px rgba(126,239,255,.6);line-height:1.3;font-weight:700}
+.clima-container{background:transparent;border:none;box-shadow:none;backdrop-filter:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;width:100%}
+.clima-header{width:100%;display:flex;justify-content:space-between;align-items:center;gap:5px;margin-bottom:6px;padding:0 5px}
+.clima-header h3{font-size:15px;color:#c6f8ff;font-weight:800;letter-spacing:.5px;text-shadow:0 0 10px rgba(0,230,255,.7)}
+.clima-header .ubicacion{font-size:11px;color:#70efff;background:transparent;padding:2px 0;font-weight:700;white-space:nowrap;text-shadow:0 0 6px rgba(0,230,255,.5)}
+.clima-body{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:0 5px}
+.clima-temp{font-size:38px;font-weight:900;color:#e0ffff;line-height:1;font-family:monospace;text-shadow:0 0 18px rgba(126,239,255,1),0 0 35px rgba(8,189,245,.6)}
+.clima-desc-small{font-size:12.5px;color:#b0e0e6;margin-top:4px;font-weight:700;text-transform:capitalize;line-height:1.2;text-shadow:0 0 8px rgba(126,239,255,.5)}
+.clima-icon{font-size:44px;filter:drop-shadow(0 0 15px rgba(126,239,255,.8));animation:climaFloat 3s ease-in-out infinite}
 @keyframes climaFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.08)}}
-.clima-detalles{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:8px;font-size:9.5px;color:#b0e0e6;background:transparent;padding:6px 5px 0;border-radius:8px;width:100%;font-weight:700;}
-.clima-loading,.clima-error{font-size:11px;text-align:center;padding:10px 0;color:#b0e0e6;font-weight:700;}
+.clima-detalles{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:8px;font-size:11px;color:#b0e0e6;background:transparent;padding:6px 5px 0;border-radius:8px;width:100%;font-weight:700}
+.clima-loading,.clima-error{font-size:12px;text-align:center;padding:10px 0;color:#b0e0e6;font-weight:700}
 .clima-error{color:#fca5a5}
-
-/* ===== ANIMACIÓN PARA EL PÁRRAFO DEL CLIMA EN TIEMPO REAL ===== */
-@keyframes fadeInText{
-  from{opacity:0;transform:translateY(4px)}
-  to{opacity:1;transform:translateY(0)}
-}
-
-radio-player{display:block;width:100%;height:100%;}
-
-.solicita-widget{background:transparent;border:none;box-shadow:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;transition:.3s;cursor:pointer;width:100%;}
+radio-player{display:block;width:100%;height:100%}
+.solicita-widget{background:transparent;border:none;box-shadow:none;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;transition:.3s;cursor:pointer;width:100%}
 .solicita-widget:hover{transform:translateY(-3px)}
-.solicita-widget h3{font-size:18px;color:#fff;margin-bottom:8px;letter-spacing:1px;font-weight:900;line-height:1.2;text-shadow:0 0 12px rgba(8,189,245,.6)}
-.solicita-widget p{color:#b5c7d9;font-size:14px;margin-bottom:12px;line-height:1.3;font-weight:600;text-shadow:0 0 6px rgba(8,189,245,.3)}
-.btn-solicita-mini{background:var(--azul);color:#001321;padding:9px 20px;border-radius:8px;font-weight:900;font-size:15px;box-shadow:0 0 15px rgba(8,189,245,.6);animation:miniPulse 2.4s ease-in-out infinite}
+.solicita-widget h3{font-size:22px;color:#fff;margin-bottom:8px;letter-spacing:1px;font-weight:900;line-height:1.2;text-shadow:0 0 12px rgba(8,189,245,.6)}
+.solicita-widget p{color:#b5c7d9;font-size:16px;margin-bottom:12px;line-height:1.3;font-weight:600;text-shadow:0 0 6px rgba(8,189,245,.3)}
+.btn-solicita-mini{background:var(--azul);color:#001321;padding:10px 24px;border-radius:8px;font-weight:900;font-size:17px;box-shadow:0 0 15px rgba(8,189,245,.6);animation:miniPulse 2.4s ease-in-out infinite}
 @keyframes miniPulse{50%{box-shadow:0 0 25px rgba(8,189,245,1);transform:scale(1.05)}}
-
-/* ===== HERO ===== */
-.hero{min-height:340px;padding:50px 6% 50px;display:flex;align-items:center;justify-content:space-between;gap:25px;position:relative;overflow:hidden;background:transparent}
+.hero{min-height:340px;padding:50px 6%;display:flex;align-items:center;justify-content:space-between;gap:25px;position:relative;overflow:hidden;background:url('https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg') center/cover no-repeat}
 .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 80%,rgba(8,189,245,.12),transparent 50%);animation:heroGlow 8s ease-in-out infinite}
 @keyframes heroGlow{50%{opacity:.4}}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(6,19,35,.72);z-index:0;pointer-events:none}
 .hero-text{max-width:550px;position:relative;z-index:2;animation:heroTextIn 1s cubic-bezier(.2,.9,.3,1) both}
 @keyframes heroTextIn{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
 .mini{color:var(--azul);letter-spacing:4px;font-size:12px;font-weight:bold}
-.hero h1{font-size:clamp(38px,6vw,60px);font-weight:900;margin:10px 0;color:white;line-height:1.1;background:linear-gradient(90deg,#fff 0%,#fff 40%,var(--azul) 50%,#fff 60%,#fff 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4s linear infinite}
+.hero h1{font-size:clamp(38px,6vw,60px);font-weight:900;margin:10px 0;color:#fff;line-height:1.1;background:linear-gradient(90deg,#fff 0%,#fff 40%,var(--azul) 50%,#fff 60%,#fff 100%);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 4s linear infinite}
 @keyframes shimmer{to{background-position:-200% center}}
 .hero h1 span{-webkit-text-fill-color:var(--azul);display:inline-block;animation:spinSlow 5s linear infinite}
 .hero h2{font-size:clamp(17px,2.5vw,24px);margin-bottom:14px;color:#b5c7d9;font-weight:800;letter-spacing:1px}
@@ -209,47 +117,12 @@ radio-player{display:block;width:100%;height:100%;}
 .hero-icon{font-size:clamp(110px,22vw,230px);color:#087fc1;text-shadow:0 0 45px #087fc1;animation:flotar 4s ease-in-out infinite;position:relative;z-index:2}
 @keyframes flotar{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-13px) rotate(6deg)}}
 @media(max-width:520px){.hero-icon{display:none}}
-
 .hero-particles{position:absolute;inset:0;z-index:1;pointer-events:none}
 .hero-particles i{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--azul);box-shadow:0 0 8px var(--azul);animation:floatParticle linear infinite}
 @keyframes floatParticle{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-20vh) scale(1);opacity:0}}
-
-/* ===== FONDO CON IMAGEN EN EL HERO ===== */
-.hero {
-  background-image: url('https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(6,19,35,0.72);
-  z-index: 0;
-  pointer-events: none;
-}
-.hero-text, .hero-icon { position: relative; z-index: 2; }
-.hero-particles { z-index: 1; }
-
-/* ===== TYPEWRITER EN EL PÁRRAFO DEL HERO ===== */
-.hero-sub .typewriter-cursor::after {
-  content: "|";
-  color: var(--azul);
-  animation: blinkCursor 0.7s step-end infinite;
-  margin-left: 2px;
-  font-weight: 300;
-}
-.hero-sub .typewriter-cursor.terminado::after {
-  animation: none;
-  opacity: 0;
-}
-@keyframes blinkCursor {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* ===== BUSCADOR ===== */
+.hero-sub .typewriter-cursor::after{content:"|";color:var(--azul);animation:blinkCursor .7s step-end infinite;margin-left:2px;font-weight:300}
+.hero-sub .typewriter-cursor.terminado::after{animation:none;opacity:0}
+@keyframes blinkCursor{0%,100%{opacity:1}50%{opacity:0}}
 .search-container{max-width:750px;margin:30px auto 15px;padding:0 5%;text-align:center;animation:heroTextIn 1.1s .2s cubic-bezier(.2,.9,.3,1) both}
 .search-box{position:relative;display:flex;align-items:center;filter:drop-shadow(0 0 12px rgba(8,189,245,.25));transition:.4s}
 .search-box:focus-within{filter:drop-shadow(0 0 22px rgba(8,189,245,.6))}
@@ -260,24 +133,18 @@ radio-player{display:block;width:100%;height:100%;}
 @keyframes iconBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px) scale(1.1)}}
 .search-counter{color:var(--subtexto);font-size:12px;font-weight:700;margin-top:10px;min-height:16px}
 .search-counter b{color:var(--azul)}
-
-/* ===== FILTROS ===== */
 .filtros{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:900px;margin:8px auto 20px;padding:0 5%}
 .filtro-btn{background:rgba(11,27,46,.78);backdrop-filter:blur(6px);border:1px solid var(--border);color:var(--subtexto);font-size:11.5px;font-weight:800;padding:8px 14px;border-radius:20px;cursor:pointer;transition:.25s;letter-spacing:.5px;text-transform:uppercase;position:relative;overflow:hidden}
 .filtro-btn::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,var(--azul) 0%,transparent 70%);opacity:0;transform:scale(0);transition:.5s;border-radius:20px}
 .filtro-btn:hover{border-color:var(--azul);color:#fff;transform:translateY(-2px)}
 .filtro-btn:hover::before{opacity:.2;transform:scale(2)}
 .filtro-btn.activo{background:var(--azul);border-color:var(--azul);color:#001321;box-shadow:0 0 14px rgba(8,189,245,.5);transform:translateY(-2px)}
-
-/* ===== SECCIONES ===== */
 .seccion{padding:20px 4% 55px}
 .titulo{text-align:center;margin-bottom:25px}
 .titulo h2{font-size:26px;letter-spacing:2px}
 .titulo p{color:var(--subtexto);margin-top:8px;font-size:13.5px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1250px;margin:auto}
-
-/* ===== TARJETAS ===== */
-.card{background:rgba(11,27,46,0.82);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:15px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.9,.3,1.2),box-shadow .35s,border-color .35s;display:flex;flex-direction:column;position:relative;animation:cardIn .6s cubic-bezier(.2,.9,.3,1.2) both}
+.card{background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:15px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.9,.3,1.2),box-shadow .35s,border-color .35s;display:flex;flex-direction:column;position:relative;animation:cardIn .6s cubic-bezier(.2,.9,.3,1.2) both}
 .card:nth-child(1){animation-delay:.05s}.card:nth-child(2){animation-delay:.1s}.card:nth-child(3){animation-delay:.15s}
 .card:nth-child(4){animation-delay:.2s}.card:nth-child(5){animation-delay:.25s}.card:nth-child(6){animation-delay:.3s}
 .card:nth-child(7){animation-delay:.35s}.card:nth-child(8){animation-delay:.4s}.card:nth-child(9){animation-delay:.45s}
@@ -286,19 +153,16 @@ radio-player{display:block;width:100%;height:100%;}
 @keyframes cardIn{from{opacity:0;transform:translateY(40px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
 .card::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:2px;background:linear-gradient(90deg,transparent,var(--azul),transparent);transition:left .6s;z-index:3}
 .card:hover::before{left:100%}
-.card:hover{transform:translateY(-8px) scale(1.015);border-color:var(--azul);box-shadow:0 18px 45px rgba(0,139,213,0.35)}
+.card:hover{transform:translateY(-8px) scale(1.015);border-color:var(--azul);box-shadow:0 18px 45px rgba(0,139,213,.35)}
 .card:focus-visible{outline:2px solid var(--azul);outline-offset:3px}
-.badge-status{position:absolute;top:10px;right:10px;background:rgba(34,197,94,0.9);color:#fff;font-size:9.5px;font-weight:bold;padding:3px 7px;border-radius:12px;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,0.3);animation:badgePulse 2.2s ease-in-out infinite}
+.badge-status{position:absolute;top:10px;right:10px;background:rgba(34,197,94,.9);color:#fff;font-size:9.5px;font-weight:bold;padding:3px 7px;border-radius:12px;z-index:2;box-shadow:0 2px 8px rgba(0,0,0,.3);animation:badgePulse 2.2s ease-in-out infinite}
 @keyframes badgePulse{50%{box-shadow:0 0 16px rgba(34,197,94,.8)}}
-
-.badge-status.no-disponible{background:rgba(220,38,38,0.92);color:#fff;animation:none}
+.badge-status.no-disponible{background:rgba(220,38,38,.92);color:#fff;animation:none}
 .card.no-disponible{opacity:.75;filter:grayscale(.5)}
-.card.no-disponible:hover{border-color:#ef4444;box-shadow:0 12px 35px rgba(220,38,38,0.22);transform:translateY(-4px)}
+.card.no-disponible:hover{border-color:#ef4444;box-shadow:0 12px 35px rgba(220,38,38,.22);transform:translateY(-4px)}
 .card.no-disponible .foto img{filter:grayscale(.4) brightness(.75)}
 .btn.deshabilitado{background:rgba(220,38,38,.12);border-color:#7f1d1d;color:#fca5a5;cursor:not-allowed;pointer-events:none}
 .card.no-disponible .contenido p{color:#8aa0b5}
-
-/* ===== CHIPS DE TARJETA ===== */
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px}
 .chip{display:inline-flex;align-items:center;gap:3px;background:rgba(8,189,245,.12);border:1px solid rgba(8,189,245,.35);color:#8ed9ff;font-size:9.5px;font-weight:800;padding:3px 8px;border-radius:10px;letter-spacing:.3px;text-transform:uppercase;line-height:1;white-space:nowrap;transition:.25s}
 .chip:hover{background:rgba(8,189,245,.25);border-color:var(--azul);color:#fff;transform:translateY(-1px)}
@@ -307,14 +171,7 @@ radio-player{display:block;width:100%;height:100%;}
 .chip.naranja{background:rgba(249,115,22,.12);border-color:rgba(249,115,22,.4);color:#fb923c}
 .chip.amarillo{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.4);color:#fbbf24}
 .chip.rosa{background:rgba(236,72,153,.12);border-color:rgba(236,72,153,.4);color:#f472b6}
-
 .card.no-disponible .chips{opacity:.55;filter:grayscale(.6)}
-
-@media(max-width:750px){
-  .chips{gap:4px;margin:0 0 8px}
-  .chip{font-size:8.5px;padding:2.5px 6px;border-radius:8px}
-}
-
 .foto{height:170px;position:relative;overflow:hidden;background:#0f2942}
 .foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.9,.3,1.2),filter .4s}
 .card:hover .foto img{transform:scale(1.1) rotate(1deg)}
@@ -324,14 +181,12 @@ radio-player{display:block;width:100%;height:100%;}
 .card:hover .contenido h3{color:var(--azul)}
 .contenido p{color:var(--subtexto);font-size:12.5px;line-height:1.4;margin-bottom:14px}
 .card-actions{display:flex;margin-top:auto}
-.btn{width:100%;text-align:center;text-decoration:none;color:var(--texto);border:1px solid var(--azul);border-radius:8px;padding:9px 6px;font-weight:bold;font-size:11px;transition:.3s;background:rgba(8,121,181,0.15);position:relative;overflow:hidden}
+.btn{width:100%;text-align:center;text-decoration:none;color:var(--texto);border:1px solid var(--azul);border-radius:8px;padding:9px 6px;font-weight:bold;font-size:11px;transition:.3s;background:rgba(8,121,181,.15);position:relative;overflow:hidden}
 .btn::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);transition:left .6s}
 .btn:hover::before{left:100%}
 .btn:hover{background:var(--azul);color:#001321;transform:translateY(-2px);box-shadow:0 6px 18px rgba(8,189,245,.4)}
-
-/* ===== IMAGEN DESTACADA ===== */
 .seccion-imagen{max-width:1050px;margin:10px auto 50px;padding:0 5%}
-.imagen-box{background:rgba(11,27,46,0.82);backdrop-filter:blur(8px);border:1px solid var(--azul);border-radius:20px;padding:14px;box-shadow:0 12px 40px rgba(8,189,245,.18),0 0 0 1px rgba(8,189,245,.08) inset;overflow:hidden;transition:.45s;position:relative}
+.imagen-box{background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--azul);border-radius:20px;padding:14px;box-shadow:0 12px 40px rgba(8,189,245,.18),0 0 0 1px rgba(8,189,245,.08) inset;overflow:hidden;transition:.45s;position:relative}
 .imagen-box::before{content:"";position:absolute;inset:-2px;border-radius:20px;padding:2px;background:linear-gradient(120deg,transparent,var(--azul),transparent,transparent);background-size:300% 300%;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.4s;animation:borderRotate 4s linear infinite}
 .imagen-box:hover::before{opacity:1}
 @keyframes borderRotate{to{background-position:300% 300%}}
@@ -339,27 +194,38 @@ radio-player{display:block;width:100%;height:100%;}
 .imagen-box img{display:block;width:100%;height:auto;border-radius:12px;object-fit:cover;transition:.5s}
 .imagen-box:hover img{filter:brightness(1.05) saturate(1.1)}
 .imagen-caption{text-align:center;color:var(--subtexto);font-size:12.5px;font-weight:700;letter-spacing:1px;margin-top:14px;text-transform:uppercase}
-@media(max-width:750px){
-  .imagen-box{padding:9px;border-radius:16px}
-  .imagen-caption{font-size:11px;margin-top:10px}
-}
-
-/* ===== TESTIMONIOS ===== */
 .carrusel-testimonios{width:100%;max-width:1250px;margin:auto;overflow:hidden;position:relative;padding:10px 0}
 .carrusel-testimonios::before,.carrusel-testimonios::after{content:"";position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
 .carrusel-testimonios::before{left:0;background:linear-gradient(90deg,rgba(6,19,35,.7),transparent)}
 .carrusel-testimonios::after{right:0;background:linear-gradient(270deg,rgba(6,19,35,.7),transparent)}
 .carrusel-track{display:flex;gap:18px;width:max-content;animation:carruselMov 25s linear infinite}
 .carrusel-track:hover{animation-play-state:paused}
-.testimonio-card{background:rgba(11,27,46,0.82);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:15px;padding:20px;box-shadow:0 5px 20px rgba(0,0,0,0.2);display:flex;flex-direction:column;justify-content:space-between;width:360px;flex-shrink:0;transition:.35s}
+.testimonio-card{background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:15px;padding:20px;box-shadow:0 5px 20px rgba(0,0,0,.2);display:flex;flex-direction:column;justify-content:space-between;width:360px;flex-shrink:0;transition:.35s}
 .testimonio-card:hover{transform:translateY(-8px) scale(1.02);border-color:var(--azul);box-shadow:0 15px 35px rgba(8,189,245,.3)}
 .estrellas{color:#f59e0b;font-size:15px;margin-bottom:8px}
 .testimonio-card p{color:var(--subtexto);font-size:12.5px;line-height:1.5;margin-bottom:14px;font-style:italic}
 .cliente{font-weight:bold;color:var(--texto);font-size:12.5px;display:flex;justify-content:space-between;align-items:center}
 .cliente span{color:var(--azul);font-size:10.5px;font-weight:600}
 @keyframes carruselMov{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-
-/* ===== SOLICITA ===== */
+.compartir-box{margin-top:24px;text-align:center;animation:heroTextIn .8s .3s cubic-bezier(.2,.9,.3,1) both}
+.compartir-titulo{color:var(--subtexto);font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.compartir-botones{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-compartir{display:inline-flex;align-items:center;gap:7px;background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--border);color:var(--subtexto);padding:10px 16px;border-radius:25px;font-size:12px;font-weight:800;cursor:pointer;transition:.3s;letter-spacing:.5px;position:relative;overflow:hidden;font-family:inherit}
+.btn-compartir::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 70%);opacity:0;transform:scale(0);transition:.5s}
+.btn-compartir:hover::before{opacity:1;transform:scale(2.5)}
+.btn-compartir:hover{transform:translateY(-3px);color:#fff}
+.btn-compartir .ico{font-size:16px;transition:.3s}
+.btn-compartir:hover .ico{transform:scale(1.2) rotate(-8deg)}
+.btn-compartir.copiar:hover{border-color:var(--azul);box-shadow:0 6px 20px rgba(8,189,245,.4);background:rgba(8,189,245,.15)}
+.btn-compartir.whatsapp:hover{border-color:#25d366;box-shadow:0 6px 20px rgba(37,211,102,.4);background:rgba(37,211,102,.15)}
+.btn-compartir.facebook:hover{border-color:#1877f2;box-shadow:0 6px 20px rgba(24,119,242,.4);background:rgba(24,119,242,.15)}
+.btn-compartir.twitter:hover{border-color:#e0e0e0;box-shadow:0 6px 20px rgba(255,255,255,.25);background:rgba(255,255,255,.1)}
+.btn-compartir.nativo:hover{border-color:#a855f7;box-shadow:0 6px 20px rgba(168,85,247,.4);background:rgba(168,85,247,.15)}
+.btn-compartir.copiado{background:rgba(34,197,94,.2);border-color:#22c55e;color:#4ade80}
+.btn-compartir.copiado .ico{animation:checkPop .5s cubic-bezier(.2,.9,.3,1.5)}
+@keyframes checkPop{0%{transform:scale(0) rotate(-45deg)}60%{transform:scale(1.3) rotate(10deg)}100%{transform:scale(1) rotate(0)}}
+.btn-compartir.nativo{display:none}
+.btn-compartir.nativo.soportado{display:inline-flex}
 .solicita-seccion{max-width:900px;margin:25px auto 35px;padding:0 5%}
 .solicita-box{background:linear-gradient(135deg,rgba(10,26,43,.9),rgba(15,41,66,.9));backdrop-filter:blur(8px);border:1px solid var(--azul);border-radius:18px;padding:30px 20px;text-align:center;box-shadow:0 10px 30px rgba(0,189,245,.15);position:relative;overflow:hidden;transition:.4s}
 .solicita-box::before{content:"";position:absolute;inset:-2px;border-radius:18px;padding:2px;background:linear-gradient(120deg,transparent,var(--azul),transparent);background-size:300% 300%;-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderRotate 5s linear infinite}
@@ -369,11 +235,9 @@ radio-player{display:block;width:100%;height:100%;}
 .btn-solicita{display:inline-block;background:var(--azul);color:#001321;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:800;font-size:13.5px;transition:.3s;cursor:pointer;animation:btnGlow 2.5s ease-in-out infinite}
 @keyframes btnGlow{50%{box-shadow:0 0 25px rgba(8,189,245,.9);transform:scale(1.04)}}
 .btn-solicita:hover{background:#fff;transform:scale(1.08);animation:none}
-
-/* ===== CONTACTO ===== */
 .contacto{max-width:800px;margin:0 auto 35px;padding:0 5%}
 .contacto .titulo{text-align:center;margin-bottom:20px}
-.contacto-box{background:rgba(11,27,46,0.82);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:15px;padding:24px 20px;transition:.35s}
+.contacto-box{background:rgba(11,27,46,.82);backdrop-filter:blur(8px);border:1px solid var(--border);border-radius:15px;padding:24px 20px;transition:.35s}
 .contacto-box:hover{border-color:var(--azul);box-shadow:0 10px 30px rgba(8,189,245,.15)}
 .contacto-box .info-icon{font-size:14.5px;margin-bottom:14px;color:var(--subtexto);line-height:1.6;transition:.3s;display:flex;align-items:center;gap:6px}
 .contacto-box .info-icon:hover{transform:translateX(6px);color:#fff}
@@ -382,18 +246,13 @@ radio-player{display:block;width:100%;height:100%;}
 .contacto-box .wa{color:#22c55e}
 .contacto-box .mail{color:#f04454}
 .contacto-box .tel{color:var(--azul)}
-
-/* ===== BOTONES FLOTANTES ===== */
-.chat-fab{position:fixed;bottom:25px;right:25px;background:var(--azul);color:#001321;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 5px 25px rgba(8,189,245,0.6);text-decoration:none;z-index:999;cursor:pointer;animation:pulseBot 2s infinite;transition:.3s;border:2px solid #fff}
+.chat-fab{position:fixed;bottom:25px;right:25px;background:var(--azul);color:#001321;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 5px 25px rgba(8,189,245,.6);text-decoration:none;z-index:999;cursor:pointer;animation:pulseBot 2s infinite;transition:.3s;border:2px solid #fff}
 .chat-fab:hover{transform:scale(1.15) rotate(10deg);background:#fff}
-@keyframes pulseBot{0%{box-shadow:0 0 0 0 rgba(8,189,245,0.7)}70%{box-shadow:0 0 0 15px rgba(8,189,245,0)}100%{box-shadow:0 0 0 0 rgba(8,189,245,0)}}
-
+@keyframes pulseBot{0%{box-shadow:0 0 0 0 rgba(8,189,245,.7)}70%{box-shadow:0 0 0 15px rgba(8,189,245,0)}100%{box-shadow:0 0 0 0 rgba(8,189,245,0)}}
 #backToTop{position:fixed;bottom:25px;left:25px;background:rgba(11,27,46,.92);backdrop-filter:blur(6px);color:var(--azul);width:48px;height:48px;border-radius:50%;border:1px solid var(--azul);display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;z-index:998;opacity:0;pointer-events:none;transition:.3s;box-shadow:0 4px 15px rgba(0,0,0,.4)}
 #backToTop.visible{opacity:1;pointer-events:auto}
 #backToTop:hover{background:var(--azul);color:#001321;transform:translateY(-3px) scale(1.1)}
-
-/* ===== CHAT ===== */
-.chat-container{position:fixed;bottom:95px;right:25px;width:350px;max-width:calc(100vw - 40px);height:480px;background:rgba(11,27,46,.96);border:1px solid var(--azul);border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,0.6);display:flex;flex-direction:column;z-index:1000;overflow:hidden;transform:scale(0);transform-origin:bottom right;transition:transform 0.3s cubic-bezier(.2,.9,.3,1.2);backdrop-filter:blur(10px)}
+.chat-container{position:fixed;bottom:95px;right:25px;width:350px;max-width:calc(100vw - 40px);height:480px;background:rgba(11,27,46,.96);border:1px solid var(--azul);border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.6);display:flex;flex-direction:column;z-index:1000;overflow:hidden;transform:scale(0);transform-origin:bottom right;transition:transform .3s cubic-bezier(.2,.9,.3,1.2);backdrop-filter:blur(10px)}
 .chat-container.abierto{transform:scale(1)}
 .chat-header{background:linear-gradient(135deg,#082530,#0a3a48);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
 .chat-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:900;color:#fff}
@@ -406,7 +265,7 @@ radio-player{display:block;width:100%;height:100%;}
 .chat-msg.bot{background:#0f2942;color:var(--subtexto);align-self:flex-start;border-bottom-left-radius:4px;border:1px solid var(--border)}
 .chat-msg.user{background:var(--azul);color:#001321;align-self:flex-end;border-bottom-right-radius:4px;font-weight:700}
 .chat-msg a{color:var(--azul);font-weight:bold;text-decoration:underline}
-.chat-input-area{padding:10px;background:rgba(6,16,30,0.95);border-top:1px solid var(--border);display:flex;gap:8px}
+.chat-input-area{padding:10px;background:rgba(6,16,30,.95);border-top:1px solid var(--border);display:flex;gap:8px}
 .chat-input{flex:1;padding:10px 14px;background:var(--fondo);border:1px solid var(--border);border-radius:12px;color:var(--texto);font-size:12.5px;outline:none}
 .chat-input:focus{border-color:var(--azul);box-shadow:0 0 10px rgba(8,189,245,.3)}
 .chat-send-btn{background:var(--azul);color:#001321;border:none;padding:0 14px;border-radius:12px;font-weight:900;cursor:pointer;transition:.2s}
@@ -414,8 +273,6 @@ radio-player{display:block;width:100%;height:100%;}
 .sugerencias-inline{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 8px}
 .sugerencias-inline button{background:rgba(8,189,245,.12);border:1px solid rgba(8,189,245,.4);color:#8ed9ff;font-size:10.5px;font-weight:700;padding:5px 10px;border-radius:12px;cursor:pointer;transition:.2s}
 .sugerencias-inline button:hover{background:var(--azul);color:#001321;transform:translateY(-2px)}
-
-/* ===== TOASTS ===== */
 #toastContainer{position:fixed;bottom:90px;left:20px;z-index:9999;display:flex;flex-direction:column;gap:10px;width:340px;max-width:calc(100vw - 30px);pointer-events:none}
 .toast{background:linear-gradient(135deg,rgba(11,27,46,.96),rgba(15,41,66,.96));border:1px solid var(--azul);border-left:4px solid var(--azul);border-radius:14px;padding:12px 14px;box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 20px rgba(8,189,245,.25);display:flex;align-items:flex-start;gap:12px;color:var(--texto);font-size:12.5px;line-height:1.4;transform:translateX(-120%);opacity:0;animation:toastIn .5s cubic-bezier(.2,.9,.3,1.2) forwards;pointer-events:auto;position:relative;overflow:hidden;backdrop-filter:blur(10px)}
 .toast.saliendo{animation:toastOut .4s ease forwards}
@@ -444,16 +301,12 @@ radio-player{display:block;width:100%;height:100%;}
 @keyframes toastIn{to{transform:translateX(0);opacity:1}}
 @keyframes toastOut{to{transform:translateX(-120%);opacity:0}}
 @keyframes toastBar{from{transform:scaleX(1)}to{transform:scaleX(0)}}
-
-/* ===== FOOTER ===== */
-footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;position:relative;background:rgba(6,16,30,0.55);backdrop-filter:blur(6px)}
+footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;position:relative;background:rgba(6,16,30,.55);backdrop-filter:blur(6px)}
 .footer-top{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;width:100%;font-size:16px;font-weight:900}
 .footer-tagline p{font-size:12px;color:var(--subtexto);letter-spacing:1px;margin:0;font-weight:700}
 .footer-legal{display:flex;gap:15px;align-items:center;justify-content:center;flex-wrap:wrap}
 .footer-legal a{font-size:14px;font-weight:bold;color:var(--azul);text-decoration:none;transition:.3s}
 .footer-legal a:hover{text-decoration:underline;transform:translateY(-2px);display:inline-block}
-
-/* ===== MODALES ===== */
 .modal-legal{display:none;position:fixed;inset:0;z-index:999;background:rgba(2,10,18,.85);backdrop-filter:blur(6px);padding:20px;overflow-y:auto}
 .modal-legal.abierto{display:flex;align-items:flex-start;justify-content:center;animation:modalFade .3s ease}
 @keyframes modalFade{from{opacity:0}to{opacity:1}}
@@ -462,1077 +315,701 @@ footer{border-top:1px solid var(--border);padding:18px 5%;display:flex;flex-dire
 .modal-legal-box h2{color:var(--texto);font-size:22px;margin-bottom:6px}
 .modal-legal-box .modal-sub{color:var(--azul);font-size:11px;letter-spacing:2px;font-weight:bold;margin-bottom:20px}
 .modal-legal-box h3{color:var(--azul);font-size:15px;margin:18px 0 8px}
-.modal-legal-box p, .modal-legal-box ul{color:var(--subtexto);font-size:13px;line-height:1.7}
+.modal-legal-box p,.modal-legal-box ul{color:var(--subtexto);font-size:13px;line-height:1.7}
 .modal-legal-box ul{margin-left:20px}
 .modal-cerrar{position:absolute;top:14px;right:16px;width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:var(--fondo);color:var(--texto);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.3s}
 .modal-cerrar:hover{background:var(--azul);color:#001321;transform:rotate(90deg)}
 .sug-form{display:flex;flex-direction:column;gap:12px;margin-top:15px}
-.sug-form input, .sug-form textarea{width:100%;padding:12px 15px;background:var(--fondo);border:1px solid var(--border);border-radius:10px;color:var(--texto);font-size:13px;outline:none;font-family:inherit;transition:.3s}
-.sug-form input:focus, .sug-form textarea:focus{border-color:var(--azul);box-shadow:0 0 10px rgba(8,189,245,.3)}
+.sug-form input,.sug-form textarea{width:100%;padding:12px 15px;background:var(--fondo);border:1px solid var(--border);border-radius:10px;color:var(--texto);font-size:13px;outline:none;font-family:inherit;transition:.3s}
+.sug-form input:focus,.sug-form textarea:focus{border-color:var(--azul);box-shadow:0 0 10px rgba(8,189,245,.3)}
 .sug-form textarea{resize:vertical;min-height:90px}
 .sug-btn{background:var(--azul);color:#001321;padding:12px;border:none;border-radius:10px;font-weight:800;font-size:13.5px;cursor:pointer;transition:.3s}
 .sug-btn:hover{background:#fff;transform:scale(1.02)}
-
-/* ===== RESPONSIVE ===== */
 @media(max-width:750px){
-  header{height:65px;padding:0 4%}
-  .logo img{height:36px;width:36px}
-  .logo span{font-size:20px}
-  .en-construccion{display:none}
-  .menu{display:block}
-  nav{display:none;position:absolute;top:65px;right:0;width:250px;background:rgba(11,27,46,0.98);backdrop-filter:blur(12px);padding:25px 20px;flex-direction:column;align-items:flex-start;gap:16px;border-left:1px solid var(--border);border-bottom:1px solid var(--border);box-shadow:-10px 15px 30px rgba(0,0,0,0.5);border-bottom-left-radius:16px;max-height:calc(100vh - 65px);overflow-y:auto}
-  nav.abierto{display:flex;animation:navIn .3s ease}
-  @keyframes navIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
-  nav a{font-size:14px;font-weight:800;letter-spacing:0.5px}
-  
-  .widgets{ padding: 0 4%; margin: 15px auto 5px; }
-  .widget-panel{
-    grid-template-columns: 1fr 1fr;
-  }
-  .widget-cell{
-    min-height: 140px;
-    padding: 10px 8px;
-  }
-
-  #reloj-lluvia #hora{font-size:28px}
-  #reloj-lluvia #fecha{font-size:12.5px}
-  
-  .clima-header h3{font-size:11px}
-  .clima-header .ubicacion{font-size:8px}
-  .clima-temp{font-size:26px}
-  .clima-icon{font-size:30px}
-  .clima-desc-small{font-size:9px}
-  .clima-detalles{font-size:8.5px;gap:2px;padding:5px 3px 0}
-  
-  .solicita-widget h3{font-size:15.5px}
-  .solicita-widget p{font-size:12.5px;margin-bottom:10px}
-  .btn-solicita-mini{padding:7px 14px;font-size:13px}
-  
-  .grid{grid-template-columns:repeat(2,1fr) !important;gap:10px}
-  .foto{height:115px}
-  .contenido{padding:10px 12px 12px}
-  .contenido h3{font-size:14.5px;margin-bottom:4px}
-  .contenido p{font-size:11px;margin-bottom:10px;line-height:1.3}
-  .btn{font-size:9.5px;padding:7px 4px}
-  .testimonio-card{width:300px}
-  .search-input{padding:15px 20px 15px 50px;font-size:15px}
-  .chat-fab{bottom:20px;right:20px;width:55px;height:55px;font-size:26px}
-  #backToTop{bottom:20px;left:20px;width:44px;height:44px}
-  .chat-container{bottom:85px;right:10px;width:calc(100vw - 20px);height:70vh}
-  #toastContainer{bottom:80px;left:10px;right:10px;width:auto;max-width:none}
-  .toast{font-size:12px;padding:10px 12px}
-  .toast-icono{font-size:20px}
-  .toast-titulo{font-size:11px}
-  .toast-texto{font-size:11.5px}
-  .bg-fx .orb{filter:blur(60px)}
-  .bg-fx .orb.o1{width:380px;height:380px}
-  .bg-fx .orb.o2{width:320px;height:320px}
-  .bg-fx .orb.o3{width:260px;height:260px}
-  .bg-fx .orb.o4{width:220px;height:220px}
-  .bg-fx .orb.o5{width:200px;height:200px}
+header{height:65px;padding:0 4%}
+.logo img{height:36px;width:36px}
+.logo span{font-size:20px}
+.en-construccion{display:none}
+.menu{display:block}
+nav{display:none;position:absolute;top:65px;right:0;width:250px;background:rgba(11,27,46,.98);backdrop-filter:blur(12px);padding:25px 20px;flex-direction:column;align-items:flex-start;gap:16px;border-left:1px solid var(--border);border-bottom:1px solid var(--border);box-shadow:-10px 15px 30px rgba(0,0,0,.5);border-bottom-left-radius:16px;max-height:calc(100vh - 65px);overflow-y:auto}
+nav.abierto{display:flex;animation:navIn .3s ease}
+@keyframes navIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+nav a{font-size:14px;font-weight:800;letter-spacing:.5px}
+.widgets{padding:0 4%;margin:15px auto 5px}
+.widget-panel{grid-template-columns:1fr 1fr}
+.widget-cell{min-height:140px;padding:10px 8px}
+#reloj-lluvia #hora{font-size:32px}
+#reloj-lluvia #fecha{font-size:14.5px}
+.clima-header h3{font-size:13px}
+.clima-header .ubicacion{font-size:9.5px}
+.clima-temp{font-size:32px}
+.clima-icon{font-size:36px}
+.clima-desc-small{font-size:11px}
+.clima-detalles{font-size:10px;gap:3px;padding:5px 3px 0}
+.solicita-widget h3{font-size:18px}
+.solicita-widget p{font-size:14px;margin-bottom:10px}
+.btn-solicita-mini{padding:9px 18px;font-size:15px}
+.grid{grid-template-columns:repeat(2,1fr)!important;gap:10px}
+.foto{height:115px}
+.contenido{padding:10px 12px 12px}
+.contenido h3{font-size:14.5px;margin-bottom:4px}
+.contenido p{font-size:11px;margin-bottom:10px;line-height:1.3}
+.btn{font-size:9.5px;padding:7px 4px}
+.chips{gap:4px;margin:0 0 8px}
+.chip{font-size:8.5px;padding:2.5px 6px;border-radius:8px}
+.testimonio-card{width:300px}
+.search-input{padding:15px 20px 15px 50px;font-size:15px}
+.chat-fab{bottom:20px;right:20px;width:55px;height:55px;font-size:26px}
+#backToTop{bottom:20px;left:20px;width:44px;height:44px}
+.chat-container{bottom:85px;right:10px;width:calc(100vw - 20px);height:70vh}
+#toastContainer{bottom:80px;left:10px;right:10px;width:auto;max-width:none}
+.toast{font-size:12px;padding:10px 12px}
+.toast-icono{font-size:20px}
+.toast-titulo{font-size:11px}
+.toast-texto{font-size:11.5px}
+.bg-fx .orb{filter:blur(60px)}
+.bg-fx .orb.o1{width:380px;height:380px}
+.bg-fx .orb.o2{width:320px;height:320px}
+.bg-fx .orb.o3{width:260px;height:260px}
+.bg-fx .orb.o4{width:220px;height:220px}
+.bg-fx .orb.o5{width:200px;height:200px}
+.compartir-botones{gap:8px}
+.btn-compartir{padding:9px 13px;font-size:11px;border-radius:20px}
+.btn-compartir .ico{font-size:14px}
+.imagen-box{padding:9px;border-radius:16px}
+.imagen-caption{font-size:11px;margin-top:10px}
 }
-
 @media(min-width:751px) and (max-width:1024px){
-  .widget-panel{ grid-template-columns: repeat(2, 1fr); }
-  .widget-cell{ min-height: 140px; }
+.widget-panel{grid-template-columns:repeat(2,1fr)}
+.widget-cell{min-height:140px}
 }
 </style>
-
 <script>
-  document.addEventListener("contextmenu", e => e.preventDefault());
-  document.addEventListener("keydown", e => {
-    const bloqueadas =
-      e.key === "F12" || e.key === "F8" ||
-      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
-      (e.ctrlKey && (e.key === "u" || e.key === "U"));
-    if (bloqueadas) { e.preventDefault(); e.stopPropagation(); return false; }
-  });
+document.addEventListener("contextmenu",e=>e.preventDefault());
+document.addEventListener("keydown",e=>{const b=e.key==="F12"||e.key==="F8"||(e.ctrlKey&&e.shiftKey&&(e.key==="I"||e.key==="J"||e.key==="C"))||(e.ctrlKey&&(e.key==="u"||e.key==="U"));if(b){e.preventDefault();e.stopPropagation();return false;}});
 </script>
 </head>
 <body id="inicio">
 
 <div class="bg-fx" aria-hidden="true">
-  <div class="stars" id="bgStars"></div>
-  <div class="orb o1"></div>
-  <div class="orb o2"></div>
-  <div class="orb o3"></div>
-  <div class="orb o4"></div>
-  <div class="orb o5"></div>
+<div class="stars" id="bgStars"></div>
+<div class="orb o1"></div>
+<div class="orb o2"></div>
+<div class="orb o3"></div>
+<div class="orb o4"></div>
+<div class="orb o5"></div>
 </div>
 
 <header>
-  <a href="#inicio" class="logo">
-    <img src="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg" alt="Logo TINMAR">
-    <span>TINMAR</span>
-  </a>
-  <span class="en-construccion">🏗️ En Construcción</span>
-  <div class="header-actions">
-    <button class="menu" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-  </div>
-  <nav id="nav" aria-label="Menú principal">
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="https://tinmar.vercel.app" target="_blank" rel="noopener noreferrer">Tienda</a>
-    <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener noreferrer">Abogado</a>
-    <a href="https://javiertato.vercel.app" target="_blank" rel="noopener noreferrer">Tatuaje</a>
-    <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener noreferrer">Lavadero</a>
-    <a href="masajes/index.html">Masajes</a>
-    <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener noreferrer">Vascolet</a>
-    <a href="https://agrosan.vercel.app" target="_blank" rel="noopener noreferrer">Agro San</a>
-    <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener noreferrer">Solicita Web</a>
-    <a href="#" id="navBtnSugerencias">Sugerencia</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<a href="#inicio" class="logo"><img src="https://i.ibb.co/G3vx9HvY/Screenshot-20261105-165211-Chat-GPT.jpg" alt="Logo TINMAR"><span>TINMAR</span></a>
+<span class="en-construccion">🏗️ En Construcción</span>
+<div class="header-actions"><button class="menu" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button></div>
+<nav id="nav" aria-label="Menú principal">
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="https://tinmar.vercel.app" target="_blank" rel="noopener noreferrer">Tienda</a>
+<a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener noreferrer">Abogado</a>
+<a href="https://javiertato.vercel.app" target="_blank" rel="noopener noreferrer">Tatuaje</a>
+<a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener noreferrer">Lavadero</a>
+<a href="masajes/index.html">Masajes</a>
+<a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener noreferrer">Vascolet</a>
+<a href="https://agrosan.vercel.app" target="_blank" rel="noopener noreferrer">Agro San</a>
+<a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener noreferrer">Solicita Web</a>
+<a href="#" id="navBtnSugerencias">Sugerencia</a>
+<a href="#contacto">Contacto</a>
+</nav>
 </header>
 
 <div class="marquee">
-  <div class="marquee-track">
-    <span>⚖️ Consultas legales con abogado</span><span>🖋️ Tatuajes personalizados</span><span>🌿 Masajes relajantes</span><span>🧺 Lavadero de ropa</span><span>⚡ Electricista matriculado</span><span>🎨 Pintor profesional</span><span>🌱 Jardinería y mantenimiento</span><span>🚰 Sanitaria y plomería</span><span>🚚 Mudanzas y fletes</span><span>🔧 Trabajos en general</span><span>🎮 Juego Vascolet</span><span>🐄 Agro San - Baño de animales</span><span>Servicios profesionales 24 horas</span>
-    <span>⚖️ Consultas legales con abogado</span><span>🖋️ Tatuajes personalizados</span><span>🌿 Masajes relajantes</span><span>🧺 Lavadero de ropa</span><span>⚡ Electricista matriculado</span><span>🎨 Pintor profesional</span><span>🌱 Jardinería y mantenimiento</span><span>🚰 Sanitaria y plomería</span><span>🚚 Mudanzas y fletes</span><span>🔧 Trabajos en general</span><span>🎮 Juego Vascolet</span><span>🐄 Agro San - Baño de animales</span><span>Servicios profesionales 24 horas</span>
-  </div>
+<div class="marquee-track">
+<span>⚖️ Consultas legales con abogado</span><span>🖋️ Tatuajes personalizados</span><span>🌿 Masajes relajantes</span><span>🧺 Lavadero de ropa</span><span>⚡ Electricista matriculado</span><span>🎨 Pintor profesional</span><span>🌱 Jardinería y mantenimiento</span><span>🚰 Sanitaria y plomería</span><span>🚚 Mudanzas y fletes</span><span>🔧 Trabajos en general</span><span>🎮 Juego Vascolet</span><span>🐄 Agro San - Baño de animales</span><span>Servicios profesionales 24 horas</span>
+<span>⚖️ Consultas legales con abogado</span><span>🖋️ Tatuajes personalizados</span><span>🌿 Masajes relajantes</span><span>🧺 Lavadero de ropa</span><span>⚡ Electricista matriculado</span><span>🎨 Pintor profesional</span><span>🌱 Jardinería y mantenimiento</span><span>🚰 Sanitaria y plomería</span><span>🚚 Mudanzas y fletes</span><span>🔧 Trabajos en general</span><span>🎮 Juego Vascolet</span><span>🐄 Agro San - Baño de animales</span><span>Servicios profesionales 24 horas</span>
+</div>
 </div>
 
 <div class="widgets">
-  <div class="widget-panel">
-    <div class="widget-cell" id="reloj-lluvia">
-      <canvas></canvas>
-      <div class="contenido">
-        <div id="hora">00:00:00</div>
-        <div id="fecha">Cargando fecha...</div>
-      </div>
-    </div>
-
-    <div class="widget-cell">
-      <div class="clima-container" id="climaWidget">
-        <div class="clima-header">
-          <h3>☀️ Clima</h3>
-          <span class="ubicacion">Montevideo</span>
-        </div>
-        <div id="climaContenedor">
-          <div class="clima-loading">⏳ Cargando...</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="widget-cell">
-      <radio-player></radio-player>
-    </div>
-
-    <div class="widget-cell">
-      <a href="#" class="solicita-widget" id="widgetSugerencia">
-        <h3>💡 SUGERENCIA</h3>
-        <p>Ayúdanos a mejorar</p>
-        <div class="btn-solicita-mini">ESCRIBIR</div>
-      </a>
-    </div>
-  </div>
+<div class="widget-panel">
+<div class="widget-cell" id="reloj-lluvia"><canvas></canvas><div class="contenido"><div id="hora">00:00:00</div><div id="fecha">Cargando fecha...</div></div></div>
+<div class="widget-cell"><div class="clima-container" id="climaWidget"><div class="clima-header"><h3>☀️ Clima</h3><span class="ubicacion">Montevideo</span></div><div id="climaContenedor"><div class="clima-loading">⏳ Cargando...</div></div></div></div>
+<div class="widget-cell"><radio-player></radio-player></div>
+<div class="widget-cell"><a href="#" class="solicita-widget" id="widgetSugerencia"><h3>💡 SUGERENCIA</h3><p>Ayúdanos a mejorar</p><div class="btn-solicita-mini">ESCRIBIR</div></a></div>
+</div>
 </div>
 
 <section class="hero">
-  <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
-  <div class="hero-text">
-    <h1><span>◎</span>TINMAR Negocios Servicios</h1>
-    <h2>ENCONTRÁ SERVICIOS CERCA TUYO</h2>
-    <p class="hero-sub"><span class="typewriter-text" data-text="Personas y negocios locales para lo que necesitás"></span></p>
-  </div>
-  <div class="hero-icon" aria-hidden="true">◎</div>
+<div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+<div class="hero-text">
+<h1><span>◎</span>TINMAR Negocios Servicios</h1>
+<h2>ENCONTRÁ SERVICIOS CERCA TUYO</h2>
+<p class="hero-sub"><span class="typewriter-text" data-text="Personas y negocios locales para lo que necesitás"></span></p>
+</div>
+<div class="hero-icon" aria-hidden="true">◎</div>
 </section>
 
 <div class="search-container">
-  <div class="search-box">
-    <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput" class="search-input" placeholder="(Ej:Abogado, Tatuaje ,lavadero, juego...)" aria-label="Buscar servicios">
-  </div>
-  <div class="search-counter" id="searchCounter"></div>
+<div class="search-box"><span class="search-icon">🔍</span><input type="text" id="searchInput" class="search-input" placeholder="(Ej:Abogado, Tatuaje ,lavadero, juego...)" aria-label="Buscar servicios"></div>
+<div class="search-counter" id="searchCounter"></div>
 </div>
 
 <div class="filtros" id="filtros">
-  <button class="filtro-btn activo" data-cat="todos">Todos</button>
-  <button class="filtro-btn" data-cat="hogar">Hogar</button>
-  <button class="filtro-btn" data-cat="legal">Legal</button>
-  <button class="filtro-btn" data-cat="belleza">Belleza</button>
-  <button class="filtro-btn" data-cat="comercio">Comercio</button>
-  <button class="filtro-btn" data-cat="otros">Otros</button>
+<button class="filtro-btn activo" data-cat="todos">Todos</button>
+<button class="filtro-btn" data-cat="hogar">Hogar</button>
+<button class="filtro-btn" data-cat="legal">Legal</button>
+<button class="filtro-btn" data-cat="belleza">Belleza</button>
+<button class="filtro-btn" data-cat="comercio">Comercio</button>
+<button class="filtro-btn" data-cat="otros">Otros</button>
 </div>
 
 <section class="seccion" id="servicios">
-  <div class="grid" id="servicesGrid">
-    <article class="card" tabindex="0" data-cat="comercio" data-search="tienda tinmar productos variedad compras">
-      <span class="badge-status">🟢 Abierto</span>
-      <div class="foto"><img src="https://i.ibb.co/MWmndFc/1793820466018.jpg" alt="Tienda" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🛒 TINMAR</h3>
-        <div class="chips">
-          <span class="chip">🛒 Online</span>
-          <span class="chip verde">⚡ Rápido</span>
-          <span class="chip">📍 Montevideo</span>
-        </div>
-        <p>Productos, variedad .</p>
-        <div class="card-actions"><a href="https://tinmar.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TIENDA ➡️</a></div>
-      </div>
-    </article>
-
-    <article class="card" tabindex="0" data-cat="legal" data-search="abogado asesoramiento jurídico consultas legales derecho">
-      <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://i.ibb.co/5hCFkk3Z/Screenshot-20261030-171925-Chrome.jpg" alt="Abogado" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>⚖️ ABOGADO</h3>
-        <div class="chips">
-    <span class="chip morado">⚖️ Legal</span>
-    <span class="chip">📍 Montevideo</span>
-    <span class="chip">📍 Uruguay</span>
-    <span class="chip amarillo">⭐ 5.0</span>
-        </div>
-        <p>Asesoramiento jurídico y consultas profesionales.</p>
-        <div class="card-actions"><a href="https://pabloalesandre.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER ABOGADO ➡️</a></div>
-      </div>
-    </article>
-
-    <article class="card" tabindex="0" data-cat="belleza" data-search="tatuajes tatuaje diseños únicos estilo personalizado arte">
-  <span class="badge-status">🟢 Abierto</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800" alt="Tatuajes" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🖋️ TATUAJES</h3>
-        <div class="chips">
-          <span class="chip rosa">🎨 Personalizado</span>
-          <span class="chip">📍 Montevideo</span>
-          <span class="chip amarillo">⭐ 5.0</span>
-        </div>
-        <p>Diseños únicos y estilo personalizado.</p>
-        <div class="card-actions"><a href="https://javiertato.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TATUAJES ➡️</a></div>
-      </div>
-    </article>
-
-    <article class="card" tabindex="0" data-cat="hogar" data-search="lavadero unión lavado ropa prendas rápido secado">
-      <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=800" alt="Lavadero" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🧺 LAVADERO</h3>
-        <div class="chips">
-          <span class="chip verde">⚡ Rápido</span>
-          <span class="chip">🧼 Confiable</span>
-          <span class="chip">📍 Montevideo</span>
-        </div>
-        <p>Lavado de ropa y prendas. Rápido y confiable.</p>
-        <div class="card-actions"><a href="https://lavaderounion.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER LAVADERO ➡️</a></div>
-      </div>
-    </article>
- <article class="card" tabindex="0" data-cat="otros" data-search="agro san baño animales aspersion ectoparasitos garrapatas ganado matias olivera tacuarembo">
-      <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://i.ibb.co/bggmJPjC/Screenshot-20261105-123817-Whats-App-Business.jpg" alt="Agro San" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🐄 AGRO SAN</h3>
-        <div class="chips">
-          <span class="chip naranja">🐄 Rural</span>
-          <span class="chip">🚚 Móvil</span>
-          <span class="chip">📍 Tacuarembó</span>
-        </div>
-        <p>Baño de aspersión móvil, control de ectoparásitos. Matías Olivera - Tacuarembó.</p>
-        <div class="card-actions"><a href="https://agrosan.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER WEB ➡️</a></div> </div> </article>
- <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="electricista instalaciones reparaciones corto circuitos luz hogar">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800" alt="Electricista" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>⚡ ELECTRICISTA</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-        <p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div> </article>
- <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="pintor pintura paredes interior exterior casas fachadas">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://i.ibb.co/Fq4Hd53G/1793821228343.jpg" alt="Pintor" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🎨 PINTOR</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-<p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div>
-    </article>
-
-    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="jardinería poda plantas espacios verdes diseño jardines">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?w=800" alt="Jardinería" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🌱 JARDINERÍA</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-        <p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div>
-    </article>
-
-    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="limpieza casas oficinas desinfección orden hogar">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Limpieza" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🧹 LIMPIEZA</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-        <p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div>
-    </article>
-
-    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="sanitaria plomería fugas cañerías grifería baño cocina">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1542013936-69f0eed2c716?w=800" alt="Sanitaria" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🚰 SANITARIA</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-        <p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div>
-    </article>
-
-    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="mudanzas fletes transporte cargas mudanza local">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Mudanzas" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🚚 MUDANZAS</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-        <p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div>
-    </article>
-
-    <article class="card" tabindex="0" data-cat="belleza" data-search="masajes relajación bienestar equilibrio cuerpo descontracturante">
-      <span class="badge-status">🟢 Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800" alt="Masajes" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🌿 MASAJES</h3>
-        <div class="chips">
-          <span class="chip verde">🌿 Relajante</span>
-          <span class="chip">📍 Montevideo</span>
-          <span class="chip amarillo">⭐ 5.0</span>
-        </div>
-        <p>Relajación, bienestar y equilibrio corporal.</p>
-        <div class="card-actions"><a href="masajes/index.html" class="btn">VER MASAJES ➡️</a></div>
-      </div>
-    </article>
-
-    <article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="trabajos en general mantenimiento construcción jardinería pintura hogar">
-      <span class="badge-status no-disponible">🔴 No Disponible</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Trabajos en general" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🔧 TRABAJOS</h3>
-        <div class="chips">
-          <span class="chip">⏸️ Pausado</span>
-        </div>
-        <p>Servicio temporalmente no disponible.</p>
-        <div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div>
-      </div>
-    </article>
-
-    <article class="card" tabindex="0" data-cat="otros" data-search="juego vascolet entretenimiento diversión online arcade">
-      <span class="badge-status">🎮 Online</span>
-      <div class="foto"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Juego Vascolet" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="contenido">
-        <h3>🎮 VASCOLET</h3>
-        <div class="chips">
-          <span class="chip morado">🎮 Online</span>
-          <span class="chip">🆓 Gratis</span>
-          <span class="chip verde">⚡ Instantáneo</span>
-        </div>
-        <p>Entretenimiento retro, diversión online.</p>
-        <div class="card-actions"><a href="https://webport.itch.io/vascolet1" class="btn" target="_blank" rel="noopener noreferrer">JUGAR AHORA ➡️</a></div>
-      </div>
-    </article>
-  </div>
+<div class="grid" id="servicesGrid">
+<article class="card" tabindex="0" data-cat="comercio" data-search="tienda tinmar productos variedad compras">
+<span class="badge-status">🟢 Abierto</span>
+<div class="foto"><img src="https://i.ibb.co/MWmndFc/1793820466018.jpg" alt="Tienda" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🛒 TINMAR</h3><div class="chips"><span class="chip">🛒 Online</span><span class="chip verde">⚡ Rápido</span><span class="chip">📍 Montevideo</span></div><p>Productos, variedad .</p><div class="card-actions"><a href="https://tinmar.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TIENDA ➡️</a></div></div>
+</article>
+<article class="card" tabindex="0" data-cat="legal" data-search="abogado asesoramiento jurídico consultas legales derecho">
+<span class="badge-status">🟢 Disponible</span>
+<div class="foto"><img src="https://i.ibb.co/5hCFkk3Z/Screenshot-20261030-171925-Chrome.jpg" alt="Abogado" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>⚖️ ABOGADO</h3><div class="chips"><span class="chip morado">⚖️ Legal</span><span class="chip">📍 Montevideo</span><span class="chip">📍 Uruguay</span><span class="chip amarillo">⭐ 5.0</span></div><p>Asesoramiento jurídico y consultas profesionales.</p><div class="card-actions"><a href="https://pabloalesandre.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER ABOGADO ➡️</a></div></div>
+</article>
+<article class="card" tabindex="0" data-cat="belleza" data-search="tatuajes tatuaje diseños únicos estilo personalizado arte">
+<span class="badge-status">🟢 Abierto</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800" alt="Tatuajes" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🖋️ TATUAJES</h3><div class="chips"><span class="chip rosa">🎨 Personalizado</span><span class="chip">📍 Montevideo</span><span class="chip amarillo">⭐ 5.0</span></div><p>Diseños únicos y estilo personalizado.</p><div class="card-actions"><a href="https://javiertato.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER TATUAJES ➡️</a></div></div>
+</article>
+<article class="card" tabindex="0" data-cat="hogar" data-search="lavadero unión lavado ropa prendas rápido secado">
+<span class="badge-status">🟢 Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=800" alt="Lavadero" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🧺 LAVADERO</h3><div class="chips"><span class="chip verde">⚡ Rápido</span><span class="chip">🧼 Confiable</span><span class="chip">📍 Montevideo</span></div><p>Lavado de ropa y prendas. Rápido y confiable.</p><div class="card-actions"><a href="https://lavaderounion.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER LAVADERO ➡️</a></div></div>
+</article>
+<article class="card" tabindex="0" data-cat="otros" data-search="agro san baño animales aspersion ectoparasitos garrapatas ganado matias olivera tacuarembo">
+<span class="badge-status">🟢 Disponible</span>
+<div class="foto"><img src="https://i.ibb.co/bggmJPjC/Screenshot-20261105-123817-Whats-App-Business.jpg" alt="Agro San" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🐄 AGRO SAN</h3><div class="chips"><span class="chip naranja">🐄 Rural</span><span class="chip">🚚 Móvil</span><span class="chip">📍 Tacuarembó</span></div><p>Baño de aspersión móvil, control de ectoparásitos. Matías Olivera - Tacuarembó.</p><div class="card-actions"><a href="https://agrosan.vercel.app" class="btn" target="_blank" rel="noopener noreferrer">VER WEB ➡️</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="electricista instalaciones reparaciones corto circuitos luz hogar">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800" alt="Electricista" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>⚡ ELECTRICISTA</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="pintor pintura paredes interior exterior casas fachadas">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://i.ibb.co/Fq4Hd53G/1793821228343.jpg" alt="Pintor" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🎨 PINTOR</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="jardinería poda plantas espacios verdes diseño jardines">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?w=800" alt="Jardinería" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🌱 JARDINERÍA</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="limpieza casas oficinas desinfección orden hogar">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800" alt="Limpieza" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🧹 LIMPIEZA</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="sanitaria plomería fugas cañerías grifería baño cocina">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1542013936-69f0eed2c716?w=800" alt="Sanitaria" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🚰 SANITARIA</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="mudanzas fletes transporte cargas mudanza local">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Mudanzas" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🚚 MUDANZAS</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card" tabindex="0" data-cat="belleza" data-search="masajes relajación bienestar equilibrio cuerpo descontracturante">
+<span class="badge-status">🟢 Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800" alt="Masajes" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🌿 MASAJES</h3><div class="chips"><span class="chip verde">🌿 Relajante</span><span class="chip">📍 Montevideo</span><span class="chip amarillo">⭐ 5.0</span></div><p>Relajación, bienestar y equilibrio corporal.</p><div class="card-actions"><a href="masajes/index.html" class="btn">VER MASAJES ➡️</a></div></div>
+</article>
+<article class="card no-disponible" tabindex="0" data-cat="hogar" data-search="trabajos en general mantenimiento construcción jardinería pintura hogar">
+<span class="badge-status no-disponible">🔴 No Disponible</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Trabajos en general" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🔧 TRABAJOS</h3><div class="chips"><span class="chip">⏸️ Pausado</span></div><p>Servicio temporalmente no disponible.</p><div class="card-actions"><a href="#" class="btn deshabilitado" aria-disabled="true" tabindex="-1">NO DISPONIBLE</a></div></div>
+</article>
+<article class="card" tabindex="0" data-cat="otros" data-search="juego vascolet entretenimiento diversión online arcade">
+<span class="badge-status">🎮 Online</span>
+<div class="foto"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Juego Vascolet" loading="lazy" onerror="this.style.display='none'"></div>
+<div class="contenido"><h3>🎮 VASCOLET</h3><div class="chips"><span class="chip morado">🎮 Online</span><span class="chip">🆓 Gratis</span><span class="chip verde">⚡ Instantáneo</span></div><p>Entretenimiento retro, diversión online.</p><div class="card-actions"><a href="https://webport.itch.io/vascolet1" class="btn" target="_blank" rel="noopener noreferrer">JUGAR AHORA ➡️</a></div></div>
+</article>
+</div>
 </section>
 
 <section class="seccion-imagen" aria-label="Imagen destacada de TINMAR">
-  <div class="imagen-box">
-    <img src="https://i.ibb.co/1GQ2FWJ4/file-00000000a1e4820ea6b9170f83d018a1.png"
-         alt="TINMAR - Portal de servicios y negocios en Montevideo"
-         loading="lazy"
-         onerror="this.closest('.imagen-box').style.display='none'">
-    <div class="imagen-caption">◎ TINMAR · Servicios y Negocios</div>
-  </div>
+<div class="imagen-box">
+<img src="https://i.ibb.co/1GQ2FWJ4/file-00000000a1e4820ea6b9170f83d018a1.png" alt="TINMAR - Portal de servicios y negocios en Montevideo" loading="lazy" onerror="this.closest('.imagen-box').style.display='none'">
+<div class="imagen-caption">◎ TINMAR · Servicios y Negocios</div>
+</div>
 </section>
 
 <section aria-label="Testimonios de clientes">
-  <div class="carrusel-testimonios">
-    <div class="carrusel-track">
-      <div class="testimonio-card">
-        <div><div class="estrellas">★★★★★</div><p>"Excelente atención del estudio jurídico. Me asesoraron de forma clara y rápida con todos los trámites que necesitaba en Montevideo."</p></div>
-        <div class="cliente">Carlos R. <span>Abogado</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div><div class="estrellas">★★★★★</div><p>"Impecable el servicio del lavadero. La ropa quedó perfecta, con muy buen aroma y lista en tiempo récord. ¡Recomendadísimo!"</p></div>
-        <div class="cliente">Valeria M. <span>Lavadero</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div><div class="estrellas">★★★★★</div><p>"El diseño del tatuaje quedó exactamente como lo imaginé. Muy prolijo, higiénico y con excelente trato profesional."</p></div>
-        <div class="cliente">Matías S. <span>Tatuajes</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div><div class="estrellas">★★★★★</div><p>"Excelente atención del estudio jurídico. Me asesoraron de forma clara y rápida con todos los trámites que necesitaba en Montevideo."</p></div>
-        <div class="cliente">Carlos R. <span>Abogado</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div><div class="estrellas">★★★★★</div><p>"Impecable el servicio del lavadero. La ropa quedó perfecta, con muy buen aroma y lista en tiempo récord. ¡Recomendadísimo!"</p></div>
-        <div class="cliente">Valeria M. <span>Lavadero</span></div>
-      </div>
-      <div class="testimonio-card">
-        <div><div class="estrellas">★★★★★</div><p>"El diseño del tatuaje quedó exactamente como lo imaginé. Muy prolijo, higiénico y con excelente trato profesional."</p></div>
-        <div class="cliente">Matías S. <span>Tatuajes</span></div>
-      </div>
-    </div>
-  </div>
+<div class="carrusel-testimonios">
+<div class="carrusel-track">
+<div class="testimonio-card"><div><div class="estrellas">★★★★★</div><p>"Excelente atención del estudio jurídico. Me asesoraron de forma clara y rápida con todos los trámites que necesitaba en Montevideo."</p></div><div class="cliente">Carlos R. <span>Abogado</span></div></div>
+<div class="testimonio-card"><div><div class="estrellas">★★★★★</div><p>"Impecable el servicio del lavadero. La ropa quedó perfecta, con muy buen aroma y lista en tiempo récord. ¡Recomendadísimo!"</p></div><div class="cliente">Valeria M. <span>Lavadero</span></div></div>
+<div class="testimonio-card"><div><div class="estrellas">★★★★★</div><p>"El diseño del tatuaje quedó exactamente como lo imaginé. Muy prolijo, higiénico y con excelente trato profesional."</p></div><div class="cliente">Matías S. <span>Tatuajes</span></div></div>
+<div class="testimonio-card"><div><div class="estrellas">★★★★★</div><p>"Excelente atención del estudio jurídico. Me asesoraron de forma clara y rápida con todos los trámites que necesitaba en Montevideo."</p></div><div class="cliente">Carlos R. <span>Abogado</span></div></div>
+<div class="testimonio-card"><div><div class="estrellas">★★★★★</div><p>"Impecable el servicio del lavadero. La ropa quedó perfecta, con muy buen aroma y lista en tiempo récord. ¡Recomendadísimo!"</p></div><div class="cliente">Valeria M. <span>Lavadero</span></div></div>
+<div class="testimonio-card"><div><div class="estrellas">★★★★★</div><p>"El diseño del tatuaje quedó exactamente como lo imaginé. Muy prolijo, higiénico y con excelente trato profesional."</p></div><div class="cliente">Matías S. <span>Tatuajes</span></div></div>
+</div>
+</div>
 </section>
 
 <section class="solicita-seccion" id="solicita">
-  <div class="solicita-box">
-    <h2>🚀 ¿NECESITAS UNA PÁGINA WEB?</h2>
-    <p>Impulsa tu emprendimiento con un diseño moderno, ultrarrápido y 100% adaptable</p>
-    <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener noreferrer" class="btn-solicita">SOLICITA TU WEB AHORA</a>
-  </div>
+<div class="solicita-box">
+<h2>🚀 ¿NECESITAS UNA PÁGINA WEB?</h2>
+<p>Impulsa tu emprendimiento con un diseño moderno, ultrarrápido y 100% adaptable</p>
+<a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener noreferrer" class="btn-solicita">SOLICITA TU WEB AHORA</a>
+</div>
 </section>
 
-<!-- BOTONES COMPARTIR -->
 <div class="compartir-box">
-  <p class="compartir-titulo">🔗 Compartí este portal</p>
-  <div class="compartir-botones">
-    <button class="btn-compartir copiar" id="btnCopiar" aria-label="Copiar enlace del portal">
-      <span class="ico">📋</span><span class="txt">Copiar enlace</span>
-    </button>
-    <button class="btn-compartir whatsapp" id="btnWhatsApp" aria-label="Compartir por WhatsApp">
-      <span class="ico">💬</span><span class="txt">WhatsApp</span>
-    </button>
-    <button class="btn-compartir facebook" id="btnFacebook" aria-label="Compartir en Facebook">
-      <span class="ico">📘</span><span class="txt">Facebook</span>
-    </button>
-    <button class="btn-compartir twitter" id="btnTwitter" aria-label="Compartir en X (Twitter)">
-      <span class="ico">🐦</span><span class="txt">X / Twitter</span>
-    </button>
-    <button class="btn-compartir nativo" id="btnNativo" aria-label="Compartir en otras apps">
-      <span class="ico">📤</span><span class="txt">Más...</span>
-    </button>
-  </div>
-</div>
-
+<p class="compartir-titulo">🔗 Compartí este portal</p>
+<div class="compartir-botones">
+<button class="btn-compartir copiar" id="btnCopiar" aria-label="Copiar enlace del portal"><span class="ico">📋</span><span class="txt">Copiar enlace</span></button>
+<button class="btn-compartir whatsapp" id="btnWhatsApp" aria-label="Compartir por WhatsApp"><span class="ico">💬</span><span class="txt">WhatsApp</span></button>
+<button class="btn-compartir facebook" id="btnFacebook" aria-label="Compartir en Facebook"><span class="ico">📘</span><span class="txt">Facebook</span></button>
+<button class="btn-compartir twitter" id="btnTwitter" aria-label="Compartir en X (Twitter)"><span class="ico">🐦</span><span class="txt">X / Twitter</span></button>
+<button class="btn-compartir nativo" id="btnNativo" aria-label="Compartir en otras apps"><span class="ico">📤</span><span class="txt">Más...</span></button></div></div>
 <section class="contacto" id="contacto">
-  <div class="titulo">
-    <h2>📌 CONTACTO</h2>
-    <p>Disponibles las 24 horas para atender tus consultas</p>
-  </div>
-  <div class="contacto-box">
-    <p class="info-icon">📍 <strong>Ubicación:</strong> Montevideo, Uruguay</p>
-    <p class="info-icon">⏰ <strong>Horario:</strong> Todos los días - Atención 24 horas</p>
-    <p class="info-icon">📞 <strong>Teléfono:</strong> <a href="tel:+59899295848" class="tel">099 295 848</a></p>
-    <p class="info-icon">📱 <strong>WhatsApp Directo:</strong> <a href="https://wa.me/59899295848" target="_blank" rel="noopener noreferrer" class="wa">Chat de WhatsApp</a></p>
-    <p class="info-icon">✉️ <strong>Correo Electrónico:</strong> <a href="mailto:martinsampayo9@gmail.com" class="mail">martinsampayo9@gmail.com</a></p>
-  </div>
-</section>
-
+<div class="titulo"><h2>📌 CONTACTO</h2><p>Disponibles las 24 horas para atender tus consultas</p></div>
+<div class="contacto-box">
+<p class="info-icon">📍 <strong>Ubicación:</strong> Montevideo, Uruguay</p>
+<p class="info-icon">⏰ <strong>Horario:</strong> Todos los días - Atención 24 horas</p>
+<p class="info-icon">📞 <strong>Teléfono:</strong> <a href="tel:+59899295848" class="tel">099 295 848</a></p>
+<p class="info-icon">📱 <strong>WhatsApp Directo:</strong> <a href="https://wa.me/59899295848" target="_blank" rel="noopener noreferrer" class="wa">Chat de WhatsApp</a></p>
+<p class="info-icon">✉️ <strong>Correo Electrónico:</strong> <a href="mailto:martinsampayo9@gmail.com" class="mail">martinsampayo9@gmail.com</a></p>
+</div></section>
 <div id="toastContainer" aria-live="polite" aria-atomic="false"></div>
-
 <button id="backToTop" aria-label="Volver arriba">▲</button>
-<button class="chat-fab" id="chatFab" aria-label="Abrir Asistente Virtual">🤖</button>
-
-<div class="chat-container" id="chatContainer" role="dialog" aria-labelledby="chatTitle">
-  <div class="chat-header">
-    <div class="chat-title" id="chatTitle"><span>◎</span> Asistente TINMAR</div>
-    <button class="chat-cerrar" id="chatCerrar" aria-label="Cerrar chat">X</button>
-  </div>
-  <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">¡Hola! 👋 Soy tu asistente en línea. Escríbeme tu consulta</div>
-  </div>
-  <div class="sugerencias-inline" id="sugerenciasInline"></div>
-  <div class="chat-input-area">
-    <input type="text" class="chat-input" id="chatInput" placeholder="Escribe tu consulta aquí..." aria-label="Mensaje">
-    <button class="chat-send-btn" id="chatSend">Enviar</button> </div></div>
-
-<footer>
-  <div class="footer-top">
-    <div>◎ TINMAR</div>
-    <div class="footer-tagline"><p>CALIDAD · CONFIANZA · SERVICIOS INTEGRALES</p></div>
-  </div>
-  <div class="footer-legal">
-    <a href="#" id="btnTerminos">Términos y Condiciones</a>
-    <span>•</span>
-    <a href="#" id="btnPrivacidad">Política de Privacidad</a>
-    <span>•</span>
-<a href="#" id="btnSugerencias">💡 Dejar Sugerencia</a> </div>  <br></footer>
+<button class="chat-fab" id="chatFab" aria-label="Abrir Asistente Virtual">🤖</button><div class="chat-container" id="chatContainer" role="dialog" aria-labelledby="chatTitle">
+<div class="chat-header"><div class="chat-title" id="chatTitle"><span>◎</span> Asistente TINMAR</div><button class="chat-cerrar" id="chatCerrar" aria-label="Cerrar chat">X</button></div>
+<div class="chat-body" id="chatBody"><div class="chat-msg bot">¡Hola! 👋 Soy tu asistente en línea. Escríbeme tu consulta</div></div>
+<div class="sugerencias-inline" id="sugerenciasInline"></div>
+<div class="chat-input-area"><input type="text" class="chat-input" id="chatInput" placeholder="Escribe tu consulta aquí..." aria-label="Mensaje"><button class="chat-send-btn" id="chatSend">Enviar</button></div></div><footer>
+<div class="footer-top"><div>◎ TINMAR</div><div class="footer-tagline"><p>CALIDAD · CONFIANZA · SERVICIOS INTEGRALES</p></div></div>
+<div class="footer-legal"><a href="#" id="btnTerminos">Términos y Condiciones</a><span>•</span><a href="#" id="btnPrivacidad">Política de Privacidad</a><span>•</span><a href="#" id="btnSugerencias">💡 Dejar Sugerencia</a></div><br></footer>
 <div class="modal-legal" id="modalTerminos" role="dialog" aria-modal="true" aria-labelledby="tituloTerminos">
-  <div class="modal-legal-box">
-    <button class="modal-cerrar" id="cerrarTerminos" aria-label="Cerrar">✕</button>
-    <h2 id="tituloTerminos">📄 Términos y Condiciones de Uso</h2>
-    <div class="modal-sub">Portal TINMAR · Montevideo, Uruguay</div>
-   <h3>1. Información General y Aceptación</h3>
-    <p>El portal <strong>TINMAR</strong> opera como un directorio y canal de conexión directa entre clientes y servicios profesionales independientes en Montevideo, Uruguay. Al acceder, navegar y utilizar este sitio web, el usuario acepta de manera expresa los presentes términos y condiciones en su totalidad.</p>
-    <h3>2. Servicios Ofrecidos</h3>
-    <p>A través de la plataforma se facilita el acceso a diversos servicios profesionales y comerciales, tales como asesoramiento jurídico, diseño de tatuajes, servicios de lavadero, masajes, trabajos de mantenimiento general y entretenimiento digital.</p>
-    <h3>3. Protección de Datos Personales</h3>
-    <p>Conforme a la Ley N.º 18.331 de Protección de Datos Personales, toda información de contacto provista voluntariamente será tratada con confidencialidad para coordinar la prestación de los servicios solicitados.</p>
-    <div style="margin-top:20px; font-size:11.5px; color:var(--subtexto);">Última actualización: Octubre 2026</div>  </div></div>
+<div class="modal-legal-box">
+<button class="modal-cerrar" id="cerrarTerminos" aria-label="Cerrar">✕</button>
+<h2 id="tituloTerminos">📄 Términos y Condiciones de Uso</h2>
+<div class="modal-sub">Portal TINMAR · Montevideo, Uruguay</div>
+<h3>1. Información General y Aceptación</h3>
+<p>El portal <strong>TINMAR</strong> opera como un directorio y canal de conexión directa entre clientes y servicios profesionales independientes en Montevideo, Uruguay. Al acceder, navegar y utilizar este sitio web, el usuario acepta de manera expresa los presentes términos y condiciones en su totalidad.</p>
+<h3>2. Servicios Ofrecidos</h3>
+<p>A través de la plataforma se facilita el acceso a diversos servicios profesionales y comerciales, tales como asesoramiento jurídico, diseño de tatuajes, servicios de lavadero, masajes, trabajos de mantenimiento general y entretenimiento digital.</p>
+<h3>3. Protección de Datos Personales</h3>
+<p>Conforme a la Ley N.º 18.331 de Protección de Datos Personales, toda información de contacto provista voluntariamente será tratada con confidencialidad para coordinar la prestación de los servicios solicitados.</p>
+<div style="margin-top:20px;font-size:11.5px;color:var(--subtexto)">Última actualización: Octubre 2026</div></div></div>
 <div class="modal-legal" id="modalPrivacidad" role="dialog" aria-modal="true" aria-labelledby="tituloPrivacidad">
-  <div class="modal-legal-box">
-    <button class="modal-cerrar" id="cerrarPrivacidad" aria-label="Cerrar">✕</button>
-    <h2 id="tituloPrivacidad">🔒 Política de Privacidad</h2>
-    <div class="modal-sub">Portal TINMAR · Montevideo, Uruguay</div>
-    <h3>1. Responsable del tratamiento</h3>
-    <p>El responsable del tratamiento de los datos es <strong>TINMAR</strong> (Montevideo, Uruguay). Contacto: <a href="mailto:martinsampayo9@gmail.com">martinsampayo9@gmail.com</a>.</p>
-    <h3>2. Finalidad</h3>
-    <p>Los datos recopilados (consultas, mensajes y WhatsApp) se usan exclusivamente para responder solicitudes y mejorar la experiencia de navegación en el Portal.</p>
-    <div style="margin-top:20px; font-size:11.5px; color:var(--subtexto);">Última actualización: Octubre 2026</div>  </div></div>
+<div class="modal-legal-box">
+<button class="modal-cerrar" id="cerrarPrivacidad" aria-label="Cerrar">X</button>
+<h2 id="tituloPrivacidad">🔒 Política de Privacidad</h2>
+<div class="modal-sub">Portal TINMAR · Montevideo, Uruguay</div>
+<h3>1. Responsable del tratamiento</h3>
+<p>El responsable del tratamiento de los datos es <strong>TINMAR</strong> (Montevideo, Uruguay). Contacto: <a href="mailto:martinsampayo9@gmail.com">martinsampayo9@gmail.com</a>.</p>
+<h3>2. Finalidad</h3>
+<p>Los datos recopilados (consultas, mensajes y WhatsApp) se usan exclusivamente para responder solicitudes y mejorar la experiencia de navegación en el Portal.</p>
+<div style="margin-top:20px;font-size:11.5px;color:var(--subtexto)">Última actualización: Octubre 2026</div></div></div>
 <div class="modal-legal" id="modalSugerencias" role="dialog" aria-modal="true" aria-labelledby="tituloSugerencias">
-  <div class="modal-legal-box">
-    <button class="modal-cerrar" id="cerrarSugerencias" aria-label="Cerrar">✕</button>
-    <h2 id="tituloSugerencias">💡 Envíanos tu Sugerencia</h2>
-    <div class="modal-sub">Ayúdanos a mejorar el Portal TINMAR</div>
-    <p>¿Tienes alguna idea, propuesta o detectaste algo que podamos mejorar? Escríbenos directamente:</p>
-    <form class="sug-form" action="https://formsubmit.co/Martinsampayo9@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="¡Nueva Sugerencia en Portal TINMAR!">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-      <input type="text" name="nombre" placeholder="Tu Nombre" required>
-      <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-      <textarea name="sugerencia" placeholder="Escribe tu sugerencia o comentario aquí..." required></textarea>
-      <button type="submit" class="sug-btn">ENVIAR SUGERENCIA</button>
-    </form>
-  </div>
-</div>
-
-<script>
-/* ===== TYPEWRITER SOLO EN EL PÁRRAFO DEL HERO ===== */
+<div class="modal-legal-box">
+<button class="modal-cerrar" id="cerrarSugerencias" aria-label="Cerrar">✕</button>
+<h2 id="tituloSugerencias">💡 Envíanos tu Sugerencia</h2>
+<div class="modal-sub">Ayúdanos a mejorar el Portal TINMAR</div>
+<p>¿Tienes alguna idea, propuesta o detectaste algo que podamos mejorar? Escríbenos directamente:</p>
+<form class="sug-form" action="https://formsubmit.co/Martinsampayo9@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="¡Nueva Sugerencia en Portal TINMAR!">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<input type="text" name="nombre" placeholder="Tu Nombre" required>
+<input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+<textarea name="sugerencia" placeholder="Escribe tu sugerencia o comentario aquí..." required></textarea>
+<button type="submit" class="sug-btn">ENVIAR SUGERENCIA</button></form></div></div><script>
 (function(){
-  document.addEventListener("DOMContentLoaded", function(){
-    const el = document.querySelector(".hero-sub .typewriter-text");
-    if(!el) return;
-    const texto = el.getAttribute("data-text") || "";
-    el.textContent = "";
-    el.classList.add("typewriter-cursor");
-    let i = 0;
-    function paso(){
-      if(i < texto.length){
-        el.textContent += texto.charAt(i);
-        i++;
-        setTimeout(paso, 55);
-      } else {
-        el.classList.remove("typewriter-cursor");
-        el.classList.add("terminado");
-      }
-    }
-    setTimeout(paso, 800);
-  });
-})();
-
-(function(){
-  const cont = document.getElementById("bgStars");
-  if(!cont) return;
-  const n = 70;
-  for(let i=0;i<n;i++){
-    const s = document.createElement("i");
-    const size = 1 + Math.random()*2.5;
-    s.style.width = size + "px";
-    s.style.height = size + "px";
-    s.style.left = Math.random()*100 + "%";
-    s.style.top = Math.random()*100 + "%";
-    s.style.animationDelay = (Math.random()*3) + "s";
-    s.style.animationDuration = (2 + Math.random()*3) + "s";
-    s.style.opacity = (0.15 + Math.random()*0.6);
-    cont.appendChild(s);  } })();
-(function(){
-  const cont = document.getElementById("heroParticles");
-  if(!cont) return;
-  const n = 18;
-  for(let i=0;i<n;i++){
-    const p = document.createElement("i");
-    p.style.left = Math.random()*100 + "%";
-    p.style.bottom = "-10px";
-    p.style.animationDuration = (8 + Math.random()*12) + "s";
-    p.style.animationDelay = (Math.random()*10) + "s";
-    const s = 2 + Math.random()*3;
-    p.style.width = s+"px";
-    p.style.height = s+"px";
-    cont.appendChild(p);  } })();
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("abierto");
-  const abierto = nav.classList.contains("abierto");
-  menuToggle.textContent = abierto ? "✕" : "☰";
-  menuToggle.setAttribute("aria-expanded", abierto);
-});
-nav.querySelectorAll("a").forEach(a => {
-  a.addEventListener("click", () => {
-    nav.classList.remove("abierto");
-    menuToggle.textContent = "☰";
-    menuToggle.setAttribute("aria-expanded", "false");
-  });
-});
-(function(){
-  const container = document.getElementById("toastContainer");
-  if(!container) return;
- const MENSAJES = [
-    { icono:"🛒", titulo:"Tienda TINMAR", texto:'Productos, variedad <a href="https://tinmar.vercel.app" target="_blank" rel="noopener">Ver tienda →</a>', tipo:"" },
-    { icono:"⚖️", titulo:"Estudio Jurídico", texto:'Asesoramiento legal profesional. <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener">Ver abogado →</a>', tipo:"verde" },
-    { icono:"🖋️", titulo:"Tatuajes Personalizados", texto:'Diseños únicos y estilo propio. <a href="https://javiertato.vercel.app" target="_blank" rel="noopener">Ver tatuajes →</a>', tipo:"morado" },
-    { icono:"🧺", titulo:"Lavadero Unión", texto:'Lavado rápido y confiable de ropa. <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener">Ver lavadero →</a>', tipo:"" },
-    { icono:"🌿", titulo:"Masajes Relajantes", texto:'Bienestar y equilibrio corporal. <a href="masajes/index.html">Ver masajes →</a>', tipo:"verde" },
-    { icono:"🎮", titulo:"Juego Vascolet", texto:'Entretenimiento retro online. <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener">Jugar ahora →</a>', tipo:"rosa" },
-    { icono:"🚀", titulo:"¿Necesitas una web?", texto:'Diseño moderno y adaptable. <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener">Solicitar →</a>', tipo:"morado" },
-    { icono:"🐄", titulo:"Agro San", texto:'Baño de animales y control de ectoparásitos. <a href="https://agrosan.vercel.app" target="_blank" rel="noopener">Ver web →</a>', tipo:"naranja" },
-    { icono:"💬", titulo:"WhatsApp Directo", texto:'Atención 24 horas al <a href="https://wa.me/59899295848?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR" target="_blank" rel="noopener">099 295 848</a>', tipo:"verde" } ];
- let ultimo = -1;
-  function indiceAleatorio(){
-    let idx;
-    do { idx = Math.floor(Math.random() * MENSAJES.length); }
- while (idx === ultimo && MENSAJES.length > 1);
-    ultimo = idx;
-    return idx; }
+document.addEventListener("DOMContentLoaded",function(){
+const el=document.querySelector(".hero-sub .typewriter-text");
+if(!el)return;
+const texto=el.getAttribute("data-text")||"";
+el.textContent="";
+el.classList.add("typewriter-cursor");
+let i=0;
+function paso(){
+if(i<texto.length){
+el.textContent+=texto.charAt(i);
+i++;
+setTimeout(paso,55);}
+else{
+el.classList.remove("typewriter-cursor");
+el.classList.add("terminado");}}
+setTimeout(paso,800);});})();(function(){
+const cont=document.getElementById("bgStars");
+if(!cont)return;
+const n=70;
+for(let i=0;i<n;i++){
+const s=document.createElement("i");
+const size=1+Math.random()*2.5;
+s.style.width=size+"px";
+s.style.height=size+"px";
+s.style.left=Math.random()*100+"%";
+s.style.top=Math.random()*100+"%";
+s.style.animationDelay=(Math.random()*3)+"s";
+s.style.animationDuration=(2+Math.random()*3)+"s";
+s.style.opacity=(0.15+Math.random()*0.6);
+cont.appendChild(s);}})();(function(){
+const cont=document.getElementById("heroParticles");
+if(!cont)return;
+const n=18;
+for(let i=0;i<n;i++){
+const p=document.createElement("i");
+p.style.left=Math.random()*100+"%";
+p.style.bottom="-10px";
+p.style.animationDuration=(8+Math.random()*12)+"s";
+p.style.animationDelay=(Math.random()*10)+"s";
+const s=2+Math.random()*3;
+p.style.width=s+"px";
+p.style.height=s+"px";
+cont.appendChild(p);}})();const menuToggle=document.getElementById("menuToggle");
+const nav=document.getElementById("nav");
+menuToggle.addEventListener("click",()=>{
+nav.classList.toggle("abierto");
+const abierto=nav.classList.contains("abierto");
+menuToggle.textContent=abierto?"✕":"☰";
+menuToggle.setAttribute("aria-expanded",abierto);});
+nav.querySelectorAll("a").forEach(a=>{
+a.addEventListener("click",()=>{
+nav.classList.remove("abierto");
+menuToggle.textContent="☰";
+menuToggle.setAttribute("aria-expanded","false");});});(function(){
+const container=document.getElementById("toastContainer");
+if(!container)return;
+const MENSAJES=[
+{icono:"🛒",titulo:"Tienda TINMAR",texto:'Productos, variedad <a href="https://tinmar.vercel.app" target="_blank" rel="noopener">Ver tienda →</a>',tipo:""},
+{icono:"⚖️",titulo:"Estudio Jurídico",texto:'Asesoramiento legal profesional. <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener">Ver abogado →</a>',tipo:"verde"},
+{icono:"🖋️",titulo:"Tatuajes Personalizados",texto:'Diseños únicos y estilo propio. <a href="https://javiertato.vercel.app" target="_blank" rel="noopener">Ver tatuajes →</a>',tipo:"morado"},
+{icono:"🧺",titulo:"Lavadero Unión",texto:'Lavado rápido y confiable de ropa. <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener">Ver lavadero →</a>',tipo:""},
+{icono:"🌿",titulo:"Masajes Relajantes",texto:'Bienestar y equilibrio corporal. <a href="masajes/index.html">Ver masajes →</a>',tipo:"verde"},
+{icono:"🎮",titulo:"Juego Vascolet",texto:'Entretenimiento retro online. <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener">Jugar ahora →</a>',tipo:"rosa"},
+{icono:"🚀",titulo:"¿Necesitas una web?",texto:'Diseño moderno y adaptable. <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener">Solicitar →</a>',tipo:"morado"},
+{icono:"🐄",titulo:"Agro San",texto:'Baño de animales y control de ectoparásitos. <a href="https://agrosan.vercel.app" target="_blank" rel="noopener">Ver web →</a>',tipo:"naranja"},
+{icono:"💬",titulo:"WhatsApp Directo",texto:'Atención 24 horas al <a href="https://wa.me/59899295848?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR" target="_blank" rel="noopener">099 295 848</a>',tipo:"verde"}];
+let ultimo=-1;
+function indiceAleatorio(){
+let idx;
+do{idx=Math.floor(Math.random()*MENSAJES.length);}
+while(idx===ultimo&&MENSAJES.length>1);
+ultimo=idx;
+return idx;}
 function mostrarToast(idx){
-    const m = MENSAJES[idx];
-    const toast = document.createElement("div");
- toast.className = "toast " + (m.tipo || "");
-    toast.innerHTML = `
-      <div class="toast-icono">${m.icono}</div>
-      <div class="toast-cuerpo">
-   <div class="toast-titulo">${m.titulo}</div>
-<div class="toast-texto">${m.texto}</div></div>
-      <button class="toast-cerrar" aria-label="Cerrar">X</button> `;
-    container.appendChild(toast);
-toast.querySelector(".toast-cerrar").addEventListener("click", () => cerrarToast(toast));
- setTimeout(() => cerrarToast(toast), 5000);}
+const m=MENSAJES[idx];
+const toast=document.createElement("div");
+toast.className="toast "+(m.tipo||"");
+toast.innerHTML=`<div class="toast-icono">${m.icono}</div><div class="toast-cuerpo"><div class="toast-titulo">${m.titulo}</div><div class="toast-texto">${m.texto}</div></div><button class="toast-cerrar" aria-label="Cerrar">X</button>`;
+container.appendChild(toast);
+toast.querySelector(".toast-cerrar").addEventListener("click",()=>cerrarToast(toast));
+setTimeout(()=>cerrarToast(toast),5000);}
 function cerrarToast(toast){
-    if(!toast || toast.classList.contains("saliendo")) return;
-    toast.classList.add("saliendo");
-    setTimeout(() => { if(toast.parentNode) toast.parentNode.removeChild(toast); }, 400);}
- setTimeout(() => mostrarToast(indiceAleatorio()), 2000);
-  setInterval(() => mostrarToast(indiceAleatorio()), 9000);
-})();
+if(!toast||toast.classList.contains("saliendo"))return;
+toast.classList.add("saliendo");
+setTimeout(()=>{if(toast.parentNode)toast.parentNode.removeChild(toast);},400);}
+setTimeout(()=>mostrarToast(indiceAleatorio()),2000);
+setInterval(()=>mostrarToast(indiceAleatorio()),9000);})();(function(){
+const searchInput=document.getElementById("searchInput");const cards=document.querySelectorAll("#servicesGrid .card");const counter=document.getElementById("searchCounter");const filtros=document.querySelectorAll(".filtro-btn");let categoriaActiva="todos";
+function aplicarFiltros(){const term=(searchInput.value||"").toLowerCase().trim();
+let visibles=0;
+cards.forEach(card=>{
+const text=card.getAttribute("data-search")||"";
+const title=card.querySelector("h3").textContent.toLowerCase();
+const desc=card.querySelector("p").textContent.toLowerCase();
+const cat=card.getAttribute("data-cat")||"otros";
+const matchTexto=!term||text.includes(term)||title.includes(term)||desc.includes(term);
+const matchCat=categoriaActiva==="todos"||cat===categoriaActiva;
+if(matchTexto&&matchCat){card.style.display="flex";visibles++;}
+else{card.style.display="none";}});
+if(term||categoriaActiva!=="todos"){
+counter.innerHTML=`<b>${visibles}</b> servicio${visibles===1?"":"s"} encontrado${visibles===1?"":"s"}`;}
+else{counter.textContent="";}}
+searchInput.addEventListener("input",aplicarFiltros);
+filtros.forEach(btn=>{
+btn.addEventListener("click",()=>{
+filtros.forEach(b=>b.classList.remove("activo"));
+btn.classList.add("activo");
+categoriaActiva=btn.getAttribute("data-cat");
+aplicarFiltros();});});})();
+
 (function(){
-  const searchInput = document.getElementById("searchInput");
-  const cards = document.querySelectorAll("#servicesGrid .card");
-  const counter = document.getElementById("searchCounter");
-  const filtros = document.querySelectorAll(".filtro-btn");
-  let categoriaActiva = "todos";
-
-  function aplicarFiltros(){
-    const term = (searchInput.value || "").toLowerCase().trim();
-    let visibles = 0;
-    cards.forEach(card => {
-      const text = card.getAttribute("data-search") || "";
-      const title = card.querySelector("h3").textContent.toLowerCase();
-      const desc = card.querySelector("p").textContent.toLowerCase();
-      const cat = card.getAttribute("data-cat") || "otros";
-      const matchTexto = !term || text.includes(term) || title.includes(term) || desc.includes(term);
-      const matchCat = categoriaActiva === "todos" || cat === categoriaActiva;
-      if(matchTexto && matchCat){ card.style.display = "flex"; visibles++; }
-      else { card.style.display = "none"; }
-    });
-    if(term || categoriaActiva !== "todos"){
-      counter.innerHTML = `<b>${visibles}</b> servicio${visibles === 1 ? "" : "s"} encontrado${visibles === 1 ? "" : "s"}`;
-    } else { counter.textContent = ""; } }
- searchInput.addEventListener("input", aplicarFiltros);
-  filtros.forEach(btn => {
-    btn.addEventListener("click", () => {
-      filtros.forEach(b => b.classList.remove("activo"));
-      btn.classList.add("activo");
-      categoriaActiva = btn.getAttribute("data-cat");
-      aplicarFiltros(); }); }); })();
-(function(){
-  const chatFab = document.getElementById("chatFab");
-  const chatContainer = document.getElementById("chatContainer");
-  const chatCerrar = document.getElementById("chatCerrar");
-  const chatBody = document.getElementById("chatBody");
-  const chatInput = document.getElementById("chatInput");
-  const chatSend = document.getElementById("chatSend");
-  const sugerenciasInline = document.getElementById("sugerenciasInline");
-  const waLink = "https://wa.me/59899295848?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR";
- const toastContainer = document.getElementById("toastContainer");
-
-  function toggleChat(estado) {
-    if (estado) {
-      chatContainer.classList.add("abierto");
-      if (toastContainer) toastContainer.style.display = "none";
-    } else {
-      chatContainer.classList.remove("abierto");
-      if (toastContainer) toastContainer.style.display = "flex";
-    }
-  }
-
-  chatFab.addEventListener("click", () => {
-    toggleChat(!chatContainer.classList.contains("abierto"));
-  });
-  chatCerrar.addEventListener("click", () => toggleChat(false));
-
-  function mostrarSugerencias(lista){
-    sugerenciasInline.innerHTML = "";
-    lista.forEach(txt => {
-      const b = document.createElement("button");
-      b.textContent = txt;
-      b.addEventListener("click", () => procesarTexto(txt));
-      sugerenciasInline.appendChild(b);  }); }
- function responder(texto){
-    const t = texto.toLowerCase().trim();
-    const noDisp = `⛔ Este servicio se encuentra <strong>temporalmente NO DISPONIBLE</strong>. Puedes consultar por otros servicios escribiendo a nuestro <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;
- if(t.includes("hola") || t.includes("buenas") || t.includes("saludos") || t.includes("inicio")){
-      return `¡Hola! 👋 ¿En qué servicio estás interesado? Puedo ayudarte con información`;
-    } else if(t.includes("agro") || t.includes("san") || t.includes("baño") || t.includes("animal") || t.includes("aspersion") || t.includes("ectoparasito") || t.includes("garrapata") || t.includes("matias olivera") || t.includes("tacuarembo")){
-      return `🐄 <strong>AGRO SAN</strong> ofrece servicio de <strong>Baño de aspersión móvil</strong> para el control de ectoparásitos. Visita su página web <a href="https://agrosan.vercel.app" target="_blank" rel="noopener">aquí</a> o contacta a <strong>Matías Olivera</strong> al <a href="https://wa.me/59898461737?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR" target="_blank" rel="noopener">098 461 737</a> (Tacuarembó).`;
-    } else if(t.includes("trabajo") || t.includes("trabajos") || t.includes("mantenimiento") || t.includes("construccion") || t.includes("albañil") || t.includes("obra")){
-      return noDisp;
-    } else if(t.includes("electricista") || t.includes("electricidad") || t.includes("cortocircuito") || t.includes("instalacion electrica") || t.includes("tablero")){
-      return noDisp;
-    } else if(t.includes("pintor") || t.includes("pintura") || t.includes("pared") || t.includes("fachada")){
-      return noDisp;
-    } else if(t.includes("jardin") || t.includes("poda") || t.includes("pasto") || t.includes("plantas")){
-      return noDisp;
-    } else if(t.includes("limpieza") || t.includes("limpiar") || t.includes("desinfeccion")){
-      return noDisp;
-    } else if(t.includes("sanitaria") || t.includes("plomero") || t.includes("plomeria") || t.includes("cañeria") || t.includes("fuga") || t.includes("grifo") || t.includes("tanque")){
- return noDisp;
-    } else if(t.includes("flete") || t.includes("mudanza") || t.includes("transporte") || t.includes("carga")){
-      return noDisp;
-    } else if(t.includes("abogado") || t.includes("juridico") || t.includes("legal") || t.includes("derecho") || t.includes("juicio") || t.includes("consulta legal")){
-      return `⚖️ Nuestro Estudio Jurídico ofrece asesoramiento legal y consultas profesionales en Montevideo. Puedes ver la web oficial <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener">aquí</a> o enviar tu consulta directo a <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("tatuaje") || t.includes("tattoo") || t.includes("tinta")){
-      return `🖋️ Contamos con servicio de Tatuajes profesionales con diseños únicos y personalizados. Mira los trabajos en su web <a href="https://javiertato.vercel.app" target="_blank" rel="noopener">aquí</a> o agenda tu turno por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("lavadero") || t.includes("ropa") || t.includes("lavar") || t.includes("secado") || t.includes("prendas") || t.includes("union")){
-      return `🧺 El Lavadero Unión brinda servicio de lavado y secado de ropa rápido, eficiente y de calidad. Puedes visitar la web <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener">aquí</a> o comunicarte por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("masaje") || t.includes("relajacion") || t.includes("descontracturante") || t.includes("bienestar")){
-      return `🌿 Disfruta de masajes orientados al bienestar y la relajación corporal. Revisa la sección dedicada <a href="masajes/index.html">aquí</a> o agenda tu cita por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("tienda") || t.includes("comprar") || t.includes("producto")){
-      return `🛒 Explora nuestra Tienda TINMAR en línea con gran catálogo y productos variados visitándola <a href="https://tinmar.vercel.app" target="_blank" rel="noopener">aquí</a>.`;
-    } else if(t.includes("juego") || t.includes("vascolet") || t.includes("jugar") || t.includes("arcade")){
-      return `🎮 ¡Tiempo de jugar! Disfruta del clásico juego retro Vascolet directamente online en este <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener">enlace</a>.`;
-    } else if(t.includes("pagina web") || t.includes("página web") || t.includes("sitio web") || t.includes("diseño web") || t.includes("programacion") || t.includes("desarrollo web")){
-      return `🚀 Impulsa tu negocio con una página web moderna, ultra rápida y adaptable. Solicita tu presupuesto <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener">aquí</a>.`;
-    } else if(t.includes("horario") || t.includes("abren") || t.includes("atienden") || t.includes("dias")){
-      return `⏰ El portal TINMAR está activo las 24 horas del día. Puedes realizar consultas o solicitar servicios en cualquier momento por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;
-    } else if(t.includes("precio") || t.includes("costo") || t.includes("presupuesto") || t.includes("cuanto sale") || t.includes("tarifa")){
-      return `💰 Para presupuestos exactos y cotizaciones rápidas sin compromiso, escríbenos a nuestro <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a> especificando qué trabajo necesitas.`;
-    } else if(t.includes("ubicacion") || t.includes("donde estan") || t.includes("donde queda") || t.includes("lugar") || t.includes("montevideo") || t.includes("uruguay")){
-      return `📍 Operamos y brindamos atención en Montevideo, Uruguay. Contáctanos al <a href="${waLink}" target="_blank" rel="noopener">099 295 848</a>.`;
-    } else if(t.includes("contacto") || t.includes("telefono") || t.includes("whatsapp") || t.includes("mail") || t.includes("correo")){
-      return `📞 Nuestro teléfono directo es 099 295 848. Puedes escribirnos a <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a> o a martinsampayo9@gmail.com.`;
-    } else if(t.includes("sugerencia") || t.includes("idea") || t.includes("reclamo") || t.includes("comentario")){
-      return `💡 ¡Tus comentarios nos ayudan a crecer! Puedes dejar tu sugerencia usando la opción en el menú inferior o del widget superior.`;
-    } else if(t.includes("clima") || t.includes("temperatura") || t.includes("lluvia") || t.includes("tiempo")){
-      return `☀️ El clima actual de Montevideo lo puedes ver en la tarjeta "Clima Actual" al inicio de la página, con temperatura, sensación térmica, viento y humedad. Se actualiza automáticamente cada 30 minutos.`;
-    } else {
-      mostrarSugerencias(["Agro San", "Abogado", "Lavadero", "Masajes", "WhatsApp directo"]);
-      return `No estoy seguro de haber entendido 🤔. Probá con alguna de estas opciones o escríbenos directo al <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;} }
- function agregarMensaje(remitente, htmlContenido){
-    const msg = document.createElement("div");
-    msg.className = "chat-msg " + remitente;
-    msg.innerHTML = htmlContenido;
-    chatBody.appendChild(msg);
- chatBody.scrollTop = chatBody.scrollHeight;}
+const chatFab=document.getElementById("chatFab");
+const chatContainer=document.getElementById("chatContainer");
+const chatCerrar=document.getElementById("chatCerrar");
+const chatBody=document.getElementById("chatBody");
+const chatInput=document.getElementById("chatInput");
+const chatSend=document.getElementById("chatSend");
+const sugerenciasInline=document.getElementById("sugerenciasInline");
+const waLink="https://wa.me/59899295848?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR";
+const toastContainer=document.getElementById("toastContainer");
+function toggleChat(estado){
+if(estado){
+chatContainer.classList.add("abierto");
+if(toastContainer)toastContainer.style.display="none";}
+else{
+chatContainer.classList.remove("abierto");
+if(toastContainer)toastContainer.style.display="flex";}}
+chatFab.addEventListener("click",()=>{
+toggleChat(!chatContainer.classList.contains("abierto"));});
+chatCerrar.addEventListener("click",()=>toggleChat(false));
+function mostrarSugerencias(lista){
+sugerenciasInline.innerHTML="";
+lista.forEach(txt=>{
+const b=document.createElement("button");
+b.textContent=txt;
+b.addEventListener("click",()=>procesarTexto(txt));
+sugerenciasInline.appendChild(b);});}
+function responder(texto){
+const t=texto.toLowerCase().trim();
+const noDisp=`⛔ Este servicio se encuentra <strong>temporalmente NO DISPONIBLE</strong>. Puedes consultar por otros servicios escribiendo a nuestro <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;
+if(t.includes("hola")||t.includes("buenas")||t.includes("saludos")||t.includes("inicio")){
+return`¡Hola! 👋 ¿En qué servicio estás interesado? Puedo ayudarte con información`;}
+else if(t.includes("agro")||t.includes("san")||t.includes("baño")||t.includes("animal")||t.includes("aspersion")||t.includes("ectoparasito")||t.includes("garrapata")||t.includes("matias olivera")||t.includes("tacuarembo")){
+return`🐄 <strong>AGRO SAN</strong> ofrece servicio de <strong>Baño de aspersión móvil</strong> para el control de ectoparásitos. Visita su página web <a href="https://agrosan.vercel.app" target="_blank" rel="noopener">aquí</a> o contacta a <strong>Matías Olivera</strong> al <a href="https://wa.me/59898461737?text=Hola,%20vengo%20desde%20el%20portal%20TINMAR" target="_blank" rel="noopener">098 461 737</a> (Tacuarembó).`;}
+else if(t.includes("trabajo")||t.includes("trabajos")||t.includes("mantenimiento")||t.includes("construccion")||t.includes("albañil")||t.includes("obra")){return noDisp;}
+else if(t.includes("electricista")||t.includes("electricidad")||t.includes("cortocircuito")||t.includes("instalacion electrica")||t.includes("tablero")){return noDisp;}
+else if(t.includes("pintor")||t.includes("pintura")||t.includes("pared")||t.includes("fachada")){return noDisp;}
+else if(t.includes("jardin")||t.includes("poda")||t.includes("pasto")||t.includes("plantas")){return noDisp;}
+else if(t.includes("limpieza")||t.includes("limpiar")||t.includes("desinfeccion")){return noDisp;}
+else if(t.includes("sanitaria")||t.includes("plomero")||t.includes("plomeria")||t.includes("cañeria")||t.includes("fuga")||t.includes("grifo")||t.includes("tanque")){return noDisp;}
+else if(t.includes("flete")||t.includes("mudanza")||t.includes("transporte")||t.includes("carga")){return noDisp;}
+else if(t.includes("abogado")||t.includes("juridico")||t.includes("legal")||t.includes("derecho")||t.includes("juicio")||t.includes("consulta legal")){
+return`⚖️ Nuestro Estudio Jurídico ofrece asesoramiento legal y consultas profesionales en Montevideo. Puedes ver la web oficial <a href="https://pabloalesandre.vercel.app" target="_blank" rel="noopener">aquí</a> o enviar tu consulta directo a <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;}
+else if(t.includes("tatuaje")||t.includes("tattoo")||t.includes("tinta")){
+return`🖋️ Contamos con servicio de Tatuajes profesionales con diseños únicos y personalizados. Mira los trabajos en su web <a href="https://javiertato.vercel.app" target="_blank" rel="noopener">aquí</a> o agenda tu turno por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;}
+else if(t.includes("lavadero")||t.includes("ropa")||t.includes("lavar")||t.includes("secado")||t.includes("prendas")||t.includes("union")){
+return`🧺 El Lavadero Unión brinda servicio de lavado y secado de ropa rápido, eficiente y de calidad. Puedes visitar la web <a href="https://lavaderounion.vercel.app" target="_blank" rel="noopener">aquí</a> o comunicarte por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;}
+else if(t.includes("masaje")||t.includes("relajacion")||t.includes("descontracturante")||t.includes("bienestar")){
+return`🌿 Disfruta de masajes orientados al bienestar y la relajación corporal. Revisa la sección dedicada <a href="masajes/index.html">aquí</a> o agenda tu cita por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;}
+else if(t.includes("tienda")||t.includes("comprar")||t.includes("producto")){
+return`🛒 Explora nuestra Tienda TINMAR en línea con gran catálogo y productos variados visitándola <a href="https://tinmar.vercel.app" target="_blank" rel="noopener">aquí</a>.`;}
+else if(t.includes("juego")||t.includes("vascolet")||t.includes("jugar")||t.includes("arcade")){
+return`🎮 ¡Tiempo de jugar! Disfruta del clásico juego retro Vascolet directamente online en este <a href="https://webport.itch.io/vascolet1" target="_blank" rel="noopener">enlace</a>.`;}
+else if(t.includes("pagina web")||t.includes("página web")||t.includes("sitio web")||t.includes("diseño web")||t.includes("programacion")||t.includes("desarrollo web")){
+return`🚀 Impulsa tu negocio con una página web moderna, ultra rápida y adaptable. Solicita tu presupuesto <a href="https://tinmar.vercel.app/solicita" target="_blank" rel="noopener">aquí</a>.`;}
+else if(t.includes("horario")||t.includes("abren")||t.includes("atienden")||t.includes("dias")){
+return`⏰ El portal TINMAR está activo las 24 horas del día. Puedes realizar consultas o solicitar servicios en cualquier momento por <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a>.`;}
+else if(t.includes("precio")||t.includes("costo")||t.includes("presupuesto")||t.includes("cuanto sale")||t.includes("tarifa")){
+return`💰 Para presupuestos exactos y cotizaciones rápidas sin compromiso, escríbenos a nuestro <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a> especificando qué trabajo necesitas.`;}
+else if(t.includes("ubicacion")||t.includes("donde estan")||t.includes("donde queda")||t.includes("lugar")||t.includes("montevideo")||t.includes("uruguay")){
+return`📍 Operamos y brindamos atención en Montevideo, Uruguay. Contáctanos al <a href="${waLink}" target="_blank" rel="noopener">099 295 848</a>.`;}
+else if(t.includes("contacto")||t.includes("telefono")||t.includes("whatsapp")||t.includes("mail")||t.includes("correo")){
+return`📞 Nuestro teléfono directo es 099 295 848. Puedes escribirnos a <a href="${waLink}" target="_blank" rel="noopener">WhatsApp</a> o a martinsampayo9@gmail.com.`;}
+else if(t.includes("sugerencia")||t.includes("idea")||t.includes("reclamo")||t.includes("comentario")){
+return`💡 ¡Tus comentarios nos ayudan a crecer! Puedes dejar tu sugerencia usando la opción en el menú inferior o del widget superior.`;}
+else if(t.includes("clima")||t.includes("temperatura")||t.includes("lluvia")||t.includes("tiempo")){
+return`☀️ El clima actual de Montevideo lo puedes ver en la tarjeta "Clima Actual" al inicio de la página, con temperatura, sensación térmica, viento y humedad. Se actualiza automáticamente cada 30 minutos.`;}
+else{
+mostrarSugerencias(["Agro San","Abogado","Lavadero","Masajes","WhatsApp directo"]);
+return`No estoy seguro de haber entendido 🤔. Probá con alguna de estas opciones o escríbenos directo al <a href="${waLink}" target="_blank" rel="noopener">WhatsApp 099 295 848</a>.`;}}
+function agregarMensaje(remitente,htmlContenido){
+const msg=document.createElement("div");
+msg.className="chat-msg "+remitente;
+msg.innerHTML=htmlContenido;
+chatBody.appendChild(msg);
+chatBody.scrollTop=chatBody.scrollHeight;}
 function procesarTexto(texto){
-    if(!texto.trim()) return;
-    agregarMensaje("user", texto);
-    chatInput.value = "";
-    sugerenciasInline.innerHTML = "";
-    setTimeout(() => {
-      const r = responder(texto);
-      agregarMensaje("bot", r);
-    }, 400); }
-chatSend.addEventListener("click", () => procesarTexto(chatInput.value));
-  chatInput.addEventListener("keypress", (e) => {
-    if(e.key === "Enter") procesarTexto(chatInput.value); }); })();
-(function(){
-  const reloj = document.getElementById("reloj-lluvia");
-  if(!reloj) return;
-  const horaEl = reloj.querySelector("#hora");
-  const fechaEl = reloj.querySelector("#fecha");
-  const canvas = reloj.querySelector("canvas");
-  const ctx = canvas.getContext("2d");
-  const dias = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
-  const meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
-  function actualizarHora(){
-    const a = new Date();
-    horaEl.textContent = String(a.getHours()).padStart(2,"0") + ":" + String(a.getMinutes()).padStart(2,"0") + ":" + String(a.getSeconds()).padStart(2,"0");
-    fechaEl.textContent = dias[a.getDay()] + ", " + a.getDate() + " de " + meses[a.getMonth()] + " de " + a.getFullYear();  }
-  actualizarHora();
-  setInterval(actualizarHora, 1000);
-  let gotas = [];
-  function ajustar(){
-    const r = canvas.getBoundingClientRect();
-canvas.width = r.width; canvas.height = r.height;
-    gotas = [];
-    for(let i=0;i<25;i++) gotas.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, l:8+Math.random()*10, v:2+Math.random()*3});}
-  function animar(){
- ctx.clearRect(0,0,canvas.width,canvas.height);
-    ctx.strokeStyle = "#7eefff";
-    ctx.lineWidth = 1;
-    for(const g of gotas){
-      ctx.beginPath();
-      ctx.moveTo(g.x, g.y);
-      ctx.lineTo(g.x, g.y + g.l);
-      ctx.stroke();
-      g.y += g.v;
-      if(g.y > canvas.height){ g.y = -10; g.x = Math.random()*canvas.width; } }
-    requestAnimationFrame(animar);  }
-  ajustar(); animar();
-  window.addEventListener("resize", ajustar);
-})();
-
-/* ===== CLIMA (con actualización en tiempo real y textos variados) ===== */
+if(!texto.trim())return;
+agregarMensaje("user",texto);
+chatInput.value="";
+sugerenciasInline.innerHTML="";
+setTimeout(()=>{
+const r=responder(texto);
+agregarMensaje("bot",r);},400);}
+chatSend.addEventListener("click",()=>procesarTexto(chatInput.value));
+chatInput.addEventListener("keypress",(e)=>{
+if(e.key==="Enter")procesarTexto(chatInput.value);});})();(function(){
+const reloj=document.getElementById("reloj-lluvia");
+if(!reloj)return;
+const horaEl=reloj.querySelector("#hora");
+const fechaEl=reloj.querySelector("#fecha");
+const canvas=reloj.querySelector("canvas");
+const ctx=canvas.getContext("2d");
+const dias=["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+const meses=["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+function actualizarHora(){
+const a=new Date();
+horaEl.textContent=String(a.getHours()).padStart(2,"0")+":"+String(a.getMinutes()).padStart(2,"0")+":"+String(a.getSeconds()).padStart(2,"0");
+fechaEl.textContent=dias[a.getDay()]+", "+a.getDate()+" de "+meses[a.getMonth()]+" de "+a.getFullYear();}
+actualizarHora();
+setInterval(actualizarHora,1000);
+let gotas=[];
+function ajustar(){
+const r=canvas.getBoundingClientRect();
+canvas.width=r.width;canvas.height=r.height;
+gotas=[];
+for(let i=0;i<25;i++)gotas.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,l:8+Math.random()*10,v:2+Math.random()*3});}
+function animar(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+ctx.strokeStyle="#7eefff";
+ctx.lineWidth=1;
+for(const g of gotas){
+ctx.beginPath();
+ctx.moveTo(g.x,g.y);
+ctx.lineTo(g.x,g.y+g.l);
+ctx.stroke();
+g.y+=g.v;
+if(g.y>canvas.height){g.y=-10;g.x=Math.random()*canvas.width;}}
+requestAnimationFrame(animar);}
+ajustar();animar();
+window.addEventListener("resize",ajustar);})();
 async function cargarClima(){
-  const contenedor = document.getElementById("climaContenedor");
-  if(!contenedor) return;
-  try{
-    const lat = -34.90, lon = -56.16;
-    const res = await fetch(
-      "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lon+
-      "&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,is_day"+
-      "&timezone=America%2FMontevideo&_=" + Date.now(),
-      {cache:"no-store"}
-    );
-    if(!res.ok) throw new Error("API");
-    const data = await res.json();
-    const actual = data.current;
-    if(!actual) throw new Error("Sin datos");
-    const codigo = actual.weather_code;
-    const esDia = actual.is_day === 1;
-    let icono = "☀️", texto = "Despejado";
-
-    if(codigo === 0){
-      icono = esDia ? "☀️" : "🌙";
-      texto = esDia ? "Cielo despejado y soleado" : "Noche despejada y estrellada";
-    }
-    else if(codigo <= 3){
-      icono = esDia ? "⛅" : "☁️";
-      texto = esDia ? "Parcialmente nublado con ratos de sol" : "Noche parcialmente nublada";
-    }
-    else if(codigo === 45 || codigo === 48){
-      icono = "🌫️"; texto = "Niebla densa, visibilidad reducida";
-    }
-    else if(codigo >= 51 && codigo <= 67){
-      icono = "🌧️"; texto = "Lluvia intermitente, llevá paraguas";
-    }
-    else if(codigo >= 71 && codigo <= 77){
-      icono = "❄️"; texto = "Nevada ligera, abrigate bien";
-    }
-    else if(codigo >= 80 && codigo <= 82){
-      icono = "🌦️"; texto = "Chaparrones aislados, típico de la zona";
-    }
-    else if(codigo >= 85 && codigo <= 86){
-      icono = "🌨️"; texto = "Nevadas dispersas, precaución al conducir";
-    }
-    else if(codigo >= 95){
-      icono = "⛈️"; texto = "Tormenta eléctrica, buscá refugio";
-    }
-
-    const temp = Math.round(actual.temperature_2m);
-    const sens = Math.round(actual.apparent_temperature);
-    const viento = Math.round(actual.wind_speed_10m);
-    const humedad = Math.round(actual.relative_humidity_2m);
-    const hora = new Date().toLocaleTimeString("es-UY",{hour:"2-digit",minute:"2-digit",timeZone:"America/Montevideo"});
-
-    const nuevoHTML = '<div class="clima-body">'
-      + '<div><div class="clima-temp">'+temp+'°C</div>'
-      + '<div class="clima-desc-small" style="animation: fadeInText .6s ease;">'+texto+'</div></div>'
-      + '<div class="clima-icon">'+icono+'</div>'
-      + '</div>'
-      + '<div class="clima-detalles">'
-      + '<div>💨 Viento: '+viento+' km/h</div>'
-      + '<div>💧 Humedad: '+humedad+'%</div>'
-      + '<div>🌡️ Sensación: '+sens+'°C</div>'
-      + '<div>🕒 Act.: '+hora+' hs</div>'
-      + '</div>';
-
-    if(contenedor.innerHTML !== nuevoHTML){
-      contenedor.innerHTML = nuevoHTML;
-    }
-
-  } catch(e){
-    contenedor.innerHTML = '<div class="clima-error">⚠️ No se pudo actualizar el clima. Comprueba tu conexión.</div>';
-  }
-}
-document.addEventListener("DOMContentLoaded", function(){
-  cargarClima();
-  setInterval(cargarClima, 300000);
-});
-
-if(!customElements.get("radio-player")){
-  customElements.define("radio-player", class extends HTMLElement {
-    constructor(){ super(); this.attachShadow({mode:"open"}); }
-    connectedCallback(){
-      this.shadowRoot.innerHTML = `
-<style>
-:host{display:block;width:100%;height:100%;}
-*{box-sizing:border-box;}
-.radio-container{width:100%;height:100%;min-height:140px;padding:8px;background:transparent;border:none;box-shadow:none;font-family:Arial,sans-serif;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:.4s;}
-.radio-screen{width:100%;min-height:28px;display:flex;align-items:center;justify-content:center;padding:5px 4px;background:transparent;border:none;color:#70efff;font-size:15px;font-weight:800;letter-spacing:.5px;text-shadow:0 0 8px rgba(126,239,255,.6);}
-.radio-song{min-height:18px;display:flex;align-items:center;justify-content:center;color:#c6f8ff;font-size:13px;font-weight:700;margin:4px 0;text-shadow:0 0 6px rgba(126,239,255,.4);}
-.play-button{width:38px;height:38px;border:none;border-radius:50%;background:#c8f7fc;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 0 15px rgba(0,220,240,.5);transition:.2s;margin-top:4px;}
-.play-button:hover{transform:scale(1.1);background:#fff;box-shadow:0 0 20px rgba(0,220,240,.8);}
-.play-icon{width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:10px solid #087f89;margin-left:2px;}
-.pause-icon{display:none;width:10px;height:13px;border-left:3px solid #087f89;border-right:3px solid #087f89;}
-.playing .play-icon{display:none;}
-.playing .pause-icon{display:block;}
-.live{margin-top:6px;color:#6df1ff;font-size:12.5px;font-weight:800;letter-spacing:.5px;text-shadow:0 0 8px rgba(126,239,255,.5);}
-audio{display:none;}
-</style>
-<div class="radio-container">
-  <div class="radio-screen"><span id="status">📻 RADIO</span></div>
-  <div class="radio-song" id="song">🎶 Música 24/7</div>
-  <button class="play-button" id="play" type="button" aria-label="Reproducir radio">
-    <div class="play-icon"></div>
-    <div class="pause-icon"></div>  </button>
-  <div class="live" id="live">● PAUSADO</div>
-  <audio id="audio" preload="auto" crossorigin="anonymous">
-    <source src="https://ice1.somafm.com/groovesalad-128-mp3?utm_source=chatgpt.com" type="audio/mpeg">
-  </audio> </div>`;
-      this.iniciar(); }
-    iniciar(){
-      const root = this.shadowRoot;
-      const cont = root.querySelector(".radio-container");
-      const btn = root.querySelector("#play");
-      const audio = root.querySelector("#audio");
-      const status = root.querySelector("#status");
-      const live = root.querySelector("#live");
-      const song = root.querySelector("#song");
-      const canciones = ["🎶 Sonando: Remix 🔥","🎵 DJ Flow 😎","🔥 Música activa","🎧 Trap Mix"];
-      let idx = 0;
-      setInterval(() => { idx = (idx+1) % canciones.length; song.textContent = canciones[idx]; }, 4000);
-      btn.addEventListener("click", async () => {
-        if(audio.paused){
-          try{
-            status.textContent = "⏳ CONECTANDO";
-            live.textContent = "● CONECTANDO";
-            if (audio.readyState === 0) { audio.load(); }
-            await new Promise(resolve => setTimeout(resolve, 100));
-            await audio.play();
-            cont.classList.add("playing");
-            status.textContent = "⚡ EN VIVO";
-            live.textContent = "● EN VIVO";
-          } catch(e){
-            cont.classList.remove("playing");
-            status.textContent = "⚠️ ERROR";
-            live.textContent = "● TOCA PARA REINTENTAR";
-            console.error("Error al reproducir:", e);
-          }
-        } else {
-          audio.pause();
-          cont.classList.remove("playing");
-          status.textContent = "📻 PAUSADA";
-          live.textContent = "● PAUSADO";
-        }
-      });
-      audio.addEventListener("playing", () => { 
-        cont.classList.add("playing"); 
-        status.textContent = "⚡ EN VIVO"; 
-        live.textContent = "● EN VIVO"; 
-      });
-      audio.addEventListener("waiting", () => {
-        status.textContent = "⏳ BUFFERING";
-        live.textContent = "● CARGANDO...";
-      });
-      audio.addEventListener("pause", () => { 
-        if(!audio.ended){ 
-          cont.classList.remove("playing"); 
-          status.textContent = "📻 PAUSADA"; 
-          live.textContent = "● PAUSADO"; 
-        } 
-      });
-    }
-  });
-}
+const contenedor=document.getElementById("climaContenedor");
+if(!contenedor)return;
+try{
+const lat=-34.90,lon=-56.16;
+const res=await fetch("https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+lon+"&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,is_day&timezone=America%2FMontevideo&_="+Date.now(),{cache:"no-store"});
+if(!res.ok)throw new Error("API");
+const data=await res.json();
+const actual=data.current;
+if(!actual)throw new Error("Sin datos");
+const codigo=actual.weather_code;
+const esDia=actual.is_day===1;
+let icono="☀️",texto="Despejado";
+if(codigo===0){icono=esDia?"☀️":"🌙";texto=esDia?"Cielo despejado y soleado":"Noche despejada y estrellada";}
+else if(codigo<=3){icono=esDia?"⛅":"☁️";texto=esDia?"Parcialmente nublado con ratos de sol":"Noche parcialmente nublada";}
+else if(codigo===45||codigo===48){icono="🌫️";texto="Niebla densa, visibilidad reducida";}
+else if(codigo>=51&&codigo<=67){icono="🌧️";texto="Lluvia intermitente, llevá paraguas";}
+else if(codigo>=71&&codigo<=77){icono="❄️";texto="Nevada ligera, abrigate bien";}
+else if(codigo>=80&&codigo<=82){icono="🌦️";texto="Chaparrones aislados, típico de la zona";}
+else if(codigo>=85&&codigo<=86){icono="🌨️";texto="Nevadas dispersas, precaución al conducir";}
+else if(codigo>=95){icono="⛈️";texto="Tormenta eléctrica, buscá refugio";}
+const temp=Math.round(actual.temperature_2m);
+const sens=Math.round(actual.apparent_temperature);
+const viento=Math.round(actual.wind_speed_10m);
+const humedad=Math.round(actual.relative_humidity_2m);
+const hora=new Date().toLocaleTimeString("es-UY",{hour:"2-digit",minute:"2-digit",timeZone:"America/Montevideo"});
+const nuevoHTML='<div class="clima-body"><div><div class="clima-temp">'+temp+'°C</div><div class="clima-desc-small" style="animation: fadeInText .6s ease;">'+texto+'</div></div><div class="clima-icon">'+icono+'</div></div><div class="clima-detalles"><div>💨 Viento: '+viento+' km/h</div><div>💧 Humedad: '+humedad+'%</div><div>🌡️ Sensación: '+sens+'°C</div><div>🕒 Act.: '+hora+' hs</div></div>';
+if(contenedor.innerHTML!==nuevoHTML){contenedor.innerHTML=nuevoHTML;}}
+catch(e){contenedor.innerHTML='<div class="clima-error">⚠️ No se pudo actualizar el clima. Comprueba tu conexión.</div>';}}
+document.addEventListener("DOMContentLoaded",function(){cargarClima();setInterval(cargarClima,300000);});if(!customElements.get("radio-player")){
+customElements.define("radio-player",class extends HTMLElement{
+constructor(){super();this.attachShadow({mode:"open"});}
+connectedCallback(){
+this.shadowRoot.innerHTML=`<style>:host{display:block;width:100%;height:100%}*{box-sizing:border-box}.radio-container{width:100%;height:100%;min-height:140px;padding:8px;background:transparent;border:none;box-shadow:none;font-family:Arial,sans-serif;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:.4s}.radio-screen{width:100%;min-height:28px;display:flex;align-items:center;justify-content:center;padding:5px 4px;background:transparent;border:none;color:#70efff;font-size:15px;font-weight:800;letter-spacing:.5px;text-shadow:0 0 8px rgba(126,239,255,.6)}.radio-song{min-height:18px;display:flex;align-items:center;justify-content:center;color:#c6f8ff;font-size:13px;font-weight:700;margin:4px 0;text-shadow:0 0 6px rgba(126,239,255,.4)}.play-button{width:38px;height:38px;border:none;border-radius:50%;background:#c8f7fc;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 0 15px rgba(0,220,240,.5);transition:.2s;margin-top:4px}.play-button:hover{transform:scale(1.1);background:#fff;box-shadow:0 0 20px rgba(0,220,240,.8)}.play-icon{width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:10px solid #087f89;margin-left:2px}.pause-icon{display:none;width:10px;height:13px;border-left:3px solid #087f89;border-right:3px solid #087f89}.playing .play-icon{display:none}.playing .pause-icon{display:block}.live{margin-top:6px;color:#6df1ff;font-size:12.5px;font-weight:800;letter-spacing:.5px;text-shadow:0 0 8px rgba(126,239,255,.5)}audio{display:none}</style><div class="radio-container"><div class="radio-screen"><span id="status">📻 RADIO</span></div><div class="radio-song" id="song">🎶 Música 24/7</div><button class="play-button" id="play" type="button" aria-label="Reproducir radio"><div class="play-icon"></div><div class="pause-icon"></div></button><div class="live" id="live">● PAUSADO</div><audio id="audio" preload="auto" crossorigin="anonymous"><source src="https://ice1.somafm.com/groovesalad-128-mp3?utm_source=chatgpt.com" type="audio/mpeg"></audio></div>`;
+this.iniciar();}
+iniciar(){
+const root=this.shadowRoot;
+const cont=root.querySelector(".radio-container");
+const btn=root.querySelector("#play");
+const audio=root.querySelector("#audio");
+const status=root.querySelector("#status");
+const live=root.querySelector("#live");
+const song=root.querySelector("#song");
+const canciones=["🎶 Sonando: Remix 🔥","🎵 DJ Flow 😎","🔥 Música activa","🎧 Trap Mix"];
+let idx=0;
+setInterval(()=>{idx=(idx+1)%canciones.length;song.textContent=canciones[idx];},4000);
+btn.addEventListener("click",async()=>{
+if(audio.paused){
+try{
+status.textContent="⏳ CONECTANDO";
+live.textContent="● CONECTANDO";
+if(audio.readyState===0){audio.load();}
+await new Promise(resolve=>setTimeout(resolve,100));
+await audio.play();
+cont.classList.add("playing");
+status.textContent="⚡ EN VIVO";
+live.textContent="● EN VIVO";}
+catch(e){
+cont.classList.remove("playing");
+status.textContent="⚠️ ERROR";
+live.textContent="● TOCA PARA REINTENTAR";
+console.error("Error al reproducir:",e);}}
+else{
+audio.pause();
+cont.classList.remove("playing");
+status.textContent="📻 PAUSADA";
+live.textContent="● PAUSADO";}});
+audio.addEventListener("playing",()=>{
+cont.classList.add("playing");
+status.textContent="⚡ EN VIVO";
+live.textContent="● EN VIVO";});
+audio.addEventListener("waiting",()=>{
+status.textContent="⏳ BUFFERING";
+live.textContent="● CARGANDO...";});
+audio.addEventListener("pause",()=>{
+if(!audio.ended){
+cont.classList.remove("playing");
+status.textContent="📻 PAUSADA";
+live.textContent="● PAUSADO";}});}});}
 (function(){
-  const modalTerminos = document.getElementById("modalTerminos");
-  const btnTerminos = document.getElementById("btnTerminos");
-  const cerrarTerminos = document.getElementById("cerrarTerminos");
-  if(btnTerminos && modalTerminos){
-    btnTerminos.addEventListener("click", e => { e.preventDefault(); modalTerminos.classList.add("abierto"); });
-    cerrarTerminos.addEventListener("click", () => modalTerminos.classList.remove("abierto"));}
-  const modalPrivacidad = document.getElementById("modalPrivacidad");
-  const btnPrivacidad = document.getElementById("btnPrivacidad");
-  const cerrarPrivacidad = document.getElementById("cerrarPrivacidad");
-  if(btnPrivacidad && modalPrivacidad){
-btnPrivacidad.addEventListener("click", e => { e.preventDefault(); modalPrivacidad.classList.add("abierto"); });
-cerrarPrivacidad.addEventListener("click",() => modalPrivacidad.classList.remove("abierto"));}
-  const modalSugerencias = document.getElementById("modalSugerencias");
-  const cerrarSugerencias = document.getElementById("cerrarSugerencias");
-  const abrirSugerencias = e => { e.preventDefault(); modalSugerencias.classList.add("abierto"); };
-document.getElementById("btnSugerencias")?.addEventListener("click", abrirSugerencias);
-document.getElementById("navBtnSugerencias")?.addEventListener("click", abrirSugerencias);
-document.getElementById("widgetSugerencia")?.addEventListener("click", abrirSugerencias);
-  if(cerrarSugerencias && modalSugerencias){
-cerrarSugerencias.addEventListener("click",() => modalSugerencias.classList.remove("abierto"));}
-  document.addEventListener("keydown", e => {
-    if(e.key === "Escape"){
+const modalTerminos=document.getElementById("modalTerminos");
+const btnTerminos=document.getElementById("btnTerminos");
+const cerrarTerminos=document.getElementById("cerrarTerminos");
+if(btnTerminos&&modalTerminos){
+btnTerminos.addEventListener("click",e=>{e.preventDefault();modalTerminos.classList.add("abierto");});
+cerrarTerminos.addEventListener("click",()=>modalTerminos.classList.remove("abierto"));}
+const modalPrivacidad=document.getElementById("modalPrivacidad");
+const btnPrivacidad=document.getElementById("btnPrivacidad");
+const cerrarPrivacidad=document.getElementById("cerrarPrivacidad");
+if(btnPrivacidad&&modalPrivacidad){
+btnPrivacidad.addEventListener("click",e=>{e.preventDefault();modalPrivacidad.classList.add("abierto");});
+cerrarPrivacidad.addEventListener("click",()=>modalPrivacidad.classList.remove("abierto"));}
+const modalSugerencias=document.getElementById("modalSugerencias");
+const cerrarSugerencias=document.getElementById("cerrarSugerencias");
+const abrirSugerencias=e=>{e.preventDefault();modalSugerencias.classList.add("abierto");};
+document.getElementById("btnSugerencias")?.addEventListener("click",abrirSugerencias);
+document.getElementById("navBtnSugerencias")?.addEventListener("click",abrirSugerencias);
+document.getElementById("widgetSugerencia")?.addEventListener("click",abrirSugerencias);
+if(cerrarSugerencias&&modalSugerencias){
+cerrarSugerencias.addEventListener("click",()=>modalSugerencias.classList.remove("abierto"));}
+document.addEventListener("keydown",e=>{
+if(e.key==="Escape"){
 modalTerminos?.classList.remove("abierto");
 modalPrivacidad?.classList.remove("abierto");
-modalSugerencias?.classList.remove("abierto");
-    } }); })();
-(function() {
-  const btn = document.getElementById("backToTop");
-  window.addEventListener("scroll", () => {
-    if(window.scrollY > 400) btn.classList.add("visible");
-    else btn.classList.remove("visible");
-  });
-  btn.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));
-})();
+modalSugerencias?.classList.remove("abierto");}});})();
+
 (function(){
-  const urlPortal = "https://tinmar.vercel.app";
-  const titulo = "TINMAR · Servicios y Negocios en Montevideo";
-  const texto = "Mirá TINMAR 👉 servicios profesionales en Montevideo: abogado, tatuajes, lavadero, masajes y más. Atención 24h.";
-  const btnCopiar = document.getElementById("btnCopiar");
-  if(btnCopiar){
-    btnCopiar.addEventListener("click", async () => {
-      const txtOriginal = btnCopiar.querySelector(".txt");
-      const icoOriginal = btnCopiar.querySelector(".ico");
-      try{
-        if(navigator.clipboard && window.isSecureContext){
-          await navigator.clipboard.writeText(urlPortal);
-        } else {
-          const ta = document.createElement("textarea");
-          ta.value = urlPortal;
-          ta.style.position = "fixed";
-          ta.style.opacity = "0";
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand("copy");
-          document.body.removeChild(ta);
-        }
-        btnCopiar.classList.add("copiado");
-        icoOriginal.textContent = "✅";
-        txtOriginal.textContent = "¡Copiado!";
-        setTimeout(() => {
-         btnCopiar.classList.remove("copiado");
-          icoOriginal.textContent = "📋";
- txtOriginal.textContent = "Copiar enlace";
-        }, 2000);
-      } catch(e){
-        alert("No se pudo copiar. Copiá manualmente: " + urlPortal);
-      }
-    });
-  }
-document.getElementById("btnWhatsApp")?.addEventListener("click", () => {
-    const msg = encodeURIComponent(texto + "\n\n" + urlPortal);
-    window.open("https://wa.me/?text=" + msg, "_blank", "noopener,noreferrer"); });
-document.getElementById("btnFacebook")?.addEventListener("click", () => {
-    const u = encodeURIComponent(urlPortal);
-window.open("https://www.facebook.com/sharer/sharer.php?u=" + u, "_blank", "noopener,noreferrer,width=600,height=500");
-  });
-document.getElementById("btnTwitter")?.addEventListener("click", () => {
-    const t = encodeURIComponent(titulo);
-    const u = encodeURIComponent(urlPortal);
-window.open("https://twitter.com/intent/tweet?text=" + t + "&url=" + u, "_blank", "noopener,noreferrer,width=600,height=500");
-  });
-  const btnNativo = document.getElementById("btnNativo");
-  if(btnNativo && navigator.share){
-    btnNativo.classList.add("soportado");
-    btnNativo.addEventListener("click", async () => {
-      try{
-        await navigator.share({ title: titulo, text: texto, url: urlPortal });
-      } catch(e){
-if(e.name !== "AbortError") console.warn("Share error:", e); } }); } })();
-</script>
-</body>
-</html>
+const btn=document.getElementById("backToTop");
+window.addEventListener("scroll",()=>{
+if(window.scrollY>400)btn.classList.add("visible");
+else btn.classList.remove("visible");});
+btn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));})();(function(){
+const urlPortal="https://tinmar.vercel.app";
+const titulo="TINMAR · Servicios y Negocios en Montevideo";
+const texto="Mirá TINMAR 👉 servicios profesionales en Montevideo: abogado, tatuajes, lavadero, masajes y más. Atención 24h.";
+const btnCopiar=document.getElementById("btnCopiar");
+if(btnCopiar){
+btnCopiar.addEventListener("click",async()=>{
+const txtOriginal=btnCopiar.querySelector(".txt");
+const icoOriginal=btnCopiar.querySelector(".ico");
+try{
+if(navigator.clipboard&&window.isSecureContext){
+await navigator.clipboard.writeText(urlPortal);}
+else{
+const ta=document.createElement("textarea");
+ta.value=urlPortal;
+ta.style.position="fixed";
+ta.style.opacity="0";
+document.body.appendChild(ta);
+ta.select();
+document.execCommand("copy");
+document.body.removeChild(ta);}
+btnCopiar.classList.add("copiado");
+icoOriginal.textContent="✅";
+txtOriginal.textContent="¡Copiado!";
+setTimeout(()=>{
+btnCopiar.classList.remove("copiado");
+icoOriginal.textContent="📋";
+txtOriginal.textContent="Copiar enlace";},2000);}
+catch(e){alert("No se pudo copiar. Copiá manualmente: "+urlPortal);}});}
+document.getElementById("btnWhatsApp")?.addEventListener("click",()=>{
+const msg=encodeURIComponent(texto+"\n\n"+urlPortal);
+window.open("https://wa.me/?text="+msg,"_blank","noopener,noreferrer");});
+document.getElementById("btnFacebook")?.addEventListener("click",()=>{
+const u=encodeURIComponent(urlPortal);
+window.open("https://www.facebook.com/sharer/sharer.php?u="+u,"_blank","noopener,noreferrer,width=600,height=500");});
+document.getElementById("btnTwitter")?.addEventListener("click",()=>{
+const t=encodeURIComponent(titulo);
+const u=encodeURIComponent(urlPortal);
+window.open("https://twitter.com/intent/tweet?text="+t+"&url="+u,"_blank","noopener,noreferrer,width=600,height=500");});
+const btnNativo=document.getElementById("btnNativo");
+if(btnNativo&&navigator.share){
+btnNativo.classList.add("soportado");
+btnNativo.addEventListener("click",async()=>{
+try{await navigator.share({title:titulo,text:texto,url:urlPortal});}
+catch(e){if(e.name!=="AbortError")console.warn("Share error:",e);}});}})();</script></body></html>
